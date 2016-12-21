@@ -4,8 +4,20 @@ print("# **Zadanie 2**: obsługa konferencji naukowej")
 print("- zgłaszanie referatów, recenzowanie")
 print("- organizacja eventu - program wystąpień, eventy typu przyjęcie, wycieczka ze zwiedzaniem itp.")
 print()
+
+print("### Lista aktorów")
+print("""
+- prelegent - osoba prezentująca na konferencji
+- recenzent - osoba, która decyduje o akceptacji lub odrzuceniu referatu
+- organizator - osoba zarządzająca terminarzem
+- słuchacz - osoba słuchająca prezentacji
+- dziennikarz - osoba relacjonująca wydarzenie
+""")
+
+print()
 print("## Przypadki Biznesowe")
 
+# for truly interactive development
 print("""<script>setTimeout(function() { location.reload(); }, 1000);</script>""")
 
 class state:
@@ -61,6 +73,7 @@ def alt(to_point=None):
 def powrot(do_p):
     punkt('Powrót do punktu %d' % do_p)
 
+###############################################################################
 PB('Zgłoszenie referatu', 'prelegent, recenzent')
 p_form = punkt("""Prelegent wypełnia formularz z danymi:
  - temat prezentacji
@@ -78,3 +91,7 @@ powrot(p_form)
 alt(p_zapis)
 punkt("Prelegent jest osobą zaproszoną")
 punkt("Publikacja jest automatycznie akceptowana")
+
+
+###############################################################################
+PB("Przeglądanie terminarza", "
