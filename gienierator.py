@@ -10,6 +10,7 @@ class state:
     kolejny_pb = 1
     kolejny_fu = 1
     kolejny_punkt = 1
+    kolejny_alt = 1
 
 def reset():
     state.kolejny_punkt = 1
@@ -22,7 +23,7 @@ def przypadek(id, nazwa, aktorzy):
     print()
     print("Aktorzy: %s" % aktorzy)
     print()
-    print("__Scenariusz główny:__" % aktorzy)
+    print("__Scenariusz główny:__")
     print()
 
 def PB(*args, **kwargs):
@@ -36,7 +37,11 @@ def punkt(tresc):
     return punkt
 
 def alt():
-    pass
+    n = state.kolejny_alt
+    print()
+    print("__Scenariusz alternatywny %d:__" % n)
+    print()
+    state.kolejny_alt += 1
 
 PB('Zgłoszenie referatu', 'prelegent, recenzent')
 punkt("""Prelegent wypełnia formularz z danymi:
