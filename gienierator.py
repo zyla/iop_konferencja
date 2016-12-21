@@ -6,9 +6,10 @@ print("- organizacja eventu - program wystąpień, eventy typu przyjęcie, wycie
 
 print("## Przypadki Biznesowe")
 
-state = object()
-state.kolejny_pb = 1
-state.kolejny_fu = 1
+class state:
+    kolejny_pb = 1
+    kolejny_fu = 1
+    kolejny_punkt = 1
 
 def reset():
     state.kolejny_punkt = 1
