@@ -80,14 +80,15 @@ def wybiera_opcje(kto):
     punkt('%s wybiera opcję "%s"' % (kto, state.pb_name))
 
 class N:
-    def __init__(self, mianownik, dopelniacz, dop_lm, new):
+    def __init__(self, mianownik, dopelniacz, dop_lm, new, new2):
         self.mianownik = mianownik
         self.dopelniacz = dopelniacz
         self.dop_lm = dop_lm
         self.new = new
+        self.new2 = new2
 
 def CRUD(thing, fields):
-    PB('Dodanie nowego %s' % thing.dopelniacz, 'organizator')
+    PB('Dodanie %s %s' % (thing.new2, thing.dopelniacz), 'organizator')
     wybiera_opcje('Organizator')
     punkt('Organizator wpisuje %s %s' % (fields, thing.dopelniacz))
     p_zatw = punkt('Organizator zatwierdza')
@@ -149,14 +150,14 @@ def CRUD(thing, fields):
 
 
 ###############################################################################
-rodzaj_posilku = N('rodzaj posiłku', 'rodzaju posiłku', 'rodzajów posiłku', 'nowy')
+rodzaj_posilku = N('rodzaj posiłku', 'rodzaju posiłku', 'rodzajów posiłku', 'nowy', 'nowego')
 CRUD(rodzaj_posilku, 'nazwę')
 
-mozliwosc_noclegu = N('możliwość noclegu', 'możliwości noclegu', 'możliwości noclegu', 'nową')
+mozliwosc_noclegu = N('możliwość noclegu', 'możliwości noclegu', 'możliwości noclegu', 'nową', 'nowej')
 CRUD(mozliwosc_noclegu, 'nazwę, opis, miejsce i cenę')
 
-warsztat = N('warsztat', 'warsztatu', 'warsztatów', 'nowy')
+warsztat = N('warsztat', 'warsztatu', 'warsztatów', 'nowy', 'nowego')
 CRUD(warsztat, 'nazwę, opis, miejsce i cenę')
 
-wycieczka = N('wycieczka', 'wycieczki', 'wycieczek', 'nowa')
+wycieczka = N('wycieczka', 'wycieczki', 'wycieczek', 'nowa', 'nowej')
 CRUD(wycieczka, 'nazwę, opis, miejsce i cenę')
