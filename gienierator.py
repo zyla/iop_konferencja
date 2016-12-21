@@ -22,8 +22,8 @@ def przypadek(id, nazwa, aktorzy):
     print()
     print("Aktorzy: %s" % aktorzy)
 
-def PB(nazwa):
-    przypadek('PB%d' % state.kolejny_pb, nazwa)
+def PB(*args, **kwargs):
+    przypadek('PB%d' % state.kolejny_pb, *args, **kwargs)
     state.kolejny_pb += 1
 
 def punkt(tresc):
@@ -33,7 +33,7 @@ def punkt(tresc):
     return punkt
 
 def alt():
-
+    pass
 
 PB('Zgłoszenie referatu', 'prelegent, recenzent')
 punkt("""Prelegent wypełnia formularz z danymi:
