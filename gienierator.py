@@ -16,6 +16,7 @@ class state:
 
 def reset():
     state.kolejny_punkt = 1
+    state.kolejny_alt = 1
 
 def przypadek(id, nazwa, aktorzy):
     reset()
@@ -25,7 +26,7 @@ def przypadek(id, nazwa, aktorzy):
     print()
     print("Aktorzy: %s" % aktorzy)
     print()
-    print("__Scenariusz główny:__")
+    print("_Scenariusz główny:_")
     print()
 
 def PB(*args, **kwargs):
@@ -41,7 +42,7 @@ def punkt(tresc):
 def alt(to_point=None):
     n = state.kolejny_alt
     print()
-    print("__Scenariusz alternatywny %d:__" % n)
+    print("_Scenariusz alternatywny %d:_" % n)
     print()
     state.kolejny_alt += 1
 
@@ -66,10 +67,14 @@ p_form = punkt("""Prelegent wypełnia formularz z danymi:
  - abstrakt
  - dane kontaktowe
  - draft publikacji""")
-p2 = punkt("System zapisuje publikację")
+p_zapis = punkt("System zapisuje publikację")
 punkt("System wysyła e-mail z potwierdzeniem do prelegenta")
 
-alt(p2)
+alt(p_form)
 punkt("Dane są niepoprawne")
 punkt("System wyświetla komunikat o błędzie")
 powrot(p_form)
+
+alt(p_zapis)
+punkt("Prelegent jest osobą zaproszoną")
+punkt("Publikacja jest automatycznie akceptowana")
