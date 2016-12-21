@@ -35,7 +35,7 @@ def punkt(tresc):
 def alt():
 
 
-PB('Zgłoszenie referatu')
+PB('Zgłoszenie referatu', 'prelegent, recenzent')
 punkt("""Prelegent wypełnia formularz z danymi:
  - temat prezentacji
  - abstrakt
