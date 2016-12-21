@@ -85,10 +85,9 @@ class N:
         self.dop_lm = dop_lm
         self.new = new
 
-rodzaj_posilku = N('rodzaj posiłku', 'rodzaju posiłku', 'rodzajów posiłku', 'nowy')
-
 def CRUD(thing, fields):
     PB('Dodanie nowego %s' % thing.dopelniacz, 'organizator')
+    wybiera_opcje('Organizator')
     punkt('Organizator wpisuje %s %s' % (fields, thing.dopelniacz))
     p_zatw = punkt('Organizator zatwierdza')
     punkt('System zapisuje %s %s' % (thing.new, thing.mianownik))
@@ -100,9 +99,23 @@ def CRUD(thing, fields):
     powrot(1)
 
     PB('Edycja %s' % thing.dopelniacz, 'organizator')
+    wybiera_opcje('Organizator')
     punkt('System prezentuje listę %s' % (thing.dop_lm))
     punkt('Organizator wybiera %s z listy' % (thing.mianownik))
     punkt('Organizator wpisuje %s %s' % (fields, thing.dopelniacz))
+    p_zatw = punkt('Organizator zatwierdza')
+    punkt('System zapisuje %s %s' % (thing.new, thing.mianownik))
+    punkt('System wyświetla komunikat o sukcesie')
+
+    alt(p_zatw)
+    punkt('Wprowadzone dane są niepoprawne')
+    punkt('System wyświetla komunikat o błędzie')
+    powrot(1)
+
+    PB('Usunięcie %s' % thing.dopelniacz, 'organizator')
+    wybiera_opcje('Organizator')
+    punkt('System prezentuje listę %s' % (thing.dop_lm))
+    punkt('Organizator wybiera %s z listy' % (thing.mianownik))
     p_zatw = punkt('Organizator zatwierdza')
     punkt('System zapisuje %s %s' % (thing.new, thing.mianownik))
     punkt('System wyświetla komunikat o sukcesie')
@@ -130,9 +143,13 @@ punkt("Publikacja jest automatycznie akceptowana")
 ###############################################################################
 PB("Przeglądanie terminarza",
    "prelegent, recenzent, organizator, słuchacz lub dziennikarz (\"użytkownik\")")
-wybiera_opcje("użytkownik")
+wybiera_opcje("Użytkownik")
 punkt("System prezentuje listę wydarzeń wraz i ich terminami")
 
 
 ###############################################################################
+rodzaj_posilku = N('rodzaj posiłku', 'rodzaju posiłku', 'rodzajów posiłku', 'nowy')
 CRUD(rodzaj_posilku, 'nazwę')
+
+mozliwosci_noclegu = N('możliwość noclegu', 'możliwości noclegu', 'możliwości noclegu', 'nową')
+CRUD(mozliwosci_noclegu, 'nazwę, opis, miejsce i cenę')
