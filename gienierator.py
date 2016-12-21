@@ -94,4 +94,6 @@ punkt("Publikacja jest automatycznie akceptowana")
 
 
 ###############################################################################
-PB("Przeglądanie terminarza", "
+PB("Przeglądanie terminarza",
+   "prelegent, recenzent, organizator, słuchacz lub dziennikarz (\"użytkownik\")")
+punkt("System prezentuje listę wydarzeń wraz i ich terminami")
