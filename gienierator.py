@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 print("# **Zadanie 2**: obsługa konferencji naukowej")
-print("- zgłaszanie referatów, recenzowanie")
-print("- organizacja eventu - program wystąpień, eventy typu przyjęcie, wycieczka ze zwiedzaniem itp.")
+print("Zgłaszanie referatów, recenzowanie, ")
+print("organizacja eventu - program wystąpień, eventy typu przyjęcie, wycieczka ze zwiedzaniem itp.")
 print()
 
 print("### Lista aktorów")
@@ -12,6 +12,7 @@ print("""
 - organizator - osoba zarządzająca terminarzem
 - słuchacz - osoba słuchająca prezentacji
 - dziennikarz - osoba relacjonująca wydarzenie
+- czas
 """)
 
 print()
@@ -120,36 +121,42 @@ def CRUD(thing, fields):
     punkt('System zapisuje %s %s' % (thing.new, thing.mianownik))
     punkt('System wyświetla komunikat o sukcesie')
 
-###############################################################################
-PB('Zgłoszenie referatu', 'prelegent, recenzent')
-p_form = punkt("""Prelegent wypełnia formularz z danymi:
- - temat prezentacji
- - abstrakt
- - dane kontaktowe
- - draft publikacji""")
-p_zapis = punkt("System zapisuje publikację")
-punkt("System wysyła e-mail z potwierdzeniem do prelegenta")
-
-alt(p_form)
-punkt("Dane są niepoprawne")
-punkt("System wyświetla komunikat o błędzie")
-powrot(p_form)
-
-alt(p_zapis)
-punkt("Prelegent jest osobą zaproszoną")
-punkt("Publikacja jest automatycznie akceptowana")
-
-
-###############################################################################
-PB("Przeglądanie terminarza",
-   "prelegent, recenzent, organizator, słuchacz lub dziennikarz (\"użytkownik\")")
-wybiera_opcje("Użytkownik")
-punkt("System prezentuje listę wydarzeń wraz i ich terminami")
+#    ###############################################################################
+#    PB('Zgłoszenie referatu', 'prelegent, recenzent')
+#    p_form = punkt("""Prelegent wypełnia formularz z danymi:
+#     - temat prezentacji
+#     - abstrakt
+#     - dane kontaktowe
+#     - draft publikacji""")
+#    p_zapis = punkt("System zapisuje publikację")
+#    punkt("System wysyła e-mail z potwierdzeniem do prelegenta")
+#    
+#    alt(p_form)
+#    punkt("Dane są niepoprawne")
+#    punkt("System wyświetla komunikat o błędzie")
+#    powrot(p_form)
+#    
+#    alt(p_zapis)
+#    punkt("Prelegent jest osobą zaproszoną")
+#    punkt("Publikacja jest automatycznie akceptowana")
+#    
+#    
+#    ###############################################################################
+#    PB("Przeglądanie terminarza",
+#       "prelegent, recenzent, organizator, słuchacz lub dziennikarz (\"użytkownik\")")
+#    wybiera_opcje("Użytkownik")
+#    punkt("System prezentuje listę wydarzeń wraz i ich terminami")
 
 
 ###############################################################################
 rodzaj_posilku = N('rodzaj posiłku', 'rodzaju posiłku', 'rodzajów posiłku', 'nowy')
 CRUD(rodzaj_posilku, 'nazwę')
 
-mozliwosci_noclegu = N('możliwość noclegu', 'możliwości noclegu', 'możliwości noclegu', 'nową')
-CRUD(mozliwosci_noclegu, 'nazwę, opis, miejsce i cenę')
+mozliwosc_noclegu = N('możliwość noclegu', 'możliwości noclegu', 'możliwości noclegu', 'nową')
+CRUD(mozliwosc_noclegu, 'nazwę, opis, miejsce i cenę')
+
+warsztat = N('warsztat', 'warsztatu', 'warsztatów', 'nowy')
+CRUD(warsztat, 'nazwę, opis, miejsce i cenę')
+
+wycieczka = N('wycieczka', 'wycieczki', 'wycieczek', 'nowa')
+CRUD(wycieczka, 'nazwę, opis, miejsce i cenę')
