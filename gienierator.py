@@ -25,6 +25,7 @@ class state:
     kolejny_fu = 1
     kolejny_punkt = 1
     kolejny_alt = 1
+    pb_name = ''
 
 def reset():
     state.kolejny_punkt = 1
@@ -32,6 +33,7 @@ def reset():
 
 def przypadek(id, nazwa, aktorzy):
     reset()
+    state.pb_name = nazwa
 
     print()
     print("### %s %s" % (id, nazwa))
@@ -72,6 +74,9 @@ def alt(to_point=None):
 
 def powrot(do_p):
     punkt('Powrót do punktu %d' % do_p)
+
+def wybiera_opcje(kto):
+    punkt('%s wybiera opcję "%s"' % (kto, state.pb_name))
 
 class N:
     def __init__(self, mianownik, dopelniacz, dop_lm, new):
