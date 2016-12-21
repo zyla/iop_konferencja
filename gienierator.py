@@ -43,18 +43,31 @@ def alt(to_point=None):
     print()
     state.kolejny_alt += 1
 
+    def render_range_to(to_point):
+        if to_point > 1:
+            return '1-%d' % to_point
+        else:
+            return '1'
+
     if to_point:
-        print("1-%d. Jak w scenariuszu głównym" % to_point)
+        print("%s. Jak w scenariuszu głównym" % render_range_to(to_point))
         state.kolejny_punkt = to_point + 1
     else:
         state.kolejny_punkt = 1
 
+def powrot(do_p):
+    punkt('Powrót do punktu %d' % do_p)
 
 PB('Zgłoszenie referatu', 'prelegent, recenzent')
-punkt("""Prelegent wypełnia formularz z danymi:
+p_form = punkt("""Prelegent wypełnia formularz z danymi:
  - temat prezentacji
  - abstrakt
  - dane kontaktowe
  - draft publikacji""")
 punkt("System zapisuje publikację")
 punkt("System wysyła e-mail z potwierdzeniem do prelegenta")
+
+alt(p_form)
+punkt("Dane są niepoprawne")
+punkt("System wyświetla komunikat o błędzie")
+powrot(p_form)
