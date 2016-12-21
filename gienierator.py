@@ -14,19 +14,26 @@ class state:
 def reset():
     state.kolejny_punkt = 1
 
-def przypadek(id, nazwa):
+def przypadek(id, nazwa, aktorzy):
     reset()
 
     print()
     print("### %s %s" % (id, nazwa))
+    print()
+    print("Aktorzy: %s" % aktorzy)
 
 def PB(nazwa):
     przypadek('PB%d' % state.kolejny_pb, nazwa)
     state.kolejny_pb += 1
 
 def punkt(tresc):
-    print('%d. %s' % (state.kolejny_punkt, tresc))
+    punkt = state.kolejny_punkt
+    print('%d. %s' % (punkt, tresc))
     state.kolejny_punkt += 1
+    return punkt
+
+def alt():
+
 
 PB('Zgłoszenie referatu')
 punkt("""Prelegent wypełnia formularz z danymi:
