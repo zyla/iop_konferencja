@@ -73,6 +73,21 @@ def alt(to_point=None):
 def powrot(do_p):
     punkt('Powrót do punktu %d' % do_p)
 
+class N:
+    def __init__(self, mianownik, dopelniacz, dop_lm, new):
+        self.mianownik = mianownik
+        self.dopelniacz = dopelniacz
+        self.dop_lm = dop_lm
+        self.new = new
+
+rodzaj_posilku = N('rodzaj posiłku', 'rodzaju posiłku', 'rodzajów posiłku', 'nowy')
+
+def CRUD(thing, fields):
+    PB('Dodanie nowego %s' % thing.dopelniacz, 'organizator')
+    punkt('Organizator wpisuje %s', fields)
+    punkt('Organizator zatwierdza')
+    punkt('System zapisuje %s %s' % (thing.new, thing.mianownik))
+
 ###############################################################################
 PB('Zgłoszenie referatu', 'prelegent, recenzent')
 p_form = punkt("""Prelegent wypełnia formularz z danymi:
