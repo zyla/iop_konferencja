@@ -22,6 +22,8 @@ def przypadek(id, nazwa, aktorzy):
     print()
     print("Aktorzy: %s" % aktorzy)
     print()
+    print("__Scenariusz główny:__" % aktorzy)
+    print()
 
 def PB(*args, **kwargs):
     przypadek('PB%d' % state.kolejny_pb, *args, **kwargs)
