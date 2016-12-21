@@ -49,6 +49,7 @@ def PB(*args, **kwargs):
     state.kolejny_pb += 1
 
 def punkt(tresc):
+    # TODO cap first
     punkt = state.kolejny_punkt
     print('%d. %s' % (punkt, tresc))
     state.kolejny_punkt += 1
@@ -155,7 +156,7 @@ def CRUD(thing, fields, delete_alt=None):
 def delete_alt_wybrany(thing, wybrany):
     def _alt():
          punkt('%s %s przez uczestników wydarzenia' % (thing.mianownik, wybrany))
-         punkt('System wyświetla osoby, przez które %s %s' % (thing.mianownik, wybrany)
+         punkt('System wyświetla osoby, przez które %s %s' % (thing.mianownik, wybrany))
          powrot(1)
     return _alt
 
