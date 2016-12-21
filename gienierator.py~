@@ -64,10 +64,10 @@ p_form = punkt("""Prelegent wypełnia formularz z danymi:
  - abstrakt
  - dane kontaktowe
  - draft publikacji""")
-p2 = punkt("System zapisuje publikację")
+punkt("System zapisuje publikację")
 punkt("System wysyła e-mail z potwierdzeniem do prelegenta")
 
-alt(p2)
+alt(p_form)
 punkt("Dane są niepoprawne")
 punkt("System wyświetla komunikat o błędzie")
 powrot(p_form)
