@@ -51,7 +51,7 @@ def PB(*args, **kwargs):
 def punkt(tresc):
     # TODO cap first
     punkt = state.kolejny_punkt
-    print('%d. %s' % (punkt, tresc))
+    print('%d. %s.' % (punkt, tresc))
     state.kolejny_punkt += 1
     return punkt
 
