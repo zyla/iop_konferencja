@@ -87,7 +87,7 @@ class N:
         self.new = new
         self.new2 = new2
 
-def CRUD(thing, fields):
+def CRUD(thing, fields, delete_alt=None):
     PB('Dodanie %s %s' % (thing.new2, thing.dopelniacz), 'organizator')
     wybiera_opcje('Organizator')
     punkt('Organizator wpisuje %s %s' % (fields, thing.dopelniacz))
@@ -122,6 +122,10 @@ def CRUD(thing, fields):
     punkt('System zapisuje %s %s' % (thing.new, thing.mianownik))
     punkt('System wyświetla komunikat o sukcesie')
 
+    if delete_alt:
+        alt(p_zatw) 
+        delete_alt()
+
 #    ###############################################################################
 #    PB('Zgłoszenie referatu', 'prelegent, recenzent')
 #    p_form = punkt("""Prelegent wypełnia formularz z danymi:
@@ -151,7 +155,12 @@ def CRUD(thing, fields):
 
 ###############################################################################
 rodzaj_posilku = N('rodzaj posiłku', 'rodzaju posiłku', 'rodzajów posiłku', 'nowy', 'nowego')
-CRUD(rodzaj_posilku, 'nazwę')
+CRUD(rodzaj_posilku, 'nazwę',
+     delete_alt=lambda: [
+         punkt('Rodzaj posiłku został już wybrany przez uczestników wydarzenia'),
+         punkt('System wyświetla osoby, które wybrały dany rodzaj posiłku'),
+         powrot(1)
+     ])
 
 mozliwosc_noclegu = N('możliwość noclegu', 'możliwości noclegu', 'możliwości noclegu', 'nową', 'nowej')
 CRUD(mozliwosc_noclegu, 'nazwę, opis, miejsce i cenę')
