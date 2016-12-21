@@ -84,8 +84,21 @@ rodzaj_posilku = N('rodzaj posiłku', 'rodzaju posiłku', 'rodzajów posiłku', 
 
 def CRUD(thing, fields):
     PB('Dodanie nowego %s' % thing.dopelniacz, 'organizator')
-    punkt('Organizator wpisuje %s' % fields)
-    punkt('Organizator zatwierdza')
+    punkt('Organizator wpisuje %s %s' % (fields, thing.dopelniacz))
+    p_zatw = punkt('Organizator zatwierdza')
+    punkt('System zapisuje %s %s' % (thing.new, thing.mianownik))
+    punkt('System wyświetla komunikat o sukcesie')
+
+    alt(p_zatw)
+    punkt('Wprowadzone dane są niepoprawne')
+    punkt('System wyświetla komunikat o błędzie')
+    powrot(1)
+
+    PB('Edycja %s' % thing.dopelniacz, 'organizator')
+    punkt('System prezentuje listę %s' % (thing.dop_lm))
+    punkt('Organizator wybiera %s z listy' % (thing.mianownik))
+    punkt('Organizator wpisuje %s %s' % (fields, thing.dopelniacz))
+    p_zatw = punkt('Organizator zatwierdza')
     punkt('System zapisuje %s %s' % (thing.new, thing.mianownik))
     punkt('System wyświetla komunikat o sukcesie')
 
@@ -112,6 +125,7 @@ punkt("Publikacja jest automatycznie akceptowana")
 ###############################################################################
 PB("Przeglądanie terminarza",
    "prelegent, recenzent, organizator, słuchacz lub dziennikarz (\"użytkownik\")")
+wybiera_opcje("użytkownik")
 punkt("System prezentuje listę wydarzeń wraz i ich terminami")
 
 
