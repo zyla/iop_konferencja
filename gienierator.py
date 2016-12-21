@@ -20,7 +20,7 @@ def przypadek(id, nazwa):
     print("### %s %s" % (id, nazwa))
 
 def PB(nazwa):
-    przypadek('PB' + state.kolejny_pb, nazwa)
+    przypadek('PB%d' % state.kolejny_pb, nazwa)
     state.kolejny_pb += 1
 
 def punkt(tresc):
