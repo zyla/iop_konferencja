@@ -36,12 +36,19 @@ def punkt(tresc):
     state.kolejny_punkt += 1
     return punkt
 
-def alt():
+def alt(to_point=None):
     n = state.kolejny_alt
     print()
     print("__Scenariusz alternatywny %d:__" % n)
     print()
     state.kolejny_alt += 1
+
+    if to_point:
+        print("1-%d. Jak w scenariuszu głównym" % to_point)
+        state.kolejny_punkt = to_point + 1
+    else:
+        state.kolejny_punkt = 1
+
 
 PB('Zgłoszenie referatu', 'prelegent, recenzent')
 punkt("""Prelegent wypełnia formularz z danymi:
