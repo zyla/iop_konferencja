@@ -84,7 +84,7 @@ rodzaj_posilku = N('rodzaj posiłku', 'rodzaju posiłku', 'rodzajów posiłku', 
 
 def CRUD(thing, fields):
     PB('Dodanie nowego %s' % thing.dopelniacz, 'organizator')
-    punkt('Organizator wpisuje %s', fields)
+    punkt('Organizator wpisuje %s' % fields)
     punkt('Organizator zatwierdza')
     punkt('System zapisuje %s %s' % (thing.new, thing.mianownik))
     punkt('System wyświetla komunikat o sukcesie')
@@ -113,3 +113,7 @@ punkt("Publikacja jest automatycznie akceptowana")
 PB("Przeglądanie terminarza",
    "prelegent, recenzent, organizator, słuchacz lub dziennikarz (\"użytkownik\")")
 punkt("System prezentuje listę wydarzeń wraz i ich terminami")
+
+
+###############################################################################
+CRUD(rodzaj_posilku, 'nazwę')
