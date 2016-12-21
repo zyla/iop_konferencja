@@ -6,6 +6,8 @@ print("- organizacja eventu - program wystąpień, eventy typu przyjęcie, wycie
 print()
 print("## Przypadki Biznesowe")
 
+print("""<script>setTimeout(function() { location.reload(); }, 1000);</script>""")
+
 class state:
     kolejny_pb = 1
     kolejny_fu = 1
