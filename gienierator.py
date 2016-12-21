@@ -50,7 +50,7 @@ def alt(to_point=None):
             return '1'
 
     if to_point:
-        print("""<ol style="list-style-type: '%s. '"><li>Jak w scenariuszu głównym</li></ol>""" % render_range_to(to_point))
+        print("""<li style="list-style-type: '%s. '">Jak w scenariuszu głównym</li>""" % render_range_to(to_point))
         state.kolejny_punkt = to_point + 1
     else:
         state.kolejny_punkt = 1
