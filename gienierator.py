@@ -152,15 +152,17 @@ def CRUD(thing, fields, delete_alt=None):
 #    wybiera_opcje("Użytkownik")
 #    punkt("System prezentuje listę wydarzeń wraz i ich terminami")
 
+def delete_alt_wybrany(thing, wybrany):
+    def _alt():
+         punkt('%s %s przez uczestników wydarzenia' % (thing.mianownik, wybrany))
+         punkt('System wyświetla osoby, przez które %s %s' % (thing.mianownik, wybrany)
+         powrot(1)
+    return _alt
 
 ###############################################################################
 rodzaj_posilku = N('rodzaj posiłku', 'rodzaju posiłku', 'rodzajów posiłku', 'nowy', 'nowego')
 CRUD(rodzaj_posilku, 'nazwę',
-     delete_alt=lambda: [
-         punkt('Rodzaj posiłku został już wybrany przez uczestników wydarzenia'),
-         punkt('System wyświetla osoby, które wybrały dany rodzaj posiłku'),
-         powrot(1)
-     ])
+     delete_alt=delete_alt_wybrany(rodzaj_posilku, 'został wybrany'))
 
 mozliwosc_noclegu = N('możliwość noclegu', 'możliwości noclegu', 'możliwości noclegu', 'nową', 'nowej')
 CRUD(mozliwosc_noclegu, 'nazwę, opis, miejsce i cenę')
