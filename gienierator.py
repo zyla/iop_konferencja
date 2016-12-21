@@ -87,6 +87,7 @@ def CRUD(thing, fields):
     punkt('Organizator wpisuje %s', fields)
     punkt('Organizator zatwierdza')
     punkt('System zapisuje %s %s' % (thing.new, thing.mianownik))
+    punkt('System wyświetla komunikat o sukcesie')
 
 ###############################################################################
 PB('Zgłoszenie referatu', 'prelegent, recenzent')
