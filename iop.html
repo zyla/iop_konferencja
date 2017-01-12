@@ -8,6 +8,69 @@
   <style type="text/css">code{white-space: pre;}</style>
 </head>
 <body>
-
+<h1 id="zadanie-2-obsługa-konferencji-naukowej"><strong>Zadanie 2</strong>: obsługa konferencji naukowej</h1>
+<p>Zgłaszanie referatów, recenzowanie, organizacja eventu - program wystąpień, eventy typu przyjęcie, wycieczka ze zwiedzaniem itp.</p>
+<h3 id="lista-aktorów">Lista aktorów</h3>
+<ul>
+<li>administrator - osoba zarządzająca systemem</li>
+<li>prelegent - osoba prezentująca na konferencji</li>
+<li>recenzent - osoba, która decyduje o akceptacji lub odrzuceniu referatu</li>
+<li>organizator - osoba zarządzająca terminarzem</li>
+<li>słuchacz - osoba słuchająca prezentacji</li>
+<li>dziennikarz - osoba relacjonująca wydarzenie</li>
+<li>czas</li>
+</ul>
+<script>setTimeout(function() { location.reload(); }, 1000);</script>
+<h2 id="przypadki-biznesowe">Przypadki Biznesowe</h2>
+<h3 id="pb1-dodanie-nowego-warsztatu-warsztatu">PB1 Dodanie nowego warsztatu warsztatu</h3>
+<p>Aktorzy: Organizator</p>
+<p><em>Scenariusz główny:</em></p>
+<ol style="list-style-type: decimal">
+<li>Organizator wybiera opcję &quot;Dodanie nowego warsztatu warsztatu&quot;.</li>
+<li>Organizator wpisuje nazwę, opis, miejsce i cenę warsztatu.</li>
+<li>Organizator zatwierdza.</li>
+<li>System zapisuje nowy warsztat warsztat.</li>
+<li>System wyświetla komunikat o sukcesie.</li>
+</ol>
+<p><em>Scenariusz alternatywny 1:</em></p>
+<p>1-3. Jak w scenariuszu głównym</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Wprowadzone dane są niepoprawne.</li>
+<li>System wyświetla komunikat o błędzie.</li>
+<li>Powrót do punktu 1.</li>
+</ol>
+<h3 id="pb2-edycja-warsztatu">PB2 Edycja warsztatu</h3>
+<p>Aktorzy: Organizator</p>
+<p><em>Scenariusz główny:</em></p>
+<ol style="list-style-type: decimal">
+<li>Organizator wybiera opcję &quot;Edycja warsztatu&quot;.</li>
+<li>System prezentuje listę warsztatów.</li>
+<li>Organizator wybiera warsztat z listy.</li>
+<li>Organizator wpisuje nazwę, opis, miejsce i cenę warsztatu.</li>
+<li>Organizator zatwierdza.</li>
+<li>System zapisuje nowy warsztat warsztat.</li>
+<li>System wyświetla komunikat o sukcesie.</li>
+</ol>
+<p><em>Scenariusz alternatywny 1:</em></p>
+<p>1-5. Jak w scenariuszu głównym</p>
+<ol start="6" style="list-style-type: decimal">
+<li>Wprowadzone dane są niepoprawne.</li>
+<li>System wyświetla komunikat o błędzie.</li>
+<li>Powrót do punktu 1.</li>
+</ol>
+<h3 id="pb3-usunięcie-warsztatu">PB3 Usunięcie warsztatu</h3>
+<p>Aktorzy: Organizator</p>
+<p><em>Scenariusz główny:</em></p>
+<ol style="list-style-type: decimal">
+<li>Organizator wybiera opcję &quot;Usunięcie warsztatu&quot;.</li>
+<li>System prezentuje listę warsztatów.</li>
+<li>Organizator wybiera warsztat z listy.</li>
+<li>Organizator zatwierdza.</li>
+<li>System zapisuje nowy warsztat warsztat.</li>
+<li>System wyświetla komunikat o sukcesie.</li>
+</ol>
+<h2 id="przypadki-systemowe">Przypadki Systemowe</h2>
+<h2 id="diagram">Diagram</h2>
+<p><img src=przypadki.png></p>
 </body>
 </html>
