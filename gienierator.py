@@ -19,9 +19,6 @@ print("""
 - czas
 """)
 
-# for truly interactive development
-# print("""<script>setTimeout(function() { location.reload(); }, 1000);</script>""")
-
 pb_out = io.StringIO()
 fu_out = io.StringIO()
 pb_graph_out = io.StringIO()
