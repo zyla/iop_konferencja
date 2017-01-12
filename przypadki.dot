@@ -1,4 +1,4 @@
-digraph { "Organizator" -> "Dodanie nowego rodzaju posiłku"
+digraph { rankdir=LR; "Organizator" -> "Dodanie nowego rodzaju posiłku"
 "Organizator" -> "Edycja rodzaju posiłku"
 "Organizator" -> "Usunięcie rodzaju posiłku"
 "Organizator" -> "Dodanie nowej możliwości noclegu"
