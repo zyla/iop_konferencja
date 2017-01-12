@@ -61,15 +61,15 @@ def PB(*args, **kwargs):
 def punkt(tresc):
     # TODO cap first
     punkt = state.kolejny_punkt
-    print('%d. %s.' % (punkt, tresc))
+    output('%d. %s.' % (punkt, tresc))
     state.kolejny_punkt += 1
     return punkt
 
 def alt(to_point=None):
     n = state.kolejny_alt
-    print()
-    print("_Scenariusz alternatywny %d:_" % n)
-    print()
+    output()
+    output("_Scenariusz alternatywny %d:_" % n)
+    output()
     state.kolejny_alt += 1
 
     def render_range_to(to_point):
@@ -79,7 +79,7 @@ def alt(to_point=None):
             return '1'
 
     if to_point:
-        print("""%s. Jak w scenariuszu głównym\n""" % render_range_to(to_point))
+        output("""%s. Jak w scenariuszu głównym\n""" % render_range_to(to_point))
         state.kolejny_punkt = to_point + 1
     else:
         state.kolejny_punkt = 1

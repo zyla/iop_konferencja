@@ -14,6 +14,8 @@ organizacja eventu - program wystąpień, eventy typu przyjęcie, wycieczka ze z
 
 <script>setTimeout(function() { location.reload(); }, 1000);</script>
 
+## Przypadki Biznesowe
+
 ### PB1 Dodanie nowego rodzaju posiłku
 
 Aktorzy: Organizator
@@ -296,8 +298,6 @@ _Scenariusz główny:_
 4. Administrator zatwierdza.
 5. System zapisuje nową konferencja.
 6. System wyświetla komunikat o sukcesie.
-
-## Przypadki Biznesowe
 
 
 ## Przypadki Systemowe
