@@ -308,9 +308,6 @@ print()
 print("## Przypadki Systemowe")
 print(fu_out.getvalue())
 
-print()
-print("## Diagram PB")
-
 def make_diagram(ident, code):
 
     f = open('%s.dot' % ident, 'w')
@@ -319,4 +316,7 @@ def make_diagram(ident, code):
 
     os.system('dot -Tpng < %s.dot > %s.png' % (ident, ident))
 
-print('<img src=przypadki.png>')
+print()
+print("## Diagram PB")
+make_diagram('pb', pb_graph_out.getvalue())
+print('<img src=pb.png>')

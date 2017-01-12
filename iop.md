@@ -472,4 +472,4 @@ _Scenariusz alternatywny 1:_
 
 
 ## Diagram PB
-<img src=przypadki.png>
+<img src=pb.png>
