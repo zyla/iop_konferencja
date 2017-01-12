@@ -24,6 +24,7 @@ print("""<script>setTimeout(function() { location.reload(); }, 1000);</script>""
 
 pb_out = io.StringIO()
 fu_out = io.StringIO()
+graph_out = io.StringIO()
 
 current_out = 
 
