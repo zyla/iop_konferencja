@@ -26,7 +26,7 @@ pb_out = io.StringIO()
 fu_out = io.StringIO()
 graph_out = io.StringIO()
 
-current_out = 
+current_out = pb_out
 
 def output(s=''):
     current_out.write(s + '\n')
