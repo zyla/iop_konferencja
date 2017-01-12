@@ -194,7 +194,6 @@ def RejestracjaNa(thing, aktorzy, aktor_gl):
     punkt('System wyświetla komunikat o błędzie')
     powrot(1)
 
-    fu_out.write('DPA\n\n')
     FU('Rejestracja na %s' % thing.biernik, aktorzy)
     wybiera_opcje(aktor_gl)
     punkt('System prezentuje listę %s' % thing.dopelniacz_lm)

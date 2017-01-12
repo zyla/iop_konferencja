@@ -343,8 +343,6 @@ _Scenariusz alternatywny 1:_
 
 
 ## Przypadki Systemowe
-DPA
-
 
 ### FU1 Rejestracja na warsztat
 
@@ -366,8 +364,6 @@ _Scenariusz alternatywny 1:_
 5. Miejsce zostało zajęte w międzyczasie.
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
-DPA
-
 
 ### FU2 Rejestracja na wycieczkę
 
