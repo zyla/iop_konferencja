@@ -471,8 +471,8 @@ _Scenariusz alternatywny 1:_
 7. Powrót do punktu 1.
 
 
-## Diagram PB
+## Diagram przypadków biznesowych
 <img src=pb.png>
 
-## Diagram PS
+## Diagram przypadków systemowych
 <img src=ps.png>

@@ -317,11 +317,11 @@ def make_diagram(ident, code):
     os.system('dot -Tpng < %s.dot > %s.png' % (ident, ident))
 
 print()
-print("## Diagram PB")
+print("## Diagram przypadków biznesowych")
 make_diagram('pb', pb_graph_out.getvalue())
 print('<img src=pb.png>')
 
 print()
-print("## Diagram PS")
+print("## Diagram przypadków systemowych")
 make_diagram('ps', fu_graph_out.getvalue())
 print('<img src=ps.png>')
