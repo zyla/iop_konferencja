@@ -190,8 +190,11 @@ CRUD(warsztat, 'nazwę, opis, miejsce i cenę')
 wycieczka = N('wycieczka', 'wycieczki', 'wycieczek', 'nowa', 'nowej')
 CRUD(wycieczka, 'nazwę, opis, miejsce i cenę')
 
-konferencja = N('konferencja', 'konferencji', 'konferencji', 'nową', 'nowej')
+konferencja = N('konferencja', 'konferencji', 'konferencji', 'nową', 'nowej') # FIXME grammar
 CRUD(konferencja, 'nazwę i opis', aktor='Administrator')
+
+wycieczka = N('wycieczka', 'wycieczki', 'wycieczek', 'nowa', 'nowej')
+CRUD(wycieczka, 'nazwę, opis, miejsce i cenę')
 
 print()
 print("## Przypadki Biznesowe")
