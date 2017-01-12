@@ -210,7 +210,7 @@ CRUD(warsztat, 'nazwę, opis, miejsce i cenę')
 # konferencja = N('konferencja', 'konferencji', 'konferencji', 'nową', 'nowej') # FIXME grammar
 # CRUD(konferencja, 'nazwę i opis', aktor='Administrator')
 
-# RejestracjaNa(warsztat, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
+RejestracjaNa(warsztat, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
 
 # RejestracjaNa(wycieczka, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
 

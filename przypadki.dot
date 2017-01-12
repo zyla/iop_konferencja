@@ -1,4 +1,7 @@
 digraph { rankdir=LR; "Organizator" -> "Dodanie nowego warsztatu warsztatu"
 "Organizator" -> "Edycja warsztatu"
 "Organizator" -> "Usunięcie warsztatu"
+"Słuchacz" -> "Rejestracja na warsztat"
+"Dziennikarz" -> "Rejestracja na warsztat"
+"Prelegent" -> "Rejestracja na warsztat"
  }
