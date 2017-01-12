@@ -1,6 +1,4 @@
-digraph { rankdir=LR; "prelegent" -> "Zgłoszenie referatu"
-"recenzent" -> "Zgłoszenie referatu"
-"prelegent" -> "Przeglądanie terminarza"
+digraph { rankdir=LR; "prelegent" -> "Przeglądanie terminarza"
 "recenzent" -> "Przeglądanie terminarza"
 "organizator" -> "Przeglądanie terminarza"
 "słuchacz lub dziennikarz ("użytkownik")" -> "Przeglądanie terminarza"
