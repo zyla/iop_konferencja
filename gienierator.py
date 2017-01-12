@@ -112,7 +112,7 @@ def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
     wybiera_opcje(aktor)
     punkt('%s wpisuje %s %s' % (aktor, fields, thing.dopelniacz))
     p_zatw = punkt('%s zatwierdza' % aktor)
-    punkt('System zapisuje %s %s' % (thing.new, thing.mianownik))
+    punkt('System zapisuje %s %s' % (thing.nowy_mianownik, thing.mianownik))
     punkt('System wyświetla komunikat o sukcesie')
 
     alt(p_zatw)
