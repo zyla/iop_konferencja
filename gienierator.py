@@ -231,8 +231,12 @@ wycieczka = N(
         nowy_biernik='nową')
 CRUD(wycieczka, 'nazwę, opis, miejsce i cenę')
 
-# konferencja = N('konferencja', 'konferencji', 'konferencji', 'nową', 'nowej') # FIXME grammar
-# CRUD(konferencja, 'nazwę i opis', aktor='Administrator')
+konferencja = N(
+        mianownik='konferencja',
+        dopelniacz='konferencji',
+        biernik='konferencję',
+        dopelniacz_lm='konferencji', 'nową', 'nowej') # FIXME grammar
+CRUD(konferencja, 'nazwę i opis', aktor='Administrator')
 
 RejestracjaNa(warsztat, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
 
