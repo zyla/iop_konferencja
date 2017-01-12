@@ -16,9 +16,6 @@ print("""
 - czas
 """)
 
-print()
-print("## Przypadki Biznesowe")
-
 # for truly interactive development
 print("""<script>setTimeout(function() { location.reload(); }, 1000);</script>""")
 
@@ -187,3 +184,8 @@ CRUD(wycieczka, 'nazwę, opis, miejsce i cenę')
 
 konferencja = N('konferencja', 'konferencji', 'konferencji', 'nową', 'nowej')
 CRUD(konferencja, 'nazwę i opis', aktor='Administrator')
+
+print()
+print("## Przypadki Biznesowe")
+
+print(pb_out)
