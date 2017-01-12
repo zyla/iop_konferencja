@@ -18,7 +18,7 @@ organizacja eventu - program wystąpień, eventy typu przyjęcie, wycieczka ze z
 
 ### PB1 Dodanie nowego rodzaju posiłku
 
-Aktorzy: Organizator
+Aktorzy: Organizator, aktor2
 
 _Scenariusz główny:_
 
@@ -81,7 +81,7 @@ _Scenariusz alternatywny 1:_
 
 ### PB4 Dodanie nowej możliwości noclegu
 
-Aktorzy: Organizator
+Aktorzy: Organizator, aktor2
 
 _Scenariusz główny:_
 
@@ -136,7 +136,7 @@ _Scenariusz główny:_
 
 ### PB7 Dodanie nowego warsztatu
 
-Aktorzy: Organizator
+Aktorzy: Organizator, aktor2
 
 _Scenariusz główny:_
 
@@ -191,7 +191,7 @@ _Scenariusz główny:_
 
 ### PB10 Dodanie nowej wycieczki
 
-Aktorzy: Organizator
+Aktorzy: Organizator, aktor2
 
 _Scenariusz główny:_
 
@@ -246,7 +246,7 @@ _Scenariusz główny:_
 
 ### PB13 Dodanie nowej konferencji
 
-Aktorzy: Administrator
+Aktorzy: Administrator, aktor2
 
 _Scenariusz główny:_
 
