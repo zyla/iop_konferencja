@@ -94,14 +94,6 @@ def powrot(do_p):
 def wybiera_opcje(kto):
     punkt('%s wybiera opcję "%s"' % (kto, state.pb_name))
 
-class N:
-    def __init__(self, mianownik, dopelniacz, dop_lm, new, new2):
-        self.mianownik = mianownik
-        self.dopelniacz = dopelniacz
-        self.dop_lm = dop_lm
-        self.new = new
-        self.new2 = new2
-
 N = namedtuple('N', ('mianownik', 'dopelniacz', 'biernik', 'dopelniacz_lm', 'nowy_mianownik', 'nowy_dopelniacz'))
 
 def graph_node(src, dst):
@@ -122,7 +114,7 @@ def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
 
     PB('Edycja %s' % thing.dopelniacz, aktor)
     wybiera_opcje(aktor)
-    punkt('System prezentuje listę %s' % (thing.dop_lm))
+    punkt('System prezentuje listę %s' % (thing.dopelniacz_lm))
     punkt('%s wybiera %s z listy' % (aktor, thing.mianownik))
     punkt('%s wpisuje %s %s' % (aktor, fields, thing.dopelniacz))
     p_zatw = punkt('%s zatwierdza' % aktor)
@@ -136,7 +128,7 @@ def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
 
     PB('Usunięcie %s' % thing.dopelniacz, aktor)
     wybiera_opcje(aktor)
-    punkt('System prezentuje listę %s' % (thing.dop_lm))
+    punkt('System prezentuje listę %s' % (thing.dopelniacz_lm))
     punkt('%s wybiera %s z listy' % (aktor, thing.mianownik))
     p_zatw = punkt('%s zatwierdza' % aktor)
     punkt('System zapisuje %s %s' % (thing.nowy_mianownik, thing.mianownik))
@@ -149,7 +141,7 @@ def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
 def RejestracjaNa(thing, aktorzy, aktor_gl):
     PB('Rejestracja na %s' % thing.mianownik, aktorzy)
     wybiera_opcje(aktor_gl)
-    punkt('System prezentuje listę %s' % thing.dop_lm)
+    punkt('System prezentuje listę %s' % thing.dopelniacz_lm)
     punkt('%s wybiera %s' % (aktor_gl, thing.mianownik)) # FIXME grammer
     p_zatw = punkt('%s zatwierdza' % aktor_gl)
     punkt('System generuje rachunek do zapłacenia')
