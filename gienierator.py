@@ -140,31 +140,31 @@ def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
         alt(p_zatw) 
         delete_alt()
 
-#    ###############################################################################
-#    PB('Zgłoszenie referatu', 'prelegent, recenzent')
-#    p_form = punkt("""Prelegent wypełnia formularz z danymi:
-#     - temat prezentacji
-#     - abstrakt
-#     - dane kontaktowe
-#     - draft publikacji""")
-#    p_zapis = punkt("System zapisuje publikację")
-#    punkt("System wysyła e-mail z potwierdzeniem do prelegenta")
-#    
-#    alt(p_form)
-#    punkt("Dane są niepoprawne")
-#    punkt("System wyświetla komunikat o błędzie")
-#    powrot(p_form)
-#    
-#    alt(p_zapis)
-#    punkt("Prelegent jest osobą zaproszoną")
-#    punkt("Publikacja jest automatycznie akceptowana")
-#    
-#    
-#    ###############################################################################
-#    PB("Przeglądanie terminarza",
-#       "prelegent, recenzent, organizator, słuchacz lub dziennikarz (\"użytkownik\")")
-#    wybiera_opcje("Użytkownik")
-#    punkt("System prezentuje listę wydarzeń wraz i ich terminami")
+###############################################################################
+PB('Zgłoszenie referatu', 'prelegent, recenzent')
+p_form = punkt("""Prelegent wypełnia formularz z danymi:
+ - temat prezentacji
+ - abstrakt
+ - dane kontaktowe
+ - draft publikacji""")
+p_zapis = punkt("System zapisuje publikację")
+punkt("System wysyła e-mail z potwierdzeniem do prelegenta")
+
+alt(p_form)
+punkt("Dane są niepoprawne")
+punkt("System wyświetla komunikat o błędzie")
+powrot(p_form)
+
+alt(p_zapis)
+punkt("Prelegent jest osobą zaproszoną")
+punkt("Publikacja jest automatycznie akceptowana")
+
+
+###############################################################################
+PB("Przeglądanie terminarza",
+   "prelegent, recenzent, organizator, słuchacz lub dziennikarz (\"użytkownik\")")
+wybiera_opcje("Użytkownik")
+punkt("System prezentuje listę wydarzeń wraz i ich terminami")
 
 def delete_alt_wybrany(thing, wybrany):
     def _alt():
@@ -188,12 +188,12 @@ def RejestracjaNa(thing, aktorzy, aktor_gl):
     powrot(1)
 
 ###############################################################################
-# rodzaj_posilku = N('rodzaj posiłku', 'rodzaju posiłku', 'rodzajów posiłku', 'nowy', 'nowego')
-# CRUD(rodzaj_posilku, 'nazwę',
-     # delete_alt=delete_alt_wybrany(rodzaj_posilku, 'został wybrany'))
+rodzaj_posilku = N('rodzaj posiłku', 'rodzaju posiłku', 'rodzajów posiłku', 'nowy', 'nowego')
+CRUD(rodzaj_posilku, 'nazwę',
+   # delete_alt=delete_alt_wybrany(rodzaj_posilku, 'został wybrany'))
 
-# mozliwosc_noclegu = N('możliwość noclegu', 'możliwości noclegu', 'możliwości noclegu', 'nową', 'nowej')
-# CRUD(mozliwosc_noclegu, 'nazwę, opis, miejsce i cenę')
+mozliwosc_noclegu = N('możliwość noclegu', 'możliwości noclegu', 'możliwości noclegu', 'nową', 'nowej')
+CRUD(mozliwosc_noclegu, 'nazwę, opis, miejsce i cenę')
 
 warsztat = N(
         mianownik='warsztat',
