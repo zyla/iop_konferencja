@@ -45,13 +45,13 @@ def przypadek(id, nazwa, aktorzy):
     reset()
     state.pb_name = nazwa
 
-    print()
-    print("### %s %s" % (id, nazwa))
-    print()
-    print("Aktorzy: %s" % aktorzy)
-    print()
-    print("_Scenariusz główny:_")
-    print()
+    output()
+    output("### %s %s" % (id, nazwa))
+    output()
+    output("Aktorzy: %s" % aktorzy)
+    output()
+    output("_Scenariusz główny:_")
+    output()
 
 def PB(*args, **kwargs):
     current_out = pb_out
