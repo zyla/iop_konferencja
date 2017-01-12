@@ -199,7 +199,6 @@ def RejestracjaNa(thing, aktorzy, aktor_gl):
     wybiera_opcje(aktor_gl)
     punkt('System prezentuje listę %s' % thing.dopelniacz_lm)
     punkt('%s lokalizuje %s na liście' % (aktor_gl, thing.biernik))
-    punkt('%s klika przycisk "Rejestracja" przy' % (aktor_gl, thing.biernik))
     p_zatw = punkt('%s zatwierdza' % aktor_gl)
     punkt('System generuje rachunek do zapłacenia')
     punkt('System zapisuje rezerwację')
