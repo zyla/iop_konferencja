@@ -309,6 +309,7 @@ _Scenariusz główny:_
 2. System prezentuje listę warsztatów.
 3. Uczestnik wybiera warsztat.
 4. System generuje rachunek do zapłacenia.
+5. System zapisuje rezerwację.
 
 
 ## Przypadki Systemowe
