@@ -317,4 +317,4 @@ _Scenariusz główny:_
 "Administrator" -> "Dodanie nowej konferencji"
 "Administrator" -> "Edycja konferencji"
 "Administrator" -> "Usunięcie konferencji"
-
+</pre>

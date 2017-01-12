@@ -201,4 +201,4 @@ print()
 print("## Przypadki Systemowe")
 print(fu_out.getvalue())
 
-print('<pre>' + graph_out.getvalue())
+print('<pre>' + graph_out.getvalue() + '</pre>')
