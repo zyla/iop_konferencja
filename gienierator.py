@@ -199,7 +199,14 @@ rodzaj_posilku = N(
 CRUD(rodzaj_posilku, 'nazwę',
    delete_alt=delete_alt_wybrany(rodzaj_posilku, 'został wybrany'))
 
-mozliwosc_noclegu = N('możliwość noclegu', 'możliwości noclegu', 'możliwości noclegu', 'nową', 'nowej')
+mozliwosc_noclegu = N(
+        mianownik='możliwość noclegu',
+        dopelniacz='możliwości noclegu',
+        biernik='możliwość noclegu',
+        dopelniacz_lm='możliwości noclegu',
+        nowy_mianownik='nową',
+        nowy_dopelniacz='nowej'
+        nowy_biernik='nową')
 CRUD(mozliwosc_noclegu, 'nazwę, opis, miejsce i cenę')
 
 warsztat = N(
