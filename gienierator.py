@@ -204,7 +204,9 @@ CRUD(mozliwosc_noclegu, 'nazwę, opis, miejsce i cenę')
 warsztat = N(
         mianownik='warsztat',
         dopelniacz='warsztatu',
-        'warsztatów', 'nowy', 'nowego')
+        biernik='warsztat',
+        dopelniacz_lm='warsztatów'
+        'nowy', 'nowego')
 
 CRUD(warsztat, 'nazwę, opis, miejsce i cenę')
 
