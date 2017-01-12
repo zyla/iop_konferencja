@@ -55,6 +55,7 @@ def przypadek(id, nazwa, aktorzy):
     print()
 
 def PB(*args, **kwargs):
+    current_out = pb_out
     przypadek('PB%d' % state.kolejny_pb, *args, **kwargs)
     state.kolejny_pb += 1
 
