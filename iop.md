@@ -12,7 +12,6 @@ organizacja eventu - program wystąpień, eventy typu przyjęcie, wycieczka ze z
 - dziennikarz - osoba relacjonująca wydarzenie
 - czas
 
-<script>setTimeout(function() { location.reload(); }, 1000);</script>
 
 ## Przypadki Biznesowe
 
