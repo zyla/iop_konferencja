@@ -94,7 +94,9 @@ def powrot(do_p):
 def wybiera_opcje(kto):
     punkt('%s wybiera opcję "%s"' % (kto, state.pb_name))
 
-N = namedtuple('N', ('mianownik', 'dopelniacz', 'biernik', 'dopelniacz_lm', 'nowy_mianownik', 'nowy_dopelniacz'))
+N = namedtuple('N', ('mianownik', 'dopelniacz', 'biernik',
+      'dopelniacz_lm',
+      'nowy_mianownik', 'nowy_dopelniacz', 'nowy_biernik'))
 
 def graph_node(src, dst):
     graph_out.write('"%s" -> "%s"\n' % (src, dst))
@@ -210,7 +212,8 @@ wycieczka = N(
         biernik='wycieczkę',
         dopelniacz_lm='wycieczek',
         nowy_mianownik='nowa',
-        nowy_dopelniacz='nowej')
+        nowy_dopelniacz='nowej',
+        nowy_biernik='nową')
 CRUD(wycieczka, 'nazwę, opis, miejsce i cenę')
 
 # konferencja = N('konferencja', 'konferencji', 'konferencji', 'nową', 'nowej') # FIXME grammar
