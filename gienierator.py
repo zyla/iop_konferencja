@@ -161,10 +161,10 @@ def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
 
 
 ###############################################################################
-PB("Przeglądanie terminarza",
-   "prelegent, recenzent, organizator, słuchacz lub dziennikarz (\"użytkownik\")")
-wybiera_opcje("Użytkownik")
-punkt("System prezentuje listę wydarzeń wraz i ich terminami")
+#   PB("Przeglądanie terminarza",
+#      "prelegent, recenzent, organizator, słuchacz lub dziennikarz (\"użytkownik\")")
+#   wybiera_opcje("Użytkownik")
+#   punkt("System prezentuje listę wydarzeń wraz i ich terminami")
 
 def delete_alt_wybrany(thing, wybrany):
     def _alt():

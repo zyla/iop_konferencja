@@ -16,16 +16,7 @@ organizacja eventu - program wystąpień, eventy typu przyjęcie, wycieczka ze z
 
 ## Przypadki Biznesowe
 
-### PB1 Przeglądanie terminarza
-
-Aktorzy: prelegent, recenzent, organizator, słuchacz lub dziennikarz ("użytkownik")
-
-_Scenariusz główny:_
-
-1. Użytkownik wybiera opcję "Przeglądanie terminarza".
-2. System prezentuje listę wydarzeń wraz i ich terminami.
-
-### PB2 Dodanie nowego rodzaju posiłku
+### PB1 Dodanie nowego rodzaju posiłku
 
 Aktorzy: Organizator
 
@@ -45,7 +36,7 @@ _Scenariusz alternatywny 1:_
 5. System wyświetla komunikat o błędzie.
 6. Powrót do punktu 1.
 
-### PB3 Edycja rodzaju posiłku
+### PB2 Edycja rodzaju posiłku
 
 Aktorzy: Organizator
 
@@ -67,7 +58,7 @@ _Scenariusz alternatywny 1:_
 7. System wyświetla komunikat o błędzie.
 8. Powrót do punktu 1.
 
-### PB4 Usunięcie rodzaju posiłku
+### PB3 Usunięcie rodzaju posiłku
 
 Aktorzy: Organizator
 
@@ -88,7 +79,7 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla osoby, przez które rodzaj posiłku został wybrany.
 7. Powrót do punktu 1.
 
-### PB5 Dodanie nowej możliwości noclegu
+### PB4 Dodanie nowej możliwości noclegu
 
 Aktorzy: Organizator
 
@@ -108,7 +99,7 @@ _Scenariusz alternatywny 1:_
 5. System wyświetla komunikat o błędzie.
 6. Powrót do punktu 1.
 
-### PB6 Edycja możliwości noclegu
+### PB5 Edycja możliwości noclegu
 
 Aktorzy: Organizator
 
@@ -130,7 +121,7 @@ _Scenariusz alternatywny 1:_
 7. System wyświetla komunikat o błędzie.
 8. Powrót do punktu 1.
 
-### PB7 Usunięcie możliwości noclegu
+### PB6 Usunięcie możliwości noclegu
 
 Aktorzy: Organizator
 
@@ -143,7 +134,7 @@ _Scenariusz główny:_
 5. System usuwa możliwość noclegu.
 6. System wyświetla komunikat o sukcesie.
 
-### PB8 Dodanie nowego warsztatu
+### PB7 Dodanie nowego warsztatu
 
 Aktorzy: Organizator
 
@@ -163,7 +154,7 @@ _Scenariusz alternatywny 1:_
 5. System wyświetla komunikat o błędzie.
 6. Powrót do punktu 1.
 
-### PB9 Edycja warsztatu
+### PB8 Edycja warsztatu
 
 Aktorzy: Organizator
 
@@ -185,7 +176,7 @@ _Scenariusz alternatywny 1:_
 7. System wyświetla komunikat o błędzie.
 8. Powrót do punktu 1.
 
-### PB10 Usunięcie warsztatu
+### PB9 Usunięcie warsztatu
 
 Aktorzy: Organizator
 
@@ -198,7 +189,7 @@ _Scenariusz główny:_
 5. System usuwa warsztat.
 6. System wyświetla komunikat o sukcesie.
 
-### PB11 Dodanie nowej wycieczki
+### PB10 Dodanie nowej wycieczki
 
 Aktorzy: Organizator
 
@@ -218,7 +209,7 @@ _Scenariusz alternatywny 1:_
 5. System wyświetla komunikat o błędzie.
 6. Powrót do punktu 1.
 
-### PB12 Edycja wycieczki
+### PB11 Edycja wycieczki
 
 Aktorzy: Organizator
 
@@ -240,7 +231,7 @@ _Scenariusz alternatywny 1:_
 7. System wyświetla komunikat o błędzie.
 8. Powrót do punktu 1.
 
-### PB13 Usunięcie wycieczki
+### PB12 Usunięcie wycieczki
 
 Aktorzy: Organizator
 
@@ -253,7 +244,7 @@ _Scenariusz główny:_
 5. System usuwa wycieczkę.
 6. System wyświetla komunikat o sukcesie.
 
-### PB14 Dodanie nowej konferencji
+### PB13 Dodanie nowej konferencji
 
 Aktorzy: Administrator
 
@@ -273,7 +264,7 @@ _Scenariusz alternatywny 1:_
 5. System wyświetla komunikat o błędzie.
 6. Powrót do punktu 1.
 
-### PB15 Edycja konferencji
+### PB14 Edycja konferencji
 
 Aktorzy: Administrator
 
@@ -295,7 +286,7 @@ _Scenariusz alternatywny 1:_
 7. System wyświetla komunikat o błędzie.
 8. Powrót do punktu 1.
 
-### PB16 Usunięcie konferencji
+### PB15 Usunięcie konferencji
 
 Aktorzy: Administrator
 
@@ -308,7 +299,7 @@ _Scenariusz główny:_
 5. System usuwa konferencję.
 6. System wyświetla komunikat o sukcesie.
 
-### PB17 Rejestracja na warsztat
+### PB16 Rejestracja na warsztat
 
 Aktorzy: Słuchacz, Dziennikarz, Prelegent
 
@@ -329,7 +320,7 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### PB18 Rejestracja na wycieczka
+### PB17 Rejestracja na wycieczka
 
 Aktorzy: Słuchacz, Dziennikarz, Prelegent
 
