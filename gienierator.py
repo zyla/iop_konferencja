@@ -198,14 +198,18 @@ warsztat = N(
         dopelniacz='warsztatu',
         biernik='warsztat',
         dopelniacz_lm='warsztatów',
-        nowy_mianownik='nowy warsztat',
-        nowy_dopelniacz='nowego warsztatu'
+        nowy_mianownik='nowy',
+        nowy_dopelniacz='nowego'
         )
 
 CRUD(warsztat, 'nazwę, opis, miejsce i cenę')
 
-# wycieczka = N('wycieczka', 'wycieczki', 'wycieczek', 'nowa', 'nowej')
-# CRUD(wycieczka, 'nazwę, opis, miejsce i cenę')
+wycieczka = N(
+        mianownik='wycieczka',
+        dopelniacz='wycieczki',
+        biernik='wycieczkę',
+        dopelniacz_lm='wycieczek', 'nowa', 'nowej')
+CRUD(wycieczka, 'nazwę, opis, miejsce i cenę')
 
 # konferencja = N('konferencja', 'konferencji', 'konferencji', 'nową', 'nowej') # FIXME grammar
 # CRUD(konferencja, 'nazwę i opis', aktor='Administrator')
