@@ -47,7 +47,7 @@ _Scenariusz główny:_
 3. Organizator wybiera warsztat z listy.
 4. Organizator wpisuje nazwę, opis, miejsce i cenę warsztatu.
 5. Organizator zatwierdza.
-6. System zapisuje nowy warsztat.
+6. System zapisuje warsztat.
 7. System wyświetla komunikat o sukcesie.
 
 _Scenariusz alternatywny 1:_
@@ -68,7 +68,7 @@ _Scenariusz główny:_
 2. System prezentuje listę warsztatów.
 3. Organizator wybiera warsztat z listy.
 4. Organizator zatwierdza.
-5. System zapisuje nowy warsztat.
+5. System usuwa nowy warsztat.
 6. System wyświetla komunikat o sukcesie.
 
 ### PB4 Dodanie nowej wycieczki
@@ -102,7 +102,7 @@ _Scenariusz główny:_
 3. Organizator wybiera wycieczka z listy.
 4. Organizator wpisuje nazwę, opis, miejsce i cenę wycieczki.
 5. Organizator zatwierdza.
-6. System zapisuje nowa wycieczka.
+6. System zapisuje wycieczkę.
 7. System wyświetla komunikat o sukcesie.
 
 _Scenariusz alternatywny 1:_
@@ -123,7 +123,7 @@ _Scenariusz główny:_
 2. System prezentuje listę wycieczek.
 3. Organizator wybiera wycieczka z listy.
 4. Organizator zatwierdza.
-5. System zapisuje nowa wycieczka.
+5. System usuwa nowa wycieczka.
 6. System wyświetla komunikat o sukcesie.
 
 ### PB7 Rejestracja na warsztat
