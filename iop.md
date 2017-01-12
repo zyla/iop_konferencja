@@ -298,7 +298,7 @@ _Scenariusz główny:_
 6. System wyświetla komunikat o sukcesie.
 
 ## Przypadki Biznesowe
-<_io.StringIO object at 0x7f775e8eb678>
+
 
 ## Przypadki Systemowe
-<_io.StringIO object at 0x7f775e8eb708>
+

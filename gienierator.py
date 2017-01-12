@@ -189,8 +189,8 @@ CRUD(konferencja, 'nazwę i opis', aktor='Administrator')
 
 print()
 print("## Przypadki Biznesowe")
-print(str(pb_out))
+print(pb_out.getvalue())
 
 print()
 print("## Przypadki Systemowe")
-print(fu_out)
+print(fu_out.getvalue())
