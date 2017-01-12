@@ -15,5 +15,5 @@ digraph { rankdir=LR; "Organizator" -> "Dodanie nowego rodzaju posiłku"
 "Administrator" -> "Usunięcie konferencji"
 "Słuchacz" -> "Rejestracja na warsztat"
 "Dziennikarz" -> "Rejestracja na warsztat"
-"Prelegenent" -> "Rejestracja na warsztat"
+"Prelegent" -> "Rejestracja na warsztat"
  }

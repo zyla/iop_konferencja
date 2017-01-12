@@ -301,7 +301,7 @@ _Scenariusz główny:_
 
 ### PB16 Rejestracja na warsztat
 
-Aktorzy: Słuchacz, Dziennikarz, Prelegenent
+Aktorzy: Słuchacz, Dziennikarz, Prelegent
 
 _Scenariusz główny:_
 
