@@ -194,12 +194,12 @@ def delete_alt_wybrany(thing, wybrany):
     return _alt
 
 ###############################################################################
-rodzaj_posilku = N('rodzaj posiłku', 'rodzaju posiłku', 'rodzajów posiłku', 'nowy', 'nowego')
-CRUD(rodzaj_posilku, 'nazwę',
-     delete_alt=delete_alt_wybrany(rodzaj_posilku, 'został wybrany'))
+# rodzaj_posilku = N('rodzaj posiłku', 'rodzaju posiłku', 'rodzajów posiłku', 'nowy', 'nowego')
+# CRUD(rodzaj_posilku, 'nazwę',
+     # delete_alt=delete_alt_wybrany(rodzaj_posilku, 'został wybrany'))
 
-mozliwosc_noclegu = N('możliwość noclegu', 'możliwości noclegu', 'możliwości noclegu', 'nową', 'nowej')
-CRUD(mozliwosc_noclegu, 'nazwę, opis, miejsce i cenę')
+# mozliwosc_noclegu = N('możliwość noclegu', 'możliwości noclegu', 'możliwości noclegu', 'nową', 'nowej')
+# CRUD(mozliwosc_noclegu, 'nazwę, opis, miejsce i cenę')
 
 warsztat = N(
         mianownik='warsztat',
@@ -210,15 +210,15 @@ warsztat = N(
 
 CRUD(warsztat, 'nazwę, opis, miejsce i cenę')
 
-wycieczka = N('wycieczka', 'wycieczki', 'wycieczek', 'nowa', 'nowej')
-CRUD(wycieczka, 'nazwę, opis, miejsce i cenę')
+# wycieczka = N('wycieczka', 'wycieczki', 'wycieczek', 'nowa', 'nowej')
+# CRUD(wycieczka, 'nazwę, opis, miejsce i cenę')
 
-konferencja = N('konferencja', 'konferencji', 'konferencji', 'nową', 'nowej') # FIXME grammar
-CRUD(konferencja, 'nazwę i opis', aktor='Administrator')
+# konferencja = N('konferencja', 'konferencji', 'konferencji', 'nową', 'nowej') # FIXME grammar
+# CRUD(konferencja, 'nazwę i opis', aktor='Administrator')
 
-RejestracjaNa(warsztat, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
+# RejestracjaNa(warsztat, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
 
-RejestracjaNa(wycieczka, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
+# RejestracjaNa(wycieczka, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
 
 print()
 print("## Przypadki Biznesowe")
