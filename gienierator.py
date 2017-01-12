@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import io, os
+from collections import namedtuple
 
 print("# **Zadanie 2**: obsługa konferencji naukowej")
 print("Zgłaszanie referatów, recenzowanie, ")
@@ -100,6 +101,8 @@ class N:
         self.dop_lm = dop_lm
         self.new = new
         self.new2 = new2
+
+N = namedtuple('N', ('mianownik', 'dopelniacz', 'celownik', 'biernik', 'dopelniacz_lm'))
 
 def graph_node(src, dst):
     graph_out.write('"%s" -> "%s"\n' % (src, dst))
