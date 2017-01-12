@@ -4,6 +4,7 @@ organizacja eventu - program wystąpień, eventy typu przyjęcie, wycieczka ze z
 
 ### Lista aktorów
 
+- administrator - osoba zarządzająca systemem
 - prelegent - osoba prezentująca na konferencji
 - recenzent - osoba, która decyduje o akceptacji lub odrzuceniu referatu
 - organizator - osoba zarządzająca terminarzem
@@ -17,7 +18,7 @@ organizacja eventu - program wystąpień, eventy typu przyjęcie, wycieczka ze z
 
 ### PB1 Dodanie nowego rodzaju posiłku
 
-Aktorzy: organizator
+Aktorzy: Organizator
 
 _Scenariusz główny:_
 
@@ -37,7 +38,7 @@ _Scenariusz alternatywny 1:_
 
 ### PB2 Edycja rodzaju posiłku
 
-Aktorzy: organizator
+Aktorzy: Organizator
 
 _Scenariusz główny:_
 
@@ -59,7 +60,7 @@ _Scenariusz alternatywny 1:_
 
 ### PB3 Usunięcie rodzaju posiłku
 
-Aktorzy: organizator
+Aktorzy: Organizator
 
 _Scenariusz główny:_
 
@@ -80,7 +81,7 @@ _Scenariusz alternatywny 1:_
 
 ### PB4 Dodanie nowej możliwości noclegu
 
-Aktorzy: organizator
+Aktorzy: Organizator
 
 _Scenariusz główny:_
 
@@ -100,7 +101,7 @@ _Scenariusz alternatywny 1:_
 
 ### PB5 Edycja możliwości noclegu
 
-Aktorzy: organizator
+Aktorzy: Organizator
 
 _Scenariusz główny:_
 
@@ -122,7 +123,7 @@ _Scenariusz alternatywny 1:_
 
 ### PB6 Usunięcie możliwości noclegu
 
-Aktorzy: organizator
+Aktorzy: Organizator
 
 _Scenariusz główny:_
 
@@ -135,7 +136,7 @@ _Scenariusz główny:_
 
 ### PB7 Dodanie nowego warsztatu
 
-Aktorzy: organizator
+Aktorzy: Organizator
 
 _Scenariusz główny:_
 
@@ -155,7 +156,7 @@ _Scenariusz alternatywny 1:_
 
 ### PB8 Edycja warsztatu
 
-Aktorzy: organizator
+Aktorzy: Organizator
 
 _Scenariusz główny:_
 
@@ -177,7 +178,7 @@ _Scenariusz alternatywny 1:_
 
 ### PB9 Usunięcie warsztatu
 
-Aktorzy: organizator
+Aktorzy: Organizator
 
 _Scenariusz główny:_
 
@@ -190,7 +191,7 @@ _Scenariusz główny:_
 
 ### PB10 Dodanie nowej wycieczki
 
-Aktorzy: organizator
+Aktorzy: Organizator
 
 _Scenariusz główny:_
 
@@ -210,7 +211,7 @@ _Scenariusz alternatywny 1:_
 
 ### PB11 Edycja wycieczki
 
-Aktorzy: organizator
+Aktorzy: Organizator
 
 _Scenariusz główny:_
 
@@ -232,7 +233,7 @@ _Scenariusz alternatywny 1:_
 
 ### PB12 Usunięcie wycieczki
 
-Aktorzy: organizator
+Aktorzy: Organizator
 
 _Scenariusz główny:_
 
@@ -241,4 +242,59 @@ _Scenariusz główny:_
 3. Organizator wybiera wycieczka z listy.
 4. Organizator zatwierdza.
 5. System zapisuje nowa wycieczka.
+6. System wyświetla komunikat o sukcesie.
+
+### PB13 Dodanie nowej konferencji
+
+Aktorzy: Administrator
+
+_Scenariusz główny:_
+
+1. Administrator wybiera opcję "Dodanie nowej konferencji".
+2. Administrator wpisuje nazwę i opis konferencji.
+3. Administrator zatwierdza.
+4. System zapisuje nową konferencja.
+5. System wyświetla komunikat o sukcesie.
+
+_Scenariusz alternatywny 1:_
+
+1-3. Jak w scenariuszu głównym
+
+4. Wprowadzone dane są niepoprawne.
+5. System wyświetla komunikat o błędzie.
+6. Powrót do punktu 1.
+
+### PB14 Edycja konferencji
+
+Aktorzy: Administrator
+
+_Scenariusz główny:_
+
+1. Administrator wybiera opcję "Edycja konferencji".
+2. System prezentuje listę konferencji.
+3. Administrator wybiera konferencja z listy.
+4. Administrator wpisuje nazwę i opis konferencji.
+5. Administrator zatwierdza.
+6. System zapisuje nową konferencja.
+7. System wyświetla komunikat o sukcesie.
+
+_Scenariusz alternatywny 1:_
+
+1-5. Jak w scenariuszu głównym
+
+6. Wprowadzone dane są niepoprawne.
+7. System wyświetla komunikat o błędzie.
+8. Powrót do punktu 1.
+
+### PB15 Usunięcie konferencji
+
+Aktorzy: Administrator
+
+_Scenariusz główny:_
+
+1. Administrator wybiera opcję "Usunięcie konferencji".
+2. System prezentuje listę konferencji.
+3. Administrator wybiera konferencja z listy.
+4. Administrator zatwierdza.
+5. System zapisuje nową konferencja.
 6. System wyświetla komunikat o sukcesie.

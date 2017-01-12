@@ -7,6 +7,7 @@ print()
 
 print("### Lista aktorów")
 print("""
+- administrator - osoba zarządzająca systemem
 - prelegent - osoba prezentująca na konferencji
 - recenzent - osoba, która decyduje o akceptacji lub odrzuceniu referatu
 - organizator - osoba zarządzająca terminarzem
@@ -88,11 +89,11 @@ class N:
         self.new = new
         self.new2 = new2
 
-def CRUD(thing, fields, delete_alt=None):
-    PB('Dodanie %s %s' % (thing.new2, thing.dopelniacz), 'organizator')
-    wybiera_opcje('Organizator')
-    punkt('Organizator wpisuje %s %s' % (fields, thing.dopelniacz))
-    p_zatw = punkt('Organizator zatwierdza')
+def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
+    PB('Dodanie %s %s' % (thing.new2, thing.dopelniacz), aktor)
+    wybiera_opcje(aktor)
+    punkt('%s wpisuje %s %s' % (aktor, fields, thing.dopelniacz))
+    p_zatw = punkt('%s zatwierdza' % aktor)
     punkt('System zapisuje %s %s' % (thing.new, thing.mianownik))
     punkt('System wyświetla komunikat o sukcesie')
 
@@ -101,12 +102,12 @@ def CRUD(thing, fields, delete_alt=None):
     punkt('System wyświetla komunikat o błędzie')
     powrot(1)
 
-    PB('Edycja %s' % thing.dopelniacz, 'organizator')
-    wybiera_opcje('Organizator')
+    PB('Edycja %s' % thing.dopelniacz, aktor)
+    wybiera_opcje(aktor)
     punkt('System prezentuje listę %s' % (thing.dop_lm))
-    punkt('Organizator wybiera %s z listy' % (thing.mianownik))
-    punkt('Organizator wpisuje %s %s' % (fields, thing.dopelniacz))
-    p_zatw = punkt('Organizator zatwierdza')
+    punkt('%s wybiera %s z listy' % (aktor, thing.mianownik))
+    punkt('%s wpisuje %s %s' % (aktor, fields, thing.dopelniacz))
+    p_zatw = punkt('%s zatwierdza' % aktor)
     punkt('System zapisuje %s %s' % (thing.new, thing.mianownik))
     punkt('System wyświetla komunikat o sukcesie')
 
@@ -115,11 +116,11 @@ def CRUD(thing, fields, delete_alt=None):
     punkt('System wyświetla komunikat o błędzie')
     powrot(1)
 
-    PB('Usunięcie %s' % thing.dopelniacz, 'organizator')
-    wybiera_opcje('Organizator')
+    PB('Usunięcie %s' % thing.dopelniacz, aktor)
+    wybiera_opcje(aktor)
     punkt('System prezentuje listę %s' % (thing.dop_lm))
-    punkt('Organizator wybiera %s z listy' % (thing.mianownik))
-    p_zatw = punkt('Organizator zatwierdza')
+    punkt('%s wybiera %s z listy' % (aktor, thing.mianownik))
+    p_zatw = punkt('%s zatwierdza' % aktor)
     punkt('System zapisuje %s %s' % (thing.new, thing.mianownik))
     punkt('System wyświetla komunikat o sukcesie')
 
@@ -173,3 +174,6 @@ CRUD(warsztat, 'nazwę, opis, miejsce i cenę')
 
 wycieczka = N('wycieczka', 'wycieczki', 'wycieczek', 'nowa', 'nowej')
 CRUD(wycieczka, 'nazwę, opis, miejsce i cenę')
+
+konferencja = N('konferencja', 'konferencji', 'konferencji', 'nową', 'nowej')
+CRUD(konferencja, 'nazwę i opis', aktor='Administrator')
