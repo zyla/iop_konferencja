@@ -62,6 +62,11 @@ def PB(*args, **kwargs):
     przypadek('PB%d' % state.kolejny_pb, *args, **kwargs)
     state.kolejny_pb += 1
 
+def FU(*args, **kwargs):
+    current_out = fu_out
+    przypadek('FU%d' % state.kolejny_fu, *args, **kwargs)
+    state.kolejny_fu += 1
+
 def punkt(tresc):
     # TODO cap first
     punkt = state.kolejny_punkt
