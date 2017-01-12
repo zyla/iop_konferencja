@@ -102,7 +102,7 @@ class N:
         self.new = new
         self.new2 = new2
 
-N = namedtuple('N', ('mianownik', 'dopelniacz', 'biernik', 'dopelniacz_lm'))
+N = namedtuple('N', ('mianownik', 'dopelniacz', 'biernik', 'dopelniacz_lm', 'nowy_mianownik', 'nowy_dopelniacz'))
 
 def graph_node(src, dst):
     graph_out.write('"%s" -> "%s"\n' % (src, dst))
