@@ -143,6 +143,9 @@ def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
         alt(p_zatw) 
         delete_alt()
 
+def RejestracjaNa(thing):
+    PB('Rejestracja na %s' % thing.mianownik)
+
 #    ###############################################################################
 #    PB('Zgłoszenie referatu', 'prelegent, recenzent')
 #    p_form = punkt("""Prelegent wypełnia formularz z danymi:
