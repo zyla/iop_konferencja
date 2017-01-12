@@ -471,5 +471,5 @@ _Scenariusz alternatywny 1:_
 7. Powrót do punktu 1.
 
 
-## Diagram
+## PB
 <img src=przypadki.png>
