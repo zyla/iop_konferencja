@@ -30,10 +30,12 @@
 <li><a href="#pb15-usunięcie-konferencji">PB15 Usunięcie konferencji</a></li>
 <li><a href="#pb16-rejestracja-na-warsztat">PB16 Rejestracja na warsztat</a></li>
 <li><a href="#pb17-rejestracja-na-wycieczkę">PB17 Rejestracja na wycieczkę</a></li>
+<li><a href="#pb18-rejestracja-na-posiłek">PB18 Rejestracja na posiłek</a></li>
 </ul></li>
 <li><a href="#przypadki-systemowe">Przypadki Systemowe</a><ul>
 <li><a href="#fu1-rejestracja-na-warsztat">FU1 Rejestracja na warsztat</a></li>
 <li><a href="#fu2-rejestracja-na-wycieczkę">FU2 Rejestracja na wycieczkę</a></li>
+<li><a href="#fu3-rejestracja-na-posiłek">FU3 Rejestracja na posiłek</a></li>
 </ul></li>
 <li><a href="#diagram">Diagram</a></li>
 </ul></li>
@@ -331,6 +333,24 @@
 <li>System wyświetla komunikat o błędzie.</li>
 <li>Powrót do punktu 1.</li>
 </ol>
+<h3 id="pb18-rejestracja-na-posiłek">PB18 Rejestracja na posiłek</h3>
+<p>Aktorzy: Słuchacz, Dziennikarz, Prelegent</p>
+<p><em>Scenariusz główny:</em></p>
+<ol style="list-style-type: decimal">
+<li>Uczestnik wybiera opcję &quot;Rejestracja na posiłek&quot;.</li>
+<li>System prezentuje listę posiłków.</li>
+<li>Uczestnik wybiera posiłek.</li>
+<li>Uczestnik zatwierdza.</li>
+<li>System generuje rachunek do zapłacenia.</li>
+<li>System zapisuje rezerwację.</li>
+</ol>
+<p><em>Scenariusz alternatywny 1:</em></p>
+<p>1-4. Jak w scenariuszu głównym</p>
+<ol start="5" style="list-style-type: decimal">
+<li>Miejsce zostało zajęte w międzyczasie.</li>
+<li>System wyświetla komunikat o błędzie.</li>
+<li>Powrót do punktu 1.</li>
+</ol>
 <h2 id="przypadki-systemowe">Przypadki Systemowe</h2>
 <h3 id="fu1-rejestracja-na-warsztat">FU1 Rejestracja na warsztat</h3>
 <p>Aktorzy: Słuchacz, Dziennikarz, Prelegent</p>
@@ -357,6 +377,24 @@
 <li>Uczestnik wybiera opcję &quot;Rejestracja na wycieczkę&quot;.</li>
 <li>System prezentuje listę wycieczek.</li>
 <li>Uczestnik lokalizuje wycieczkę na liście.</li>
+<li>Uczestnik zatwierdza.</li>
+<li>System generuje rachunek do zapłacenia.</li>
+<li>System zapisuje rezerwację.</li>
+</ol>
+<p><em>Scenariusz alternatywny 1:</em></p>
+<p>1-4. Jak w scenariuszu głównym</p>
+<ol start="5" style="list-style-type: decimal">
+<li>Miejsce zostało zajęte w międzyczasie.</li>
+<li>System wyświetla komunikat o błędzie.</li>
+<li>Powrót do punktu 1.</li>
+</ol>
+<h3 id="fu3-rejestracja-na-posiłek">FU3 Rejestracja na posiłek</h3>
+<p>Aktorzy: Słuchacz, Dziennikarz, Prelegent</p>
+<p><em>Scenariusz główny:</em></p>
+<ol style="list-style-type: decimal">
+<li>Uczestnik wybiera opcję &quot;Rejestracja na posiłek&quot;.</li>
+<li>System prezentuje listę posiłków.</li>
+<li>Uczestnik lokalizuje posiłek na liście.</li>
 <li>Uczestnik zatwierdza.</li>
 <li>System generuje rachunek do zapłacenia.</li>
 <li>System zapisuje rezerwację.</li>

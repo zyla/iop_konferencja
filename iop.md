@@ -341,6 +341,27 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
+### PB18 Rejestracja na posiłek
+
+Aktorzy: Słuchacz, Dziennikarz, Prelegent
+
+_Scenariusz główny:_
+
+1. Uczestnik wybiera opcję "Rejestracja na posiłek".
+2. System prezentuje listę posiłków.
+3. Uczestnik wybiera posiłek.
+4. Uczestnik zatwierdza.
+5. System generuje rachunek do zapłacenia.
+6. System zapisuje rezerwację.
+
+_Scenariusz alternatywny 1:_
+
+1-4. Jak w scenariuszu głównym
+
+5. Miejsce zostało zajęte w międzyczasie.
+6. System wyświetla komunikat o błędzie.
+7. Powrót do punktu 1.
+
 
 ## Przypadki Systemowe
 
@@ -374,6 +395,27 @@ _Scenariusz główny:_
 1. Uczestnik wybiera opcję "Rejestracja na wycieczkę".
 2. System prezentuje listę wycieczek.
 3. Uczestnik lokalizuje wycieczkę na liście.
+4. Uczestnik zatwierdza.
+5. System generuje rachunek do zapłacenia.
+6. System zapisuje rezerwację.
+
+_Scenariusz alternatywny 1:_
+
+1-4. Jak w scenariuszu głównym
+
+5. Miejsce zostało zajęte w międzyczasie.
+6. System wyświetla komunikat o błędzie.
+7. Powrót do punktu 1.
+
+### FU3 Rejestracja na posiłek
+
+Aktorzy: Słuchacz, Dziennikarz, Prelegent
+
+_Scenariusz główny:_
+
+1. Uczestnik wybiera opcję "Rejestracja na posiłek".
+2. System prezentuje listę posiłków.
+3. Uczestnik lokalizuje posiłek na liście.
 4. Uczestnik zatwierdza.
 5. System generuje rachunek do zapłacenia.
 6. System zapisuje rezerwację.

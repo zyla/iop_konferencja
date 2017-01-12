@@ -267,14 +267,16 @@ RejestracjaNa(warsztat, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='U
 
 RejestracjaNa(wycieczka, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
 
-rodzaj_posilku = N(
-        mianownik='rodzaj posiłku',
-        dopelniacz='rodzaju posiłku',
-        biernik='rodzaj posiłku',
-        dopelniacz_lm='rodzajów posiłku',
+posilek = N(
+        mianownik='posiłek',
+        dopelniacz='posiłku',
+        biernik='posiłek',
+        dopelniacz_lm='posiłków',
         nowy_mianownik='nowy',
         nowy_dopelniacz='nowego',
         nowy_biernik='nowy')
+
+RejestracjaNa(posilek, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
 
 ########################################################################################
 # output this shit
