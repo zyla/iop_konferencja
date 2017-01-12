@@ -108,7 +108,7 @@ def graph_node(src, dst):
     graph_out.write('"%s" -> "%s"\n' % (src, dst))
 
 def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
-    PB('Dodanie %s %s' % (thing.new2, thing.dopelniacz), aktor)
+    PB('Dodanie %s %s' % (thing.nowy_dopelniacz, thing.dopelniacz), aktor)
     wybiera_opcje(aktor)
     punkt('%s wpisuje %s %s' % (aktor, fields, thing.dopelniacz))
     p_zatw = punkt('%s zatwierdza' % aktor)
@@ -126,7 +126,7 @@ def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
     punkt('%s wybiera %s z listy' % (aktor, thing.mianownik))
     punkt('%s wpisuje %s %s' % (aktor, fields, thing.dopelniacz))
     p_zatw = punkt('%s zatwierdza' % aktor)
-    punkt('System zapisuje %s %s' % (thing.new, thing.mianownik))
+    punkt('System zapisuje %s %s' % (thing.nowy_mianownik, thing.mianownik))
     punkt('System wyświetla komunikat o sukcesie')
 
     alt(p_zatw)
@@ -139,7 +139,7 @@ def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
     punkt('System prezentuje listę %s' % (thing.dop_lm))
     punkt('%s wybiera %s z listy' % (aktor, thing.mianownik))
     p_zatw = punkt('%s zatwierdza' % aktor)
-    punkt('System zapisuje %s %s' % (thing.new, thing.mianownik))
+    punkt('System zapisuje %s %s' % (thing.nowy_mianownik, thing.mianownik))
     punkt('System wyświetla komunikat o sukcesie')
 
     if delete_alt:
