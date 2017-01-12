@@ -24,9 +24,11 @@ print("""<script>setTimeout(function() { location.reload(); }, 1000);</script>""
 
 pb_out = io.StringIO()
 fu_out = io.StringIO()
-graph_out = io.StringIO()
+pb_graph_out = io.StringIO()
+fu_graph_out = io.StringIO()
 
 current_out = pb_out
+current_graph_out = pb_graph_out
 
 def output(s=''):
     current_out.write(s + '\n')
