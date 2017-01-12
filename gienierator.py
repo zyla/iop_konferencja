@@ -98,6 +98,9 @@ class N:
         self.new = new
         self.new2 = new2
 
+def graph_node(src, dst):
+    graph_out.write(
+
 def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
     PB('Dodanie %s %s' % (thing.new2, thing.dopelniacz), aktor)
     wybiera_opcje(aktor)
@@ -194,3 +197,5 @@ print(pb_out.getvalue())
 print()
 print("## Przypadki Systemowe")
 print(fu_out.getvalue())
+
+print('<pre>' + graph_out.getvalue())
