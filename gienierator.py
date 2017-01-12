@@ -317,6 +317,6 @@ def make_diagram(ident, code):
     f.write('digraph { rankdir=LR; ' + code + ' }')
     f.close()
 
-    os.system('dot -Tpng < przypadki.dot > przypadki.png')
+    os.system('dot -Tpng < %s.dot > %s.png' % (ident, ident))
 
 print('<img src=przypadki.png>')
