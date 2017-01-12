@@ -149,6 +149,7 @@ def RejestracjaNa(thing, aktorzy, aktor_gl):
     punkt('System prezentuje listę %s' % thing.dop_lm)
     punkt('%s wybiera %s' % (aktor_gl, thing.mianownik)) # FIXME grammer
     punkt('System generuje rachunek do zapłacenia')
+    punkt('System zapisuje rezerwację')
 
 #    ###############################################################################
 #    PB('Zgłoszenie referatu', 'prelegent, recenzent')
