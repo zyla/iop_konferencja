@@ -188,7 +188,14 @@ def RejestracjaNa(thing, aktorzy, aktor_gl):
     powrot(1)
 
 ###############################################################################
-rodzaj_posilku = N('rodzaj posiłku', 'rodzaju posiłku', 'rodzajów posiłku', 'nowy', 'nowego')
+rodzaj_posilku = N(
+        mianownik='rodzaj posiłku',
+        dopelniacz='rodzaju posiłku',
+        biernik='rodzaj posiłku',
+        dopelniacz_lm='rodzajów posiłku',
+        nowy_mianownik='nowy',
+        nowy_dopelniacz='nowego',
+        nowy_biernik='nowy')
 CRUD(rodzaj_posilku, 'nazwę',
    # delete_alt=delete_alt_wybrany(rodzaj_posilku, 'został wybrany'))
 
