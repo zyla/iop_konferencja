@@ -188,6 +188,8 @@ def RejestracjaNa(thing, aktorzy, aktor_gl):
     powrot(1)
 
 ###############################################################################
+# actual definitions
+
 rodzaj_posilku = N(
         mianownik='rodzaj posiłku',
         dopelniacz='rodzaju posiłku',
@@ -245,7 +247,9 @@ RejestracjaNa(warsztat, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='U
 
 RejestracjaNa(wycieczka, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
 
-### output this shit
+
+########################################################################################
+# output this shit
 
 print()
 print("## Przypadki Biznesowe")
