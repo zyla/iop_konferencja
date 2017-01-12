@@ -1,4 +1,6 @@
 digraph {
 	"Prelegent" -> "PB1 Zgłoszenie referatu";
 	"Prelegent" -> "PB2 Zgłoszenie innej formy";
+
+	"Recenzent" <- "PB1 Zgłoszenie referatu";
 }
