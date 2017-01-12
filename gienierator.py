@@ -267,9 +267,9 @@ CRUD(konferencja, 'nazwę i opis', aktor='Administrator')
 
 SDP = 'Słuchacz/Dziennikarz/Prelegent'
 
-RejestracjaNa(warsztat, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
+RejestracjaNa(warsztat, aktorzy=SDP, aktor_gl='Uczestnik')
 
-RejestracjaNa(wycieczka, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
+RejestracjaNa(wycieczka, aktorzy=SDP, aktor_gl='Uczestnik')
 
 posilek = N(
         mianownik='posiłek',
@@ -280,7 +280,7 @@ posilek = N(
         nowy_dopelniacz='nowego',
         nowy_biernik='nowy')
 
-RejestracjaNa(posilek, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
+RejestracjaNa(posilek, aktorzy=SDP, aktor_gl='Uczestnik')
 
 nocleg = N(
         mianownik='nocleg',
@@ -291,7 +291,7 @@ nocleg = N(
         nowy_dopelniacz='nowego',
         nowy_biernik='nowy')
 
-RejestracjaNa(nocleg, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
+RejestracjaNa(nocleg, aktorzy=SDP, aktor_gl='Uczestnik')
 
 ########################################################################################
 # output this shit
