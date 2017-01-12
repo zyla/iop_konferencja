@@ -58,11 +58,13 @@ def przypadek(id, nazwa, aktorzy):
         graph_node(aktor, '%s %s' % (id, nazwa))
 
 def PB(*args, **kwargs):
+    global current_out
     current_out = pb_out
     przypadek('PB%d' % state.kolejny_pb, *args, **kwargs)
     state.kolejny_pb += 1
 
 def FU(*args, **kwargs):
+    global current_out
     current_out = fu_out
     przypadek('FU%d' % state.kolejny_fu, *args, **kwargs)
     state.kolejny_fu += 1
