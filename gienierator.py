@@ -313,10 +313,10 @@ print("## Diagram PB")
 
 def make_diagram(ident, code):
 
-f = open('przypadki.dot', 'w')
-f.write('digraph { rankdir=LR; ' + graph_out.getvalue() + ' }')
-f.close()
+    f = open('%s.dot' % ident, 'w')
+    f.write('digraph { rankdir=LR; ' + code + ' }')
+    f.close()
 
-os.system('dot -Tpng < przypadki.dot > przypadki.png')
+    os.system('dot -Tpng < przypadki.dot > przypadki.png')
 
 print('<img src=przypadki.png>')
