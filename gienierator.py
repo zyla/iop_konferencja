@@ -106,7 +106,7 @@ def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
     wybiera_opcje(aktor)
     punkt('%s wpisuje %s %s' % (aktor, fields, thing.dopelniacz))
     p_zatw = punkt('%s zatwierdza' % aktor)
-    punkt('System zapisuje %s %s' % (thing.nowy_mianownik, thing.mianownik))
+    punkt('System zapisuje %s %s' % (thing.nowy_biernik, thing.biernik))
     punkt('System wyświetla komunikat o sukcesie')
 
     alt(p_zatw)
@@ -201,7 +201,8 @@ warsztat = N(
         biernik='warsztat',
         dopelniacz_lm='warsztatów',
         nowy_mianownik='nowy',
-        nowy_dopelniacz='nowego'
+        nowy_dopelniacz='nowego',
+        nowy_biernik='nowy'
         )
 
 CRUD(warsztat, 'nazwę, opis, miejsce i cenę')

@@ -80,7 +80,7 @@ _Scenariusz główny:_
 1. Organizator wybiera opcję "Dodanie nowej wycieczki".
 2. Organizator wpisuje nazwę, opis, miejsce i cenę wycieczki.
 3. Organizator zatwierdza.
-4. System zapisuje nowa wycieczka.
+4. System zapisuje nową wycieczkę.
 5. System wyświetla komunikat o sukcesie.
 
 _Scenariusz alternatywny 1:_
