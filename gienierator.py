@@ -143,8 +143,9 @@ def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
         alt(p_zatw) 
         delete_alt()
 
-def RejestracjaNa(thing, aktorzy):
+def RejestracjaNa(thing, aktorzy, aktor_gl):
     PB('Rejestracja na %s' % thing.mianownik, aktorzy)
+    wybiera_opcje(aktor_gl)
 
 #    ###############################################################################
 #    PB('Zgłoszenie referatu', 'prelegent, recenzent')
@@ -196,7 +197,7 @@ CRUD(wycieczka, 'nazwę, opis, miejsce i cenę')
 konferencja = N('konferencja', 'konferencji', 'konferencji', 'nową', 'nowej') # FIXME grammar
 CRUD(konferencja, 'nazwę i opis', aktor='Administrator')
 
-RejestracjaNa(warsztat, 'Słuchacz, Dziennikarz, Prelegent')
+RejestracjaNa(warsztat, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
 
 print()
 print("## Przypadki Biznesowe")
