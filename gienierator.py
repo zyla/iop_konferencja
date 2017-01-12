@@ -102,7 +102,7 @@ class N:
         self.new = new
         self.new2 = new2
 
-N = namedtuple('N', ('mianownik', 'dopelniacz', 'celownik', 'biernik', 'dopelniacz_lm'))
+N = namedtuple('N', ('mianownik', 'dopelniacz', 'biernik', 'dopelniacz_lm'))
 
 def graph_node(src, dst):
     graph_out.write('"%s" -> "%s"\n' % (src, dst))
@@ -201,7 +201,11 @@ CRUD(rodzaj_posilku, 'nazwę',
 mozliwosc_noclegu = N('możliwość noclegu', 'możliwości noclegu', 'możliwości noclegu', 'nową', 'nowej')
 CRUD(mozliwosc_noclegu, 'nazwę, opis, miejsce i cenę')
 
-warsztat = N('warsztat', 'warsztatu', 'warsztatów', 'nowy', 'nowego')
+warsztat = N(
+        mianownik='warsztat',
+        dopelniacz='warsztatu',
+        'warsztatów', 'nowy', 'nowego')
+
 CRUD(warsztat, 'nazwę, opis, miejsce i cenę')
 
 wycieczka = N('wycieczka', 'wycieczki', 'wycieczek', 'nowa', 'nowej')
