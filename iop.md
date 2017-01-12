@@ -155,7 +155,7 @@ _Scenariusz główny:_
 
 1. Uczestnik wybiera opcję "Rejestracja na wycieczka".
 2. System prezentuje listę wycieczek.
-3. Uczestnik wybiera wycieczka.
+3. Uczestnik wybiera wycieczkę.
 4. Uczestnik zatwierdza.
 5. System generuje rachunek do zapłacenia.
 6. System zapisuje rezerwację.

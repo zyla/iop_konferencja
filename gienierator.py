@@ -138,20 +138,6 @@ def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
         alt(p_zatw) 
         delete_alt()
 
-def RejestracjaNa(thing, aktorzy, aktor_gl):
-    PB('Rejestracja na %s' % thing.mianownik, aktorzy)
-    wybiera_opcje(aktor_gl)
-    punkt('System prezentuje listę %s' % thing.dopelniacz_lm)
-    punkt('%s wybiera %s' % (aktor_gl, thing.mianownik)) # FIXME grammer
-    p_zatw = punkt('%s zatwierdza' % aktor_gl)
-    punkt('System generuje rachunek do zapłacenia')
-    punkt('System zapisuje rezerwację')
-
-    alt(p_zatw)
-    punkt('Miejsce zostało zajęte w międzyczasie')
-    punkt('System wyświetla komunikat o błędzie')
-    powrot(1)
-
 #    ###############################################################################
 #    PB('Zgłoszenie referatu', 'prelegent, recenzent')
 #    p_form = punkt("""Prelegent wypełnia formularz z danymi:
@@ -184,6 +170,20 @@ def delete_alt_wybrany(thing, wybrany):
          punkt('System wyświetla osoby, przez które %s %s' % (thing.mianownik, wybrany))
          powrot(1)
     return _alt
+
+def RejestracjaNa(thing, aktorzy, aktor_gl):
+    PB('Rejestracja na %s' % thing.mianownik, aktorzy)
+    wybiera_opcje(aktor_gl)
+    punkt('System prezentuje listę %s' % thing.dopelniacz_lm)
+    punkt('%s wybiera %s' % (aktor_gl, thing.biernik))
+    p_zatw = punkt('%s zatwierdza' % aktor_gl)
+    punkt('System generuje rachunek do zapłacenia')
+    punkt('System zapisuje rezerwację')
+
+    alt(p_zatw)
+    punkt('Miejsce zostało zajęte w międzyczasie')
+    punkt('System wyświetla komunikat o błędzie')
+    powrot(1)
 
 ###############################################################################
 # rodzaj_posilku = N('rodzaj posiłku', 'rodzaju posiłku', 'rodzajów posiłku', 'nowy', 'nowego')
