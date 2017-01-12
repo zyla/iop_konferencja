@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import io
+import io, os
 
 print("# **Zadanie 2**: obsługa konferencji naukowej")
 print("Zgłaszanie referatów, recenzowanie, ")
@@ -204,4 +204,10 @@ print(fu_out.getvalue())
 print()
 print("## Diagram")
 
-print('<pre>' + graph_out.getvalue() + '</pre>')
+f = open('przypadki.dot', 'w')
+f.write('digraph { ' + graph_out.getvalue() + ' }')
+f.close()
+
+os.system('dot -Tpng < przypadki.dot > przypadki.png')
+
+print('<img src=przypadki.png>')

@@ -302,19 +302,6 @@ _Scenariusz główny:_
 
 ## Przypadki Systemowe
 
-<pre>"Organizator" -> "Dodanie nowego rodzaju posiłku"
-"Organizator" -> "Edycja rodzaju posiłku"
-"Organizator" -> "Usunięcie rodzaju posiłku"
-"Organizator" -> "Dodanie nowej możliwości noclegu"
-"Organizator" -> "Edycja możliwości noclegu"
-"Organizator" -> "Usunięcie możliwości noclegu"
-"Organizator" -> "Dodanie nowego warsztatu"
-"Organizator" -> "Edycja warsztatu"
-"Organizator" -> "Usunięcie warsztatu"
-"Organizator" -> "Dodanie nowej wycieczki"
-"Organizator" -> "Edycja wycieczki"
-"Organizator" -> "Usunięcie wycieczki"
-"Administrator" -> "Dodanie nowej konferencji"
-"Administrator" -> "Edycja konferencji"
-"Administrator" -> "Usunięcie konferencji"
-</pre>
+
+## Diagram
+<img src=przypadki.png>
