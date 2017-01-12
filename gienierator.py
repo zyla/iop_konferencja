@@ -147,6 +147,7 @@ def RejestracjaNa(thing, aktorzy, aktor_gl):
     PB('Rejestracja na %s' % thing.mianownik, aktorzy)
     wybiera_opcje(aktor_gl)
     punkt('System prezentuje listę %s' % thing.dop_lm)
+    punkt('%s wybiera %s' % thing.mianownik) # FIXME grammer
 
 #    ###############################################################################
 #    PB('Zgłoszenie referatu', 'prelegent, recenzent')
