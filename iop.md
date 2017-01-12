@@ -369,7 +369,7 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### PB18 Rejestracja na posiłek
+### PB19 Rejestracja na posiłek
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
@@ -390,7 +390,7 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### PB19 Rejestracja na nocleg
+### PB20 Rejestracja na nocleg
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
