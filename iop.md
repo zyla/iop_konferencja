@@ -16,16 +16,16 @@ organizacja eventu - program wystąpień, eventy typu przyjęcie, wycieczka ze z
 
 ## Przypadki Biznesowe
 
-### PB1 Dodanie nowego warsztatu warsztatu
+### PB1 Dodanie nowego warsztatu
 
 Aktorzy: Organizator
 
 _Scenariusz główny:_
 
-1. Organizator wybiera opcję "Dodanie nowego warsztatu warsztatu".
+1. Organizator wybiera opcję "Dodanie nowego warsztatu".
 2. Organizator wpisuje nazwę, opis, miejsce i cenę warsztatu.
 3. Organizator zatwierdza.
-4. System zapisuje nowy warsztat warsztat.
+4. System zapisuje nowy warsztat.
 5. System wyświetla komunikat o sukcesie.
 
 _Scenariusz alternatywny 1:_
@@ -47,7 +47,7 @@ _Scenariusz główny:_
 3. Organizator wybiera warsztat z listy.
 4. Organizator wpisuje nazwę, opis, miejsce i cenę warsztatu.
 5. Organizator zatwierdza.
-6. System zapisuje nowy warsztat warsztat.
+6. System zapisuje nowy warsztat.
 7. System wyświetla komunikat o sukcesie.
 
 _Scenariusz alternatywny 1:_
@@ -68,10 +68,65 @@ _Scenariusz główny:_
 2. System prezentuje listę warsztatów.
 3. Organizator wybiera warsztat z listy.
 4. Organizator zatwierdza.
-5. System zapisuje nowy warsztat warsztat.
+5. System zapisuje nowy warsztat.
 6. System wyświetla komunikat o sukcesie.
 
-### PB4 Rejestracja na warsztat
+### PB4 Dodanie nowej wycieczki
+
+Aktorzy: Organizator
+
+_Scenariusz główny:_
+
+1. Organizator wybiera opcję "Dodanie nowej wycieczki".
+2. Organizator wpisuje nazwę, opis, miejsce i cenę wycieczki.
+3. Organizator zatwierdza.
+4. System zapisuje nowa wycieczka.
+5. System wyświetla komunikat o sukcesie.
+
+_Scenariusz alternatywny 1:_
+
+1-3. Jak w scenariuszu głównym
+
+4. Wprowadzone dane są niepoprawne.
+5. System wyświetla komunikat o błędzie.
+6. Powrót do punktu 1.
+
+### PB5 Edycja wycieczki
+
+Aktorzy: Organizator
+
+_Scenariusz główny:_
+
+1. Organizator wybiera opcję "Edycja wycieczki".
+2. System prezentuje listę wycieczek.
+3. Organizator wybiera wycieczka z listy.
+4. Organizator wpisuje nazwę, opis, miejsce i cenę wycieczki.
+5. Organizator zatwierdza.
+6. System zapisuje nowa wycieczka.
+7. System wyświetla komunikat o sukcesie.
+
+_Scenariusz alternatywny 1:_
+
+1-5. Jak w scenariuszu głównym
+
+6. Wprowadzone dane są niepoprawne.
+7. System wyświetla komunikat o błędzie.
+8. Powrót do punktu 1.
+
+### PB6 Usunięcie wycieczki
+
+Aktorzy: Organizator
+
+_Scenariusz główny:_
+
+1. Organizator wybiera opcję "Usunięcie wycieczki".
+2. System prezentuje listę wycieczek.
+3. Organizator wybiera wycieczka z listy.
+4. Organizator zatwierdza.
+5. System zapisuje nowa wycieczka.
+6. System wyświetla komunikat o sukcesie.
+
+### PB7 Rejestracja na warsztat
 
 Aktorzy: Słuchacz, Dziennikarz, Prelegent
 

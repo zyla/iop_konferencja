@@ -208,7 +208,9 @@ wycieczka = N(
         mianownik='wycieczka',
         dopelniacz='wycieczki',
         biernik='wycieczkę',
-        dopelniacz_lm='wycieczek', 'nowa', 'nowej')
+        dopelniacz_lm='wycieczek',
+        nowy_mianownik='nowa',
+        nowy_dopelniacz='nowej')
 CRUD(wycieczka, 'nazwę, opis, miejsce i cenę')
 
 # konferencja = N('konferencja', 'konferencji', 'konferencji', 'nową', 'nowej') # FIXME grammar
