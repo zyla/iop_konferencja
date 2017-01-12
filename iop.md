@@ -301,7 +301,7 @@ _Scenariusz główny:_
 
 ### PB16 Rejestracja na warsztat
 
-Aktorzy: Słuchacz, Dziennikarz, Prelegent
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
@@ -322,7 +322,7 @@ _Scenariusz alternatywny 1:_
 
 ### PB17 Rejestracja na wycieczkę
 
-Aktorzy: Słuchacz, Dziennikarz, Prelegent
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
@@ -343,7 +343,7 @@ _Scenariusz alternatywny 1:_
 
 ### PB18 Rejestracja na posiłek
 
-Aktorzy: Słuchacz, Dziennikarz, Prelegent
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
@@ -364,7 +364,7 @@ _Scenariusz alternatywny 1:_
 
 ### PB19 Rejestracja na nocleg
 
-Aktorzy: Słuchacz, Dziennikarz, Prelegent
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
@@ -388,7 +388,7 @@ _Scenariusz alternatywny 1:_
 
 ### FU1 Rejestracja na warsztat
 
-Aktorzy: Słuchacz, Dziennikarz, Prelegent
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
@@ -409,7 +409,7 @@ _Scenariusz alternatywny 1:_
 
 ### FU2 Rejestracja na wycieczkę
 
-Aktorzy: Słuchacz, Dziennikarz, Prelegent
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
@@ -430,7 +430,7 @@ _Scenariusz alternatywny 1:_
 
 ### FU3 Rejestracja na posiłek
 
-Aktorzy: Słuchacz, Dziennikarz, Prelegent
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
@@ -451,7 +451,7 @@ _Scenariusz alternatywny 1:_
 
 ### FU4 Rejestracja na nocleg
 
-Aktorzy: Słuchacz, Dziennikarz, Prelegent
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 

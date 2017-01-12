@@ -28,7 +28,7 @@ pb_graph_out = io.StringIO()
 fu_graph_out = io.StringIO()
 
 current_out = pb_out
-current_graph_out = pb_graph_out
+graph_out = pb_graph_out
 
 def output(s=''):
     current_out.write(s + '\n')
@@ -62,12 +62,16 @@ def przypadek(id, nazwa, aktorzy):
 def PB(*args, **kwargs):
     global current_out
     current_out = pb_out
+    global graph_out
+    graph_out = pb_graph_out
     przypadek('PB%d' % state.kolejny_pb, *args, **kwargs)
     state.kolejny_pb += 1
 
 def FU(*args, **kwargs):
     global current_out
     current_out = fu_out
+    global graph_out
+    graph_out = fu_graph_out
     przypadek('FU%d' % state.kolejny_fu, *args, **kwargs)
     state.kolejny_fu += 1
 
