@@ -278,6 +278,17 @@ posilek = N(
 
 RejestracjaNa(posilek, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
 
+nocleg = N(
+        mianownik='nocleg',
+        dopelniacz='noclegu',
+        biernik='nocleg',
+        dopelniacz_lm='noclegów',
+        nowy_mianownik='nowy',
+        nowy_dopelniacz='nowego',
+        nowy_biernik='nowy')
+
+RejestracjaNa(nocleg, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
+
 ########################################################################################
 # output this shit
 
