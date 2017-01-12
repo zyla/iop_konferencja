@@ -146,7 +146,7 @@ def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
 def RejestracjaNa(thing, aktorzy, aktor_gl):
     PB('Rejestracja na %s' % thing.mianownik, aktorzy)
     wybiera_opcje(aktor_gl)
-    punkt('System prezentuje listę %s', thing.dop_lm)
+    punkt('System prezentuje listę %s' % thing.dop_lm)
 
 #    ###############################################################################
 #    PB('Zgłoszenie referatu', 'prelegent, recenzent')

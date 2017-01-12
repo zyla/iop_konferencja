@@ -306,6 +306,7 @@ Aktorzy: Słuchacz, Dziennikarz, Prelegent
 _Scenariusz główny:_
 
 1. Uczestnik wybiera opcję "Rejestracja na warsztat".
+2. System prezentuje listę warsztatów.
 
 
 ## Przypadki Systemowe
