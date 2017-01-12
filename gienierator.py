@@ -53,6 +53,9 @@ def przypadek(id, nazwa, aktorzy):
     output("_Scenariusz główny:_")
     output()
 
+    for aktor in aktorzy.split(', '):
+        graph_node(aktor, nazwa)
+
 def PB(*args, **kwargs):
     current_out = pb_out
     przypadek('PB%d' % state.kolejny_pb, *args, **kwargs)
