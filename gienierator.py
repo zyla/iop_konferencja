@@ -209,6 +209,8 @@ CRUD(konferencja, 'nazwę i opis', aktor='Administrator')
 
 RejestracjaNa(warsztat, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
 
+RejestracjaNa(wycieczka, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
+
 print()
 print("## Przypadki Biznesowe")
 print(pb_out.getvalue())
