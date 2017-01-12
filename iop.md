@@ -15,7 +15,36 @@ organizacja eventu - program wystąpień, eventy typu przyjęcie, wycieczka ze z
 
 ## Przypadki Biznesowe
 
-### PB1 Dodanie nowego rodzaju posiłku
+### PB1 Zgłoszenie referatu
+
+Aktorzy: prelegent, recenzent
+
+_Scenariusz główny:_
+
+1. Prelegent wypełnia formularz z danymi:
+ - temat prezentacji
+ - abstrakt
+ - dane kontaktowe
+ - draft publikacji.
+2. System zapisuje publikację.
+3. System wysyła e-mail z potwierdzeniem do prelegenta.
+
+_Scenariusz alternatywny 1:_
+
+1. Jak w scenariuszu głównym
+
+2. Dane są niepoprawne.
+3. System wyświetla komunikat o błędzie.
+4. Powrót do punktu 1.
+
+_Scenariusz alternatywny 2:_
+
+1-2. Jak w scenariuszu głównym
+
+3. Prelegent jest osobą zaproszoną.
+4. Publikacja jest automatycznie akceptowana.
+
+### PB2 Dodanie nowego rodzaju posiłku
 
 Aktorzy: Organizator
 
@@ -35,7 +64,7 @@ _Scenariusz alternatywny 1:_
 5. System wyświetla komunikat o błędzie.
 6. Powrót do punktu 1.
 
-### PB2 Edycja rodzaju posiłku
+### PB3 Edycja rodzaju posiłku
 
 Aktorzy: Organizator
 
@@ -57,7 +86,7 @@ _Scenariusz alternatywny 1:_
 7. System wyświetla komunikat o błędzie.
 8. Powrót do punktu 1.
 
-### PB3 Usunięcie rodzaju posiłku
+### PB4 Usunięcie rodzaju posiłku
 
 Aktorzy: Organizator
 
@@ -78,7 +107,7 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla osoby, przez które rodzaj posiłku został wybrany.
 7. Powrót do punktu 1.
 
-### PB4 Dodanie nowej możliwości noclegu
+### PB5 Dodanie nowej możliwości noclegu
 
 Aktorzy: Organizator
 
@@ -98,7 +127,7 @@ _Scenariusz alternatywny 1:_
 5. System wyświetla komunikat o błędzie.
 6. Powrót do punktu 1.
 
-### PB5 Edycja możliwości noclegu
+### PB6 Edycja możliwości noclegu
 
 Aktorzy: Organizator
 
@@ -120,7 +149,7 @@ _Scenariusz alternatywny 1:_
 7. System wyświetla komunikat o błędzie.
 8. Powrót do punktu 1.
 
-### PB6 Usunięcie możliwości noclegu
+### PB7 Usunięcie możliwości noclegu
 
 Aktorzy: Organizator
 
@@ -133,7 +162,7 @@ _Scenariusz główny:_
 5. System usuwa możliwość noclegu.
 6. System wyświetla komunikat o sukcesie.
 
-### PB7 Dodanie nowego warsztatu
+### PB8 Dodanie nowego warsztatu
 
 Aktorzy: Organizator
 
@@ -153,7 +182,7 @@ _Scenariusz alternatywny 1:_
 5. System wyświetla komunikat o błędzie.
 6. Powrót do punktu 1.
 
-### PB8 Edycja warsztatu
+### PB9 Edycja warsztatu
 
 Aktorzy: Organizator
 
@@ -175,7 +204,7 @@ _Scenariusz alternatywny 1:_
 7. System wyświetla komunikat o błędzie.
 8. Powrót do punktu 1.
 
-### PB9 Usunięcie warsztatu
+### PB10 Usunięcie warsztatu
 
 Aktorzy: Organizator
 
@@ -188,7 +217,7 @@ _Scenariusz główny:_
 5. System usuwa warsztat.
 6. System wyświetla komunikat o sukcesie.
 
-### PB10 Dodanie nowej wycieczki
+### PB11 Dodanie nowej wycieczki
 
 Aktorzy: Organizator
 
@@ -208,7 +237,7 @@ _Scenariusz alternatywny 1:_
 5. System wyświetla komunikat o błędzie.
 6. Powrót do punktu 1.
 
-### PB11 Edycja wycieczki
+### PB12 Edycja wycieczki
 
 Aktorzy: Organizator
 
@@ -230,7 +259,7 @@ _Scenariusz alternatywny 1:_
 7. System wyświetla komunikat o błędzie.
 8. Powrót do punktu 1.
 
-### PB12 Usunięcie wycieczki
+### PB13 Usunięcie wycieczki
 
 Aktorzy: Organizator
 
@@ -243,7 +272,7 @@ _Scenariusz główny:_
 5. System usuwa wycieczkę.
 6. System wyświetla komunikat o sukcesie.
 
-### PB13 Dodanie nowej konferencji
+### PB14 Dodanie nowej konferencji
 
 Aktorzy: Administrator
 
@@ -263,7 +292,7 @@ _Scenariusz alternatywny 1:_
 5. System wyświetla komunikat o błędzie.
 6. Powrót do punktu 1.
 
-### PB14 Edycja konferencji
+### PB15 Edycja konferencji
 
 Aktorzy: Administrator
 
@@ -285,7 +314,7 @@ _Scenariusz alternatywny 1:_
 7. System wyświetla komunikat o błędzie.
 8. Powrót do punktu 1.
 
-### PB15 Usunięcie konferencji
+### PB16 Usunięcie konferencji
 
 Aktorzy: Administrator
 
@@ -298,7 +327,7 @@ _Scenariusz główny:_
 5. System usuwa konferencję.
 6. System wyświetla komunikat o sukcesie.
 
-### PB16 Rejestracja na warsztat
+### PB17 Rejestracja na warsztat
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
@@ -319,7 +348,7 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### PB17 Rejestracja na wycieczkę
+### PB18 Rejestracja na wycieczkę
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
