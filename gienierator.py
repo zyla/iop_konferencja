@@ -320,3 +320,8 @@ print()
 print("## Diagram PB")
 make_diagram('pb', pb_graph_out.getvalue())
 print('<img src=pb.png>')
+
+print()
+print("## Diagram PS")
+make_diagram('ps', pb_graph_out.getvalue())
+print('<img src=ps.png>')

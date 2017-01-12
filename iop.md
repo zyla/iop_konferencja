@@ -473,3 +473,6 @@ _Scenariusz alternatywny 1:_
 
 ## Diagram PB
 <img src=pb.png>
+
+## Diagram PS
+<img src=ps.png>
