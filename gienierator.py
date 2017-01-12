@@ -309,7 +309,7 @@ print("## Przypadki Systemowe")
 print(fu_out.getvalue())
 
 print()
-print("## PB")
+print("## Diagram PB")
 
 f = open('przypadki.dot', 'w')
 f.write('digraph { rankdir=LR; ' + graph_out.getvalue() + ' }')
