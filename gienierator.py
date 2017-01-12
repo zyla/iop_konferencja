@@ -133,7 +133,7 @@ def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
     punkt('System prezentuje listę %s' % (thing.dopelniacz_lm))
     punkt('%s wybiera %s z listy' % (aktor, thing.mianownik))
     p_zatw = punkt('%s zatwierdza' % aktor)
-    punkt('System usuwa %s %s' % (thing.nowy_mianownik, thing.mianownik))
+    punkt('System usuwa %s' % thing.biernik)
     punkt('System wyświetla komunikat o sukcesie')
 
     if delete_alt:

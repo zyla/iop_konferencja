@@ -68,7 +68,7 @@ _Scenariusz główny:_
 2. System prezentuje listę warsztatów.
 3. Organizator wybiera warsztat z listy.
 4. Organizator zatwierdza.
-5. System usuwa nowy warsztat.
+5. System usuwa warsztat.
 6. System wyświetla komunikat o sukcesie.
 
 ### PB4 Dodanie nowej wycieczki
@@ -123,7 +123,7 @@ _Scenariusz główny:_
 2. System prezentuje listę wycieczek.
 3. Organizator wybiera wycieczka z listy.
 4. Organizator zatwierdza.
-5. System usuwa nowa wycieczka.
+5. System usuwa wycieczkę.
 6. System wyświetla komunikat o sukcesie.
 
 ### PB7 Rejestracja na warsztat
