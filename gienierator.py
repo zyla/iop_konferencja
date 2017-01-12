@@ -205,7 +205,7 @@ mozliwosc_noclegu = N(
         biernik='możliwość noclegu',
         dopelniacz_lm='możliwości noclegu',
         nowy_mianownik='nową',
-        nowy_dopelniacz='nowej'
+        nowy_dopelniacz='nowej',
         nowy_biernik='nową')
 CRUD(mozliwosc_noclegu, 'nazwę, opis, miejsce i cenę')
 

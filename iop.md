@@ -16,7 +16,163 @@ organizacja eventu - program wystąpień, eventy typu przyjęcie, wycieczka ze z
 
 ## Przypadki Biznesowe
 
-### PB1 Dodanie nowego warsztatu
+### PB1 Zgłoszenie referatu
+
+Aktorzy: prelegent, recenzent
+
+_Scenariusz główny:_
+
+1. Prelegent wypełnia formularz z danymi:
+ - temat prezentacji
+ - abstrakt
+ - dane kontaktowe
+ - draft publikacji.
+2. System zapisuje publikację.
+3. System wysyła e-mail z potwierdzeniem do prelegenta.
+
+_Scenariusz alternatywny 1:_
+
+1. Jak w scenariuszu głównym
+
+2. Dane są niepoprawne.
+3. System wyświetla komunikat o błędzie.
+4. Powrót do punktu 1.
+
+_Scenariusz alternatywny 2:_
+
+1-2. Jak w scenariuszu głównym
+
+3. Prelegent jest osobą zaproszoną.
+4. Publikacja jest automatycznie akceptowana.
+
+### PB2 Przeglądanie terminarza
+
+Aktorzy: prelegent, recenzent, organizator, słuchacz lub dziennikarz ("użytkownik")
+
+_Scenariusz główny:_
+
+1. Użytkownik wybiera opcję "Przeglądanie terminarza".
+2. System prezentuje listę wydarzeń wraz i ich terminami.
+
+### PB3 Dodanie nowego rodzaju posiłku
+
+Aktorzy: Organizator
+
+_Scenariusz główny:_
+
+1. Organizator wybiera opcję "Dodanie nowego rodzaju posiłku".
+2. Organizator wpisuje nazwę rodzaju posiłku.
+3. Organizator zatwierdza.
+4. System zapisuje nowy rodzaj posiłku.
+5. System wyświetla komunikat o sukcesie.
+
+_Scenariusz alternatywny 1:_
+
+1-3. Jak w scenariuszu głównym
+
+4. Wprowadzone dane są niepoprawne.
+5. System wyświetla komunikat o błędzie.
+6. Powrót do punktu 1.
+
+### PB4 Edycja rodzaju posiłku
+
+Aktorzy: Organizator
+
+_Scenariusz główny:_
+
+1. Organizator wybiera opcję "Edycja rodzaju posiłku".
+2. System prezentuje listę rodzajów posiłku.
+3. Organizator wybiera rodzaj posiłku z listy.
+4. Organizator wpisuje nazwę rodzaju posiłku.
+5. Organizator zatwierdza.
+6. System zapisuje rodzaj posiłku.
+7. System wyświetla komunikat o sukcesie.
+
+_Scenariusz alternatywny 1:_
+
+1-5. Jak w scenariuszu głównym
+
+6. Wprowadzone dane są niepoprawne.
+7. System wyświetla komunikat o błędzie.
+8. Powrót do punktu 1.
+
+### PB5 Usunięcie rodzaju posiłku
+
+Aktorzy: Organizator
+
+_Scenariusz główny:_
+
+1. Organizator wybiera opcję "Usunięcie rodzaju posiłku".
+2. System prezentuje listę rodzajów posiłku.
+3. Organizator wybiera rodzaj posiłku z listy.
+4. Organizator zatwierdza.
+5. System usuwa rodzaj posiłku.
+6. System wyświetla komunikat o sukcesie.
+
+_Scenariusz alternatywny 1:_
+
+1-4. Jak w scenariuszu głównym
+
+5. rodzaj posiłku został wybrany przez uczestników wydarzenia.
+6. System wyświetla osoby, przez które rodzaj posiłku został wybrany.
+7. Powrót do punktu 1.
+
+### PB6 Dodanie nowej możliwości noclegu
+
+Aktorzy: Organizator
+
+_Scenariusz główny:_
+
+1. Organizator wybiera opcję "Dodanie nowej możliwości noclegu".
+2. Organizator wpisuje nazwę, opis, miejsce i cenę możliwości noclegu.
+3. Organizator zatwierdza.
+4. System zapisuje nową możliwość noclegu.
+5. System wyświetla komunikat o sukcesie.
+
+_Scenariusz alternatywny 1:_
+
+1-3. Jak w scenariuszu głównym
+
+4. Wprowadzone dane są niepoprawne.
+5. System wyświetla komunikat o błędzie.
+6. Powrót do punktu 1.
+
+### PB7 Edycja możliwości noclegu
+
+Aktorzy: Organizator
+
+_Scenariusz główny:_
+
+1. Organizator wybiera opcję "Edycja możliwości noclegu".
+2. System prezentuje listę możliwości noclegu.
+3. Organizator wybiera możliwość noclegu z listy.
+4. Organizator wpisuje nazwę, opis, miejsce i cenę możliwości noclegu.
+5. Organizator zatwierdza.
+6. System zapisuje możliwość noclegu.
+7. System wyświetla komunikat o sukcesie.
+
+_Scenariusz alternatywny 1:_
+
+1-5. Jak w scenariuszu głównym
+
+6. Wprowadzone dane są niepoprawne.
+7. System wyświetla komunikat o błędzie.
+8. Powrót do punktu 1.
+
+### PB8 Usunięcie możliwości noclegu
+
+Aktorzy: Organizator
+
+_Scenariusz główny:_
+
+1. Organizator wybiera opcję "Usunięcie możliwości noclegu".
+2. System prezentuje listę możliwości noclegu.
+3. Organizator wybiera możliwość noclegu z listy.
+4. Organizator zatwierdza.
+5. System usuwa możliwość noclegu.
+6. System wyświetla komunikat o sukcesie.
+
+### PB9 Dodanie nowego warsztatu
 
 Aktorzy: Organizator
 
@@ -36,7 +192,7 @@ _Scenariusz alternatywny 1:_
 5. System wyświetla komunikat o błędzie.
 6. Powrót do punktu 1.
 
-### PB2 Edycja warsztatu
+### PB10 Edycja warsztatu
 
 Aktorzy: Organizator
 
@@ -58,7 +214,7 @@ _Scenariusz alternatywny 1:_
 7. System wyświetla komunikat o błędzie.
 8. Powrót do punktu 1.
 
-### PB3 Usunięcie warsztatu
+### PB11 Usunięcie warsztatu
 
 Aktorzy: Organizator
 
@@ -71,7 +227,7 @@ _Scenariusz główny:_
 5. System usuwa warsztat.
 6. System wyświetla komunikat o sukcesie.
 
-### PB4 Dodanie nowej wycieczki
+### PB12 Dodanie nowej wycieczki
 
 Aktorzy: Organizator
 
@@ -91,7 +247,7 @@ _Scenariusz alternatywny 1:_
 5. System wyświetla komunikat o błędzie.
 6. Powrót do punktu 1.
 
-### PB5 Edycja wycieczki
+### PB13 Edycja wycieczki
 
 Aktorzy: Organizator
 
@@ -113,7 +269,7 @@ _Scenariusz alternatywny 1:_
 7. System wyświetla komunikat o błędzie.
 8. Powrót do punktu 1.
 
-### PB6 Usunięcie wycieczki
+### PB14 Usunięcie wycieczki
 
 Aktorzy: Organizator
 
@@ -126,7 +282,7 @@ _Scenariusz główny:_
 5. System usuwa wycieczkę.
 6. System wyświetla komunikat o sukcesie.
 
-### PB7 Rejestracja na warsztat
+### PB15 Rejestracja na warsztat
 
 Aktorzy: Słuchacz, Dziennikarz, Prelegent
 
@@ -147,7 +303,7 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### PB8 Rejestracja na wycieczka
+### PB16 Rejestracja na wycieczka
 
 Aktorzy: Słuchacz, Dziennikarz, Prelegent
 

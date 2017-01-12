@@ -22,7 +22,144 @@
 </ul>
 <script>setTimeout(function() { location.reload(); }, 1000);</script>
 <h2 id="przypadki-biznesowe">Przypadki Biznesowe</h2>
-<h3 id="pb1-dodanie-nowego-warsztatu">PB1 Dodanie nowego warsztatu</h3>
+<h3 id="pb1-zgłoszenie-referatu">PB1 Zgłoszenie referatu</h3>
+<p>Aktorzy: prelegent, recenzent</p>
+<p><em>Scenariusz główny:</em></p>
+<ol style="list-style-type: decimal">
+<li>Prelegent wypełnia formularz z danymi:</li>
+</ol>
+<ul>
+<li>temat prezentacji</li>
+<li>abstrakt</li>
+<li>dane kontaktowe</li>
+<li>draft publikacji.</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>System zapisuje publikację.</li>
+<li>System wysyła e-mail z potwierdzeniem do prelegenta.</li>
+</ol>
+<p><em>Scenariusz alternatywny 1:</em></p>
+<ol style="list-style-type: decimal">
+<li><p>Jak w scenariuszu głównym</p></li>
+<li>Dane są niepoprawne.</li>
+<li>System wyświetla komunikat o błędzie.</li>
+<li><p>Powrót do punktu 1.</p></li>
+</ol>
+<p><em>Scenariusz alternatywny 2:</em></p>
+<p>1-2. Jak w scenariuszu głównym</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Prelegent jest osobą zaproszoną.</li>
+<li>Publikacja jest automatycznie akceptowana.</li>
+</ol>
+<h3 id="pb2-przeglądanie-terminarza">PB2 Przeglądanie terminarza</h3>
+<p>Aktorzy: prelegent, recenzent, organizator, słuchacz lub dziennikarz (&quot;użytkownik&quot;)</p>
+<p><em>Scenariusz główny:</em></p>
+<ol style="list-style-type: decimal">
+<li>Użytkownik wybiera opcję &quot;Przeglądanie terminarza&quot;.</li>
+<li>System prezentuje listę wydarzeń wraz i ich terminami.</li>
+</ol>
+<h3 id="pb3-dodanie-nowego-rodzaju-posiłku">PB3 Dodanie nowego rodzaju posiłku</h3>
+<p>Aktorzy: Organizator</p>
+<p><em>Scenariusz główny:</em></p>
+<ol style="list-style-type: decimal">
+<li>Organizator wybiera opcję &quot;Dodanie nowego rodzaju posiłku&quot;.</li>
+<li>Organizator wpisuje nazwę rodzaju posiłku.</li>
+<li>Organizator zatwierdza.</li>
+<li>System zapisuje nowy rodzaj posiłku.</li>
+<li>System wyświetla komunikat o sukcesie.</li>
+</ol>
+<p><em>Scenariusz alternatywny 1:</em></p>
+<p>1-3. Jak w scenariuszu głównym</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Wprowadzone dane są niepoprawne.</li>
+<li>System wyświetla komunikat o błędzie.</li>
+<li>Powrót do punktu 1.</li>
+</ol>
+<h3 id="pb4-edycja-rodzaju-posiłku">PB4 Edycja rodzaju posiłku</h3>
+<p>Aktorzy: Organizator</p>
+<p><em>Scenariusz główny:</em></p>
+<ol style="list-style-type: decimal">
+<li>Organizator wybiera opcję &quot;Edycja rodzaju posiłku&quot;.</li>
+<li>System prezentuje listę rodzajów posiłku.</li>
+<li>Organizator wybiera rodzaj posiłku z listy.</li>
+<li>Organizator wpisuje nazwę rodzaju posiłku.</li>
+<li>Organizator zatwierdza.</li>
+<li>System zapisuje rodzaj posiłku.</li>
+<li>System wyświetla komunikat o sukcesie.</li>
+</ol>
+<p><em>Scenariusz alternatywny 1:</em></p>
+<p>1-5. Jak w scenariuszu głównym</p>
+<ol start="6" style="list-style-type: decimal">
+<li>Wprowadzone dane są niepoprawne.</li>
+<li>System wyświetla komunikat o błędzie.</li>
+<li>Powrót do punktu 1.</li>
+</ol>
+<h3 id="pb5-usunięcie-rodzaju-posiłku">PB5 Usunięcie rodzaju posiłku</h3>
+<p>Aktorzy: Organizator</p>
+<p><em>Scenariusz główny:</em></p>
+<ol style="list-style-type: decimal">
+<li>Organizator wybiera opcję &quot;Usunięcie rodzaju posiłku&quot;.</li>
+<li>System prezentuje listę rodzajów posiłku.</li>
+<li>Organizator wybiera rodzaj posiłku z listy.</li>
+<li>Organizator zatwierdza.</li>
+<li>System usuwa rodzaj posiłku.</li>
+<li>System wyświetla komunikat o sukcesie.</li>
+</ol>
+<p><em>Scenariusz alternatywny 1:</em></p>
+<p>1-4. Jak w scenariuszu głównym</p>
+<ol start="5" style="list-style-type: decimal">
+<li>rodzaj posiłku został wybrany przez uczestników wydarzenia.</li>
+<li>System wyświetla osoby, przez które rodzaj posiłku został wybrany.</li>
+<li>Powrót do punktu 1.</li>
+</ol>
+<h3 id="pb6-dodanie-nowej-możliwości-noclegu">PB6 Dodanie nowej możliwości noclegu</h3>
+<p>Aktorzy: Organizator</p>
+<p><em>Scenariusz główny:</em></p>
+<ol style="list-style-type: decimal">
+<li>Organizator wybiera opcję &quot;Dodanie nowej możliwości noclegu&quot;.</li>
+<li>Organizator wpisuje nazwę, opis, miejsce i cenę możliwości noclegu.</li>
+<li>Organizator zatwierdza.</li>
+<li>System zapisuje nową możliwość noclegu.</li>
+<li>System wyświetla komunikat o sukcesie.</li>
+</ol>
+<p><em>Scenariusz alternatywny 1:</em></p>
+<p>1-3. Jak w scenariuszu głównym</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Wprowadzone dane są niepoprawne.</li>
+<li>System wyświetla komunikat o błędzie.</li>
+<li>Powrót do punktu 1.</li>
+</ol>
+<h3 id="pb7-edycja-możliwości-noclegu">PB7 Edycja możliwości noclegu</h3>
+<p>Aktorzy: Organizator</p>
+<p><em>Scenariusz główny:</em></p>
+<ol style="list-style-type: decimal">
+<li>Organizator wybiera opcję &quot;Edycja możliwości noclegu&quot;.</li>
+<li>System prezentuje listę możliwości noclegu.</li>
+<li>Organizator wybiera możliwość noclegu z listy.</li>
+<li>Organizator wpisuje nazwę, opis, miejsce i cenę możliwości noclegu.</li>
+<li>Organizator zatwierdza.</li>
+<li>System zapisuje możliwość noclegu.</li>
+<li>System wyświetla komunikat o sukcesie.</li>
+</ol>
+<p><em>Scenariusz alternatywny 1:</em></p>
+<p>1-5. Jak w scenariuszu głównym</p>
+<ol start="6" style="list-style-type: decimal">
+<li>Wprowadzone dane są niepoprawne.</li>
+<li>System wyświetla komunikat o błędzie.</li>
+<li>Powrót do punktu 1.</li>
+</ol>
+<h3 id="pb8-usunięcie-możliwości-noclegu">PB8 Usunięcie możliwości noclegu</h3>
+<p>Aktorzy: Organizator</p>
+<p><em>Scenariusz główny:</em></p>
+<ol style="list-style-type: decimal">
+<li>Organizator wybiera opcję &quot;Usunięcie możliwości noclegu&quot;.</li>
+<li>System prezentuje listę możliwości noclegu.</li>
+<li>Organizator wybiera możliwość noclegu z listy.</li>
+<li>Organizator zatwierdza.</li>
+<li>System usuwa możliwość noclegu.</li>
+<li>System wyświetla komunikat o sukcesie.</li>
+</ol>
+<h3 id="pb9-dodanie-nowego-warsztatu">PB9 Dodanie nowego warsztatu</h3>
 <p>Aktorzy: Organizator</p>
 <p><em>Scenariusz główny:</em></p>
 <ol style="list-style-type: decimal">
@@ -39,7 +176,7 @@
 <li>System wyświetla komunikat o błędzie.</li>
 <li>Powrót do punktu 1.</li>
 </ol>
-<h3 id="pb2-edycja-warsztatu">PB2 Edycja warsztatu</h3>
+<h3 id="pb10-edycja-warsztatu">PB10 Edycja warsztatu</h3>
 <p>Aktorzy: Organizator</p>
 <p><em>Scenariusz główny:</em></p>
 <ol style="list-style-type: decimal">
@@ -58,7 +195,7 @@
 <li>System wyświetla komunikat o błędzie.</li>
 <li>Powrót do punktu 1.</li>
 </ol>
-<h3 id="pb3-usunięcie-warsztatu">PB3 Usunięcie warsztatu</h3>
+<h3 id="pb11-usunięcie-warsztatu">PB11 Usunięcie warsztatu</h3>
 <p>Aktorzy: Organizator</p>
 <p><em>Scenariusz główny:</em></p>
 <ol style="list-style-type: decimal">
@@ -69,7 +206,7 @@
 <li>System usuwa warsztat.</li>
 <li>System wyświetla komunikat o sukcesie.</li>
 </ol>
-<h3 id="pb4-dodanie-nowej-wycieczki">PB4 Dodanie nowej wycieczki</h3>
+<h3 id="pb12-dodanie-nowej-wycieczki">PB12 Dodanie nowej wycieczki</h3>
 <p>Aktorzy: Organizator</p>
 <p><em>Scenariusz główny:</em></p>
 <ol style="list-style-type: decimal">
@@ -86,7 +223,7 @@
 <li>System wyświetla komunikat o błędzie.</li>
 <li>Powrót do punktu 1.</li>
 </ol>
-<h3 id="pb5-edycja-wycieczki">PB5 Edycja wycieczki</h3>
+<h3 id="pb13-edycja-wycieczki">PB13 Edycja wycieczki</h3>
 <p>Aktorzy: Organizator</p>
 <p><em>Scenariusz główny:</em></p>
 <ol style="list-style-type: decimal">
@@ -105,7 +242,7 @@
 <li>System wyświetla komunikat o błędzie.</li>
 <li>Powrót do punktu 1.</li>
 </ol>
-<h3 id="pb6-usunięcie-wycieczki">PB6 Usunięcie wycieczki</h3>
+<h3 id="pb14-usunięcie-wycieczki">PB14 Usunięcie wycieczki</h3>
 <p>Aktorzy: Organizator</p>
 <p><em>Scenariusz główny:</em></p>
 <ol style="list-style-type: decimal">
@@ -116,7 +253,7 @@
 <li>System usuwa wycieczkę.</li>
 <li>System wyświetla komunikat o sukcesie.</li>
 </ol>
-<h3 id="pb7-rejestracja-na-warsztat">PB7 Rejestracja na warsztat</h3>
+<h3 id="pb15-rejestracja-na-warsztat">PB15 Rejestracja na warsztat</h3>
 <p>Aktorzy: Słuchacz, Dziennikarz, Prelegent</p>
 <p><em>Scenariusz główny:</em></p>
 <ol style="list-style-type: decimal">
@@ -134,7 +271,7 @@
 <li>System wyświetla komunikat o błędzie.</li>
 <li>Powrót do punktu 1.</li>
 </ol>
-<h3 id="pb8-rejestracja-na-wycieczka">PB8 Rejestracja na wycieczka</h3>
+<h3 id="pb16-rejestracja-na-wycieczka">PB16 Rejestracja na wycieczka</h3>
 <p>Aktorzy: Słuchacz, Dziennikarz, Prelegent</p>
 <p><em>Scenariusz główny:</em></p>
 <ol style="list-style-type: decimal">
