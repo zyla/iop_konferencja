@@ -55,7 +55,7 @@ def przypadek(id, nazwa, aktorzy):
     output()
 
     for aktor in aktorzy.split(', '):
-        graph_node(aktor, nazwa)
+        graph_node(aktor, '%s %s' % (id, nazwa))
 
 def PB(*args, **kwargs):
     current_out = pb_out
