@@ -308,8 +308,9 @@ _Scenariusz główny:_
 1. Uczestnik wybiera opcję "Rejestracja na warsztat".
 2. System prezentuje listę warsztatów.
 3. Uczestnik wybiera warsztat.
-4. System generuje rachunek do zapłacenia.
-5. System zapisuje rezerwację.
+4. Uczestnik zatwierdza.
+5. System generuje rachunek do zapłacenia.
+6. System zapisuje rezerwację.
 
 
 ## Przypadki Systemowe
