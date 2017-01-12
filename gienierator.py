@@ -22,6 +22,13 @@ print("## Przypadki Biznesowe")
 # for truly interactive development
 print("""<script>setTimeout(function() { location.reload(); }, 1000);</script>""")
 
+pb_out = io.StringIO()
+
+current_out = 
+
+def output(s=''):
+    current_out.write(s + '\n')
+
 class state:
     kolejny_pb = 1
     kolejny_fu = 1
