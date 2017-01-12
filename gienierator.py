@@ -192,6 +192,20 @@ def RejestracjaNa(thing, aktorzy, aktor_gl):
     punkt('System wyświetla komunikat o błędzie')
     powrot(1)
 
+    FU('Rejestracja na %s' % thing.biernik, aktorzy)
+    wybiera_opcje(aktor_gl)
+    punkt('System prezentuje listę %s' % thing.dopelniacz_lm)
+    punkt('%s lokalizuje %s na liście' % (aktor_gl, thing.biernik))
+    punkt('%s klika przycisk "Rejestracja" przy' % (aktor_gl, thing.biernik))
+    p_zatw = punkt('%s zatwierdza' % aktor_gl)
+    punkt('System generuje rachunek do zapłacenia')
+    punkt('System zapisuje rezerwację')
+
+    alt(p_zatw)
+    punkt('Miejsce zostało zajęte w międzyczasie')
+    punkt('System wyświetla komunikat o błędzie')
+    powrot(1)
+
 ###############################################################################
 # actual definitions
 
