@@ -1,5 +1,5 @@
-digraph { rankdir=LR; "prelegent" -> "PB1 Zgłoszenie referatu"
-"recenzent" -> "PB1 Zgłoszenie referatu"
+digraph { rankdir=LR; "Prelegent" -> "PB1 Zgłoszenie referatu"
+"Recenzent" -> "PB1 Zgłoszenie referatu"
 "Organizator" -> "PB2 Dodanie nowego rodzaju posiłku"
 "Organizator" -> "PB3 Edycja rodzaju posiłku"
 "Organizator" -> "PB4 Usunięcie rodzaju posiłku"

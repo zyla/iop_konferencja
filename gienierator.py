@@ -151,7 +151,7 @@ def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
         delete_alt()
 
 ###############################################################################
-PB('Zgłoszenie referatu', 'prelegent, recenzent')
+PB('Zgłoszenie referatu', 'Prelegent, Recenzent')
 p_form = punkt("""Prelegent wypełnia formularz z danymi:
  - temat prezentacji
  - abstrakt

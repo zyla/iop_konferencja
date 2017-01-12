@@ -17,7 +17,7 @@ organizacja eventu - program wystąpień, eventy typu przyjęcie, wycieczka ze z
 
 ### PB1 Zgłoszenie referatu
 
-Aktorzy: prelegent, recenzent
+Aktorzy: Prelegent, Recenzent
 
 _Scenariusz główny:_
 
