@@ -148,23 +148,23 @@ def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
         delete_alt()
 
 ###############################################################################
-#   PB('Zgłoszenie referatu', 'prelegent, recenzent')
-#   p_form = punkt("""Prelegent wypełnia formularz z danymi:
-#    - temat prezentacji
-#    - abstrakt
-#    - dane kontaktowe
-#    - draft publikacji""")
-#   p_zapis = punkt("System zapisuje publikację")
-#   punkt("System wysyła e-mail z potwierdzeniem do prelegenta")
-#   
-#   alt(p_form)
-#   punkt("Dane są niepoprawne")
-#   punkt("System wyświetla komunikat o błędzie")
-#   powrot(p_form)
-#   
-#   alt(p_zapis)
-#   punkt("Prelegent jest osobą zaproszoną")
-#   punkt("Publikacja jest automatycznie akceptowana")
+PB('Zgłoszenie referatu', 'prelegent, recenzent')
+p_form = punkt("""Prelegent wypełnia formularz z danymi:
+ - temat prezentacji
+ - abstrakt
+ - dane kontaktowe
+ - draft publikacji""")
+p_zapis = punkt("System zapisuje publikację")
+punkt("System wysyła e-mail z potwierdzeniem do prelegenta")
+
+alt(p_form)
+punkt("Dane są niepoprawne")
+punkt("System wyświetla komunikat o błędzie")
+powrot(p_form)
+
+alt(p_zapis)
+punkt("Prelegent jest osobą zaproszoną")
+punkt("Publikacja jest automatycznie akceptowana")
 
 
 ###############################################################################
