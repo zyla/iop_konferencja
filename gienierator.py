@@ -205,7 +205,10 @@ warsztat = N(
         mianownik='warsztat',
         dopelniacz='warsztatu',
         biernik='warsztat',
-        dopelniacz_lm='warsztatów')
+        dopelniacz_lm='warsztatów',
+        nowy_mianownik='nowy warsztat',
+        nowy_dopelniacz='nowego warsztatu'
+        )
 
 CRUD(warsztat, 'nazwę, opis, miejsce i cenę')
 
