@@ -148,9 +148,14 @@ def RejestracjaNa(thing, aktorzy, aktor_gl):
     wybiera_opcje(aktor_gl)
     punkt('System prezentuje listę %s' % thing.dop_lm)
     punkt('%s wybiera %s' % (aktor_gl, thing.mianownik)) # FIXME grammer
-    punkt('%s zatwierdza' % aktor_gl)
+    p_zatw = punkt('%s zatwierdza' % aktor_gl)
     punkt('System generuje rachunek do zapłacenia')
     punkt('System zapisuje rezerwację')
+
+    alt(p_zatw)
+    punkt('Miejsce zostało zajęte w międzyczasie')
+    punkt('System wyświetla komunikat o błędzie')
+    powrot(1)
 
 #    ###############################################################################
 #    PB('Zgłoszenie referatu', 'prelegent, recenzent')

@@ -312,6 +312,14 @@ _Scenariusz główny:_
 5. System generuje rachunek do zapłacenia.
 6. System zapisuje rezerwację.
 
+_Scenariusz alternatywny 1:_
+
+1-4. Jak w scenariuszu głównym
+
+5. Miejsce zostało zajęte w międzyczasie.
+6. System wyświetla komunikat o błędzie.
+7. Powrót do punktu 1.
+
 
 ## Przypadki Systemowe
 
