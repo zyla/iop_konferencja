@@ -235,7 +235,10 @@ konferencja = N(
         mianownik='konferencja',
         dopelniacz='konferencji',
         biernik='konferencję',
-        dopelniacz_lm='konferencji', 'nową', 'nowej') # FIXME grammar
+        dopelniacz_lm='konferencji',
+        nowy_mianownik='nową',
+        nowy_dopelniacz='nowej',
+        nowy_biernik='nową')
 CRUD(konferencja, 'nazwę i opis', aktor='Administrator')
 
 RejestracjaNa(warsztat, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')

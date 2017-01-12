@@ -253,7 +253,62 @@ _Scenariusz główny:_
 5. System usuwa wycieczkę.
 6. System wyświetla komunikat o sukcesie.
 
-### PB14 Rejestracja na warsztat
+### PB14 Dodanie nowej konferencji
+
+Aktorzy: Administrator
+
+_Scenariusz główny:_
+
+1. Administrator wybiera opcję "Dodanie nowej konferencji".
+2. Administrator wpisuje nazwę i opis konferencji.
+3. Administrator zatwierdza.
+4. System zapisuje nową konferencję.
+5. System wyświetla komunikat o sukcesie.
+
+_Scenariusz alternatywny 1:_
+
+1-3. Jak w scenariuszu głównym
+
+4. Wprowadzone dane są niepoprawne.
+5. System wyświetla komunikat o błędzie.
+6. Powrót do punktu 1.
+
+### PB15 Edycja konferencji
+
+Aktorzy: Administrator
+
+_Scenariusz główny:_
+
+1. Administrator wybiera opcję "Edycja konferencji".
+2. System prezentuje listę konferencji.
+3. Administrator wybiera konferencja z listy.
+4. Administrator wpisuje nazwę i opis konferencji.
+5. Administrator zatwierdza.
+6. System zapisuje konferencję.
+7. System wyświetla komunikat o sukcesie.
+
+_Scenariusz alternatywny 1:_
+
+1-5. Jak w scenariuszu głównym
+
+6. Wprowadzone dane są niepoprawne.
+7. System wyświetla komunikat o błędzie.
+8. Powrót do punktu 1.
+
+### PB16 Usunięcie konferencji
+
+Aktorzy: Administrator
+
+_Scenariusz główny:_
+
+1. Administrator wybiera opcję "Usunięcie konferencji".
+2. System prezentuje listę konferencji.
+3. Administrator wybiera konferencja z listy.
+4. Administrator zatwierdza.
+5. System usuwa konferencję.
+6. System wyświetla komunikat o sukcesie.
+
+### PB17 Rejestracja na warsztat
 
 Aktorzy: Słuchacz, Dziennikarz, Prelegent
 
@@ -274,7 +329,7 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### PB15 Rejestracja na wycieczka
+### PB18 Rejestracja na wycieczka
 
 Aktorzy: Słuchacz, Dziennikarz, Prelegent
 
