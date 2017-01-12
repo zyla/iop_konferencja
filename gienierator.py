@@ -245,6 +245,8 @@ RejestracjaNa(warsztat, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='U
 
 RejestracjaNa(wycieczka, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
 
+### output this shit
+
 print()
 print("## Przypadki Biznesowe")
 print(pb_out.getvalue())
