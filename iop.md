@@ -320,13 +320,13 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### PB17 Rejestracja na wycieczka
+### PB17 Rejestracja na wycieczkę
 
 Aktorzy: Słuchacz, Dziennikarz, Prelegent
 
 _Scenariusz główny:_
 
-1. Uczestnik wybiera opcję "Rejestracja na wycieczka".
+1. Uczestnik wybiera opcję "Rejestracja na wycieczkę".
 2. System prezentuje listę wycieczek.
 3. Uczestnik wybiera wycieczkę.
 4. Uczestnik zatwierdza.
