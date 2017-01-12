@@ -197,7 +197,7 @@ rodzaj_posilku = N(
         nowy_dopelniacz='nowego',
         nowy_biernik='nowy')
 CRUD(rodzaj_posilku, 'nazwę',
-   # delete_alt=delete_alt_wybrany(rodzaj_posilku, 'został wybrany'))
+   delete_alt=delete_alt_wybrany(rodzaj_posilku, 'został wybrany'))
 
 mozliwosc_noclegu = N('możliwość noclegu', 'możliwości noclegu', 'możliwości noclegu', 'nową', 'nowej')
 CRUD(mozliwosc_noclegu, 'nazwę, opis, miejsce i cenę')
