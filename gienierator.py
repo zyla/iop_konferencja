@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import io
+
 print("# **Zadanie 2**: obsługa konferencji naukowej")
 print("Zgłaszanie referatów, recenzowanie, ")
 print("organizacja eventu - program wystąpień, eventy typu przyjęcie, wycieczka ze zwiedzaniem itp.")
