@@ -265,6 +265,8 @@ konferencja = N(
         nowy_biernik='nową')
 CRUD(konferencja, 'nazwę i opis', aktor='Administrator')
 
+SDP = 'Słuchacz/Dziennikarz/Prelegent'
+
 RejestracjaNa(warsztat, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
 
 RejestracjaNa(wycieczka, aktorzy='Słuchacz, Dziennikarz, Prelegent', aktor_gl='Uczestnik')
