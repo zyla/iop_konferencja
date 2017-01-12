@@ -205,7 +205,7 @@ print()
 print("## Diagram")
 
 f = open('przypadki.dot', 'w')
-f.write('digraph { ' + graph_out.getvalue() + ' }')
+f.write('digraph { rankdir=LR; ' + graph_out.getvalue() + ' }')
 f.close()
 
 os.system('dot -Tpng < przypadki.dot > przypadki.png')
