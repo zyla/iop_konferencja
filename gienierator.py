@@ -99,7 +99,7 @@ class N:
         self.new2 = new2
 
 def graph_node(src, dst):
-    graph_out.write(
+    graph_out.write('"%s" -> "%s"\n' % (src, dst))
 
 def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
     PB('Dodanie %s %s' % (thing.new2, thing.dopelniacz), aktor)
