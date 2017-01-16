@@ -182,6 +182,30 @@ punkt("Prelegent jest osobą zaproszoną")
 punkt("Publikacja jest automatycznie akceptowana")
 
 
+PB('Zgłoszenie innej formy', 'Prelegent, Recenzent')
+output("""
+1. Prelegent wypełnia formularz z następującymi danymi:
+ - temat prezentacji
+ - krótki opis wraz z informacja o formie prezentacji
+ - dane kontaktowe
+2. System zapisuje informacje. Wysyła e-mail do recenzentów i e-mail z potwierdzeniem do prelegenta.
+
+_Scenariusz alternatywny 1:_
+
+1. Jak w scenariuszu głównym
+
+2. Dane są niepoprawne.
+3. System wyświetla komunikat o błędzie.
+4. Powrót do punktu 1.
+
+_Scenariusz alternatywny 2:_
+
+1-2. Jak w scenariuszu głównym
+
+3. Prelegent jest osobą zaproszoną.
+4. Publikacja jest automatycznie akceptowana.
+""")
+
 ###############################################################################
 #   PB("Przeglądanie terminarza",
 #      "prelegent, recenzent, organizator, słuchacz lub dziennikarz (\"użytkownik\")")
