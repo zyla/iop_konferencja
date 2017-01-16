@@ -197,7 +197,6 @@ def delete_alt_wybrany(thing, wybrany):
 
 def RejestracjaNa(thing, aktorzy, aktor_gl):
     # Rejestracja
-
     PB('Rejestracja na %s' % thing.biernik, aktorzy)
     wybiera_opcje(aktor_gl)
     punkt('System prezentuje listę %s' % thing.dopelniacz_lm)
