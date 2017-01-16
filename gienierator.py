@@ -176,6 +176,23 @@ def CRUD(thing, fields, fields_fu, delete_alt=None, aktor='Organizator'):
     punkt('System wyświetla komunikat o błędzie')
     powrot(1)
 
+    # FU Edycja
+    FU('Edycja %s' % thing.dopelniacz, aktor)
+    wybiera_opcje(aktor)
+    punkt('System prezentuje listę %s' % (thing.dopelniacz_lm))
+    punkt('%s wybiera %s z listy' % (aktor, thing.mianownik))
+    punkt('%s klika przycisk "Edytuj"' % aktor)
+    punkt('System prezentuje %s, wypełniony danymi %s' % (fields_fu, thing.dopelniacz))
+    punkt('%s edytuje dane w formularzu' % aktor)
+    p_zatw = punkt('%s klika przycisk "Zapisz"' % aktor)
+    punkt('System zapisuje %s' % thing.biernik)
+    punkt('System wyświetla komunikat o sukcesie')
+
+    alt(p_zatw)
+    punkt('Wprowadzone dane są niepoprawne')
+    punkt('System wyświetla komunikat o błędzie')
+    powrot(1)
+
 ###############################################################################
 PB('Zgłoszenie referatu', 'Prelegent, Recenzent')
 p_form = punkt("""Prelegent wypełnia formularz z danymi:
