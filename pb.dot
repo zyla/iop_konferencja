@@ -1,5 +1,5 @@
 digraph { rankdir=LR; "PB1 Zgłoszenie referatu" -> "Prelegent" [dir=back]"
-"Recenzent" -> "PB1 Zgłoszenie referatu" "
+"Recenzent" -> "PB1 Zgłoszenie referatu" [dir=none]"
 "Organizator" -> "PB2 Dodanie nowego rodzaju posiłku" "
 "Organizator" -> "PB3 Edycja rodzaju posiłku" "
 "Organizator" -> "PB4 Usunięcie rodzaju posiłku" "
@@ -20,5 +20,5 @@ digraph { rankdir=LR; "PB1 Zgłoszenie referatu" -> "Prelegent" [dir=back]"
 "Słuchacz/Dziennikarz/Prelegent" -> "PB19 Rejestracja na posiłek" "
 "Słuchacz/Dziennikarz/Prelegent" -> "PB20 Rejestracja na nocleg" "
 "Recenzent" -> "PB21 Recenzja referatu" "
-"PB21 Recenzja referatu" -> "Prelegent" [dir=back]"
+"PB21 Recenzja referatu" -> "Prelegent" [dir=none]"
  }
