@@ -439,7 +439,6 @@ output("""
 _Scenariusz alternatywny 1:_
 
 1. Jak w scenariuszu głównym.
-
 2. System informuje o kolizjach.
 """)
 
@@ -451,7 +450,6 @@ output("""
 _Scenariusz alternatywny 1:_
 
 1. Jak w scenariuszu głównym.
-
 2. System powiadamia, że terminarz nie został jeszcze utworzony.
 """)
 
@@ -459,10 +457,12 @@ PB('Kontakt z organizatorem', 'Prelegent/Recenzent/Słuchacz/Dziennikarz, Organi
 output("""
 1. Aktor wybiera opcję "Kontakt z organizatorem".
 2. System wyświetla formularz do wypełnienia danymi:
--Imię
--Nazwisko
--Temat
--Treść
+
+- Imię
+- Nazwisko
+- Temat
+- Treść
+
 3. Aktor zatwierdza wypełnione dane.
 4. System wysyła formularz w formia e-maila do organizatora, wraz z adresem e-mail pytającego.
 
@@ -521,6 +521,7 @@ Prelegent nie zgłosił jeszcze pierwszej wersji artykułu. Opcja “Zgłoś pop
 _Scenariusz alternatywny 2:_
 
 1-5. Jak w scenariuszu głównym.
+
 6. Plik z draftem jest w niepoprawnym formacie.
 7. System informuje o błędzie.
 8. Powrót do punktu 2.
@@ -572,11 +573,13 @@ output("""
 _Scenariusz alternatywny 1:_
 
 1-3. Jak w scenariuszu głównym.
+
 4. System wyświetla informację o różnym wpisaniu nowego hasła.
 
 _Scenariusz alternatywny 2:_
 
 1-3. Jak w scenariuszu głównym.
+
 4. System wyświetla informację o za słabym haśle.
 """)
 
@@ -593,6 +596,7 @@ output("""
 _Scenariusz alternatywny 1:_
 
 1-2. Jak w scenariuszu głównym.
+
 3. Wprowadzony login lub hasło są niepoprawne.
 4. System wyświetla komunikat o błędzie.
 5. Powrót do punktu 1.
