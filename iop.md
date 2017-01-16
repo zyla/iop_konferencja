@@ -392,7 +392,7 @@ _Scenariusz alternatywny 1:_
 
 ### PB20 Rejestracja na nocleg
 
-Aktorzy: Słuchacz/Dziennikarz/Prelegent, test
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
@@ -479,7 +479,7 @@ _Scenariusz alternatywny 1:_
 
 ### FU4 Rejestracja na nocleg
 
-Aktorzy: Słuchacz/Dziennikarz/Prelegent, test
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
