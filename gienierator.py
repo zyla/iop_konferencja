@@ -224,7 +224,7 @@ def RejestracjaNa(thing, aktorzy, aktor_gl):
     powrot(1)
 
     # Rezygnacja
-    PB('Rejestracja na %s' % thing.biernik, aktorzy)
+    PB('Rezygnacja z %s' % thing.biernik, aktorzy)
     wybiera_opcje(aktor_gl)
     punkt('System prezentuje listę %s' % thing.dopelniacz_lm)
     punkt('%s wybiera %s' % (aktor_gl, thing.biernik))
@@ -236,6 +236,20 @@ def RejestracjaNa(thing, aktorzy, aktor_gl):
     punkt('Miejsce zostało zajęte w międzyczasie')
     punkt('System wyświetla komunikat o błędzie')
     powrot(1)
+
+    FU('Rezygnacja na %s' % thing.biernik, aktorzy)
+    wybiera_opcje(aktor_gl)
+    punkt('System prezentuje listę %s' % thing.dopelniacz_lm)
+    punkt('%s lokalizuje %s na liście' % (aktor_gl, thing.biernik))
+    p_zatw = punkt('%s zatwierdza' % aktor_gl)
+    punkt('System generuje rachunek do zapłacenia')
+    punkt('System zapisuje rezerwację')
+
+    alt(p_zatw)
+    punkt('Miejsce zostało zajęte w międzyczasie')
+    punkt('System wyświetla komunikat o błędzie')
+    powrot(1)
+
 
 ###############################################################################
 # actual definitions

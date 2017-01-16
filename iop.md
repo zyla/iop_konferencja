@@ -348,13 +348,13 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### PB18 Rejestracja na warsztat
+### PB18 Rezygnacja z warsztat
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
-1. Uczestnik wybiera opcję "Rejestracja na warsztat".
+1. Uczestnik wybiera opcję "Rezygnacja z warsztat".
 2. System prezentuje listę warsztatów.
 3. Uczestnik wybiera warsztat.
 4. Uczestnik zatwierdza.
@@ -390,13 +390,13 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### PB20 Rejestracja na wycieczkę
+### PB20 Rezygnacja z wycieczkę
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
-1. Uczestnik wybiera opcję "Rejestracja na wycieczkę".
+1. Uczestnik wybiera opcję "Rezygnacja z wycieczkę".
 2. System prezentuje listę wycieczek.
 3. Uczestnik wybiera wycieczkę.
 4. Uczestnik zatwierdza.
@@ -432,13 +432,13 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### PB22 Rejestracja na posiłek
+### PB22 Rezygnacja z posiłek
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
-1. Uczestnik wybiera opcję "Rejestracja na posiłek".
+1. Uczestnik wybiera opcję "Rezygnacja z posiłek".
 2. System prezentuje listę posiłków.
 3. Uczestnik wybiera posiłek.
 4. Uczestnik zatwierdza.
@@ -474,13 +474,13 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### PB24 Rejestracja na nocleg
+### PB24 Rezygnacja z nocleg
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
-1. Uczestnik wybiera opcję "Rejestracja na nocleg".
+1. Uczestnik wybiera opcję "Rezygnacja z nocleg".
 2. System prezentuje listę noclegów.
 3. Uczestnik wybiera nocleg.
 4. Uczestnik zatwierdza.
@@ -541,7 +541,28 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### FU2 Rejestracja na wycieczkę
+### FU2 Rezygnacja na warsztat
+
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
+
+_Scenariusz główny:_
+
+1. Uczestnik wybiera opcję "Rezygnacja na warsztat".
+2. System prezentuje listę warsztatów.
+3. Uczestnik lokalizuje warsztat na liście.
+4. Uczestnik zatwierdza.
+5. System generuje rachunek do zapłacenia.
+6. System zapisuje rezerwację.
+
+_Scenariusz alternatywny 1:_
+
+1-4. Jak w scenariuszu głównym
+
+5. Miejsce zostało zajęte w międzyczasie.
+6. System wyświetla komunikat o błędzie.
+7. Powrót do punktu 1.
+
+### FU3 Rejestracja na wycieczkę
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
@@ -562,7 +583,28 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### FU3 Rejestracja na posiłek
+### FU4 Rezygnacja na wycieczkę
+
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
+
+_Scenariusz główny:_
+
+1. Uczestnik wybiera opcję "Rezygnacja na wycieczkę".
+2. System prezentuje listę wycieczek.
+3. Uczestnik lokalizuje wycieczkę na liście.
+4. Uczestnik zatwierdza.
+5. System generuje rachunek do zapłacenia.
+6. System zapisuje rezerwację.
+
+_Scenariusz alternatywny 1:_
+
+1-4. Jak w scenariuszu głównym
+
+5. Miejsce zostało zajęte w międzyczasie.
+6. System wyświetla komunikat o błędzie.
+7. Powrót do punktu 1.
+
+### FU5 Rejestracja na posiłek
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
@@ -583,13 +625,55 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### FU4 Rejestracja na nocleg
+### FU6 Rezygnacja na posiłek
+
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
+
+_Scenariusz główny:_
+
+1. Uczestnik wybiera opcję "Rezygnacja na posiłek".
+2. System prezentuje listę posiłków.
+3. Uczestnik lokalizuje posiłek na liście.
+4. Uczestnik zatwierdza.
+5. System generuje rachunek do zapłacenia.
+6. System zapisuje rezerwację.
+
+_Scenariusz alternatywny 1:_
+
+1-4. Jak w scenariuszu głównym
+
+5. Miejsce zostało zajęte w międzyczasie.
+6. System wyświetla komunikat o błędzie.
+7. Powrót do punktu 1.
+
+### FU7 Rejestracja na nocleg
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
 1. Uczestnik wybiera opcję "Rejestracja na nocleg".
+2. System prezentuje listę noclegów.
+3. Uczestnik lokalizuje nocleg na liście.
+4. Uczestnik zatwierdza.
+5. System generuje rachunek do zapłacenia.
+6. System zapisuje rezerwację.
+
+_Scenariusz alternatywny 1:_
+
+1-4. Jak w scenariuszu głównym
+
+5. Miejsce zostało zajęte w międzyczasie.
+6. System wyświetla komunikat o błędzie.
+7. Powrót do punktu 1.
+
+### FU8 Rezygnacja na nocleg
+
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
+
+_Scenariusz główny:_
+
+1. Uczestnik wybiera opcję "Rezygnacja na nocleg".
 2. System prezentuje listę noclegów.
 3. Uczestnik lokalizuje nocleg na liście.
 4. Uczestnik zatwierdza.
