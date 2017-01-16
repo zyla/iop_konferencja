@@ -581,6 +581,29 @@ _Scenariusz alternatywny 2:_
 """)
 
 ########################################################################################
+# Custom FU shit
+
+FU('Rezygnacja z konferencji', 'Słuchacz')
+output("""
+1. System wyświetla formularz z polami: imię, nazwisko, kod biletu.
+2. Słuchacz wpisuje dane.
+3. System wyświetla komunikat o sukcesie.
+4. System zaznacza że to miejsce jest wolne.
+5. System wysyła e-mail z potwierdzeniem.
+6. System zwraca pieniądze: wysyła na konto słuchacza.
+
+_Scenariusz alternatywny 1_:
+
+1-3. Jak w scenariuszu głównym.
+
+4. System wyświetla komunikat że zostały wpisane błędne dane.
+
+_Scenariusz alternatywny 2_:
+
+1. System wyświetla komunikat że upłynął termin rezygnacji z konferencji.
+""")
+
+########################################################################################
 # output this shit
 
 print()
