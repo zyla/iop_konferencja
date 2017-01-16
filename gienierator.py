@@ -122,7 +122,6 @@ def graph_node(src, dst, on_right, arrow):
     if not arrow:
         arrow_fmt = '[dir=none]'
 
-
     graph_out.write('"%s" -> "%s" %s"\n' % (src, dst, arrow_fmt))
 
 def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
