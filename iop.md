@@ -396,10 +396,10 @@ Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
-1. Uczestnik wybiera opcję "Rejestracja na nocleg".
+1. Uczestnik, <-test wybiera opcję "Rejestracja na nocleg".
 2. System prezentuje listę noclegów.
-3. Uczestnik wybiera nocleg.
-4. Uczestnik zatwierdza.
+3. Uczestnik, <-test wybiera nocleg.
+4. Uczestnik, <-test zatwierdza.
 5. System generuje rachunek do zapłacenia.
 6. System zapisuje rezerwację.
 
@@ -483,10 +483,10 @@ Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
-1. Uczestnik wybiera opcję "Rejestracja na nocleg".
+1. Uczestnik, <-test wybiera opcję "Rejestracja na nocleg".
 2. System prezentuje listę noclegów.
-3. Uczestnik lokalizuje nocleg na liście.
-4. Uczestnik zatwierdza.
+3. Uczestnik, <-test lokalizuje nocleg na liście.
+4. Uczestnik, <-test zatwierdza.
 5. System generuje rachunek do zapłacenia.
 6. System zapisuje rezerwację.
 
