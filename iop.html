@@ -30,19 +30,27 @@
 <li><a href="#pb15-edycja-konferencji">PB15 Edycja konferencji</a></li>
 <li><a href="#pb16-usunięcie-konferencji">PB16 Usunięcie konferencji</a></li>
 <li><a href="#pb17-rejestracja-na-warsztat">PB17 Rejestracja na warsztat</a></li>
-<li><a href="#pb18-rejestracja-na-wycieczkę">PB18 Rejestracja na wycieczkę</a></li>
-<li><a href="#pb19-rejestracja-na-posiłek">PB19 Rejestracja na posiłek</a></li>
-<li><a href="#pb20-rejestracja-na-nocleg">PB20 Rejestracja na nocleg</a></li>
-<li><a href="#pb21-recenzja-referatu">PB21 Recenzja referatu</a></li>
-<li><a href="#pb22-edycja-terminarza-wydarzenia">PB22 Edycja terminarza wydarzenia</a></li>
-<li><a href="#pb23-przeglądanie-terminarza">PB23 Przeglądanie terminarza</a></li>
-<li><a href="#pb24-kontakt-z-organizatorem">PB24 Kontakt z organizatorem</a></li>
+<li><a href="#pb18-rezygnacja-z-warsztatu">PB18 Rezygnacja z warsztatu</a></li>
+<li><a href="#pb19-rejestracja-na-wycieczkę">PB19 Rejestracja na wycieczkę</a></li>
+<li><a href="#pb20-rezygnacja-z-wycieczki">PB20 Rezygnacja z wycieczki</a></li>
+<li><a href="#pb21-rejestracja-na-posiłek">PB21 Rejestracja na posiłek</a></li>
+<li><a href="#pb22-rezygnacja-z-posiłku">PB22 Rezygnacja z posiłku</a></li>
+<li><a href="#pb23-rejestracja-na-nocleg">PB23 Rejestracja na nocleg</a></li>
+<li><a href="#pb24-rezygnacja-z-noclegu">PB24 Rezygnacja z noclegu</a></li>
+<li><a href="#pb25-recenzja-referatu">PB25 Recenzja referatu</a></li>
+<li><a href="#pb26-edycja-terminarza-wydarzenia">PB26 Edycja terminarza wydarzenia</a></li>
+<li><a href="#pb27-przeglądanie-terminarza">PB27 Przeglądanie terminarza</a></li>
+<li><a href="#pb28-kontakt-z-organizatorem">PB28 Kontakt z organizatorem</a></li>
 </ul></li>
 <li><a href="#przypadki-systemowe">Przypadki Systemowe</a><ul>
 <li><a href="#fu1-rejestracja-na-warsztat">FU1 Rejestracja na warsztat</a></li>
-<li><a href="#fu2-rejestracja-na-wycieczkę">FU2 Rejestracja na wycieczkę</a></li>
-<li><a href="#fu3-rejestracja-na-posiłek">FU3 Rejestracja na posiłek</a></li>
-<li><a href="#fu4-rejestracja-na-nocleg">FU4 Rejestracja na nocleg</a></li>
+<li><a href="#fu2-rezygnacja-z-warsztatu">FU2 Rezygnacja z warsztatu</a></li>
+<li><a href="#fu3-rejestracja-na-wycieczkę">FU3 Rejestracja na wycieczkę</a></li>
+<li><a href="#fu4-rezygnacja-z-wycieczki">FU4 Rezygnacja z wycieczki</a></li>
+<li><a href="#fu5-rejestracja-na-posiłek">FU5 Rejestracja na posiłek</a></li>
+<li><a href="#fu6-rezygnacja-z-posiłku">FU6 Rezygnacja z posiłku</a></li>
+<li><a href="#fu7-rejestracja-na-nocleg">FU7 Rejestracja na nocleg</a></li>
+<li><a href="#fu8-rezygnacja-z-noclegu">FU8 Rezygnacja z noclegu</a></li>
 </ul></li>
 <li><a href="#diagram-przypadków-biznesowych">Diagram przypadków biznesowych</a></li>
 <li><a href="#diagram-przypadków-systemowych">Diagram przypadków systemowych</a></li>
@@ -351,7 +359,24 @@
 <li>System wyświetla komunikat o błędzie.</li>
 <li>Powrót do punktu 1.</li>
 </ol>
-<h3 id="pb18-rejestracja-na-wycieczkę"><a href="#pb18-rejestracja-na-wycieczkę">PB18 Rejestracja na wycieczkę</a></h3>
+<h3 id="pb18-rezygnacja-z-warsztatu"><a href="#pb18-rezygnacja-z-warsztatu">PB18 Rezygnacja z warsztatu</a></h3>
+<p>Aktorzy: Słuchacz/Dziennikarz/Prelegent</p>
+<p><em>Scenariusz główny:</em></p>
+<ol style="list-style-type: decimal">
+<li>Uczestnik wybiera opcję &quot;Rezygnacja z warsztatu&quot;.</li>
+<li>System prezentuje listę warsztatów.</li>
+<li>Uczestnik wybiera warsztat.</li>
+<li>Uczestnik zatwierdza.</li>
+<li>System anuluje rezerwację warsztatu.</li>
+<li>System anuluje rachunek.</li>
+</ol>
+<p><em>Scenariusz alternatywny 1:</em></p>
+<p>1-6. Jak w scenariuszu głównym</p>
+<ol start="7" style="list-style-type: decimal">
+<li>Rachunek został już zapłacony.</li>
+<li>Pieniądze nie są zwracane.</li>
+</ol>
+<h3 id="pb19-rejestracja-na-wycieczkę"><a href="#pb19-rejestracja-na-wycieczkę">PB19 Rejestracja na wycieczkę</a></h3>
 <p>Aktorzy: Słuchacz/Dziennikarz/Prelegent</p>
 <p><em>Scenariusz główny:</em></p>
 <ol style="list-style-type: decimal">
@@ -369,7 +394,24 @@
 <li>System wyświetla komunikat o błędzie.</li>
 <li>Powrót do punktu 1.</li>
 </ol>
-<h3 id="pb19-rejestracja-na-posiłek"><a href="#pb19-rejestracja-na-posiłek">PB19 Rejestracja na posiłek</a></h3>
+<h3 id="pb20-rezygnacja-z-wycieczki"><a href="#pb20-rezygnacja-z-wycieczki">PB20 Rezygnacja z wycieczki</a></h3>
+<p>Aktorzy: Słuchacz/Dziennikarz/Prelegent</p>
+<p><em>Scenariusz główny:</em></p>
+<ol style="list-style-type: decimal">
+<li>Uczestnik wybiera opcję &quot;Rezygnacja z wycieczki&quot;.</li>
+<li>System prezentuje listę wycieczek.</li>
+<li>Uczestnik wybiera wycieczkę.</li>
+<li>Uczestnik zatwierdza.</li>
+<li>System anuluje rezerwację wycieczki.</li>
+<li>System anuluje rachunek.</li>
+</ol>
+<p><em>Scenariusz alternatywny 1:</em></p>
+<p>1-6. Jak w scenariuszu głównym</p>
+<ol start="7" style="list-style-type: decimal">
+<li>Rachunek został już zapłacony.</li>
+<li>Pieniądze nie są zwracane.</li>
+</ol>
+<h3 id="pb21-rejestracja-na-posiłek"><a href="#pb21-rejestracja-na-posiłek">PB21 Rejestracja na posiłek</a></h3>
 <p>Aktorzy: Słuchacz/Dziennikarz/Prelegent</p>
 <p><em>Scenariusz główny:</em></p>
 <ol style="list-style-type: decimal">
@@ -387,7 +429,24 @@
 <li>System wyświetla komunikat o błędzie.</li>
 <li>Powrót do punktu 1.</li>
 </ol>
-<h3 id="pb20-rejestracja-na-nocleg"><a href="#pb20-rejestracja-na-nocleg">PB20 Rejestracja na nocleg</a></h3>
+<h3 id="pb22-rezygnacja-z-posiłku"><a href="#pb22-rezygnacja-z-posiłku">PB22 Rezygnacja z posiłku</a></h3>
+<p>Aktorzy: Słuchacz/Dziennikarz/Prelegent</p>
+<p><em>Scenariusz główny:</em></p>
+<ol style="list-style-type: decimal">
+<li>Uczestnik wybiera opcję &quot;Rezygnacja z posiłku&quot;.</li>
+<li>System prezentuje listę posiłków.</li>
+<li>Uczestnik wybiera posiłek.</li>
+<li>Uczestnik zatwierdza.</li>
+<li>System anuluje rezerwację posiłku.</li>
+<li>System anuluje rachunek.</li>
+</ol>
+<p><em>Scenariusz alternatywny 1:</em></p>
+<p>1-6. Jak w scenariuszu głównym</p>
+<ol start="7" style="list-style-type: decimal">
+<li>Rachunek został już zapłacony.</li>
+<li>Pieniądze nie są zwracane.</li>
+</ol>
+<h3 id="pb23-rejestracja-na-nocleg"><a href="#pb23-rejestracja-na-nocleg">PB23 Rejestracja na nocleg</a></h3>
 <p>Aktorzy: Słuchacz/Dziennikarz/Prelegent</p>
 <p><em>Scenariusz główny:</em></p>
 <ol style="list-style-type: decimal">
@@ -405,7 +464,24 @@
 <li>System wyświetla komunikat o błędzie.</li>
 <li>Powrót do punktu 1.</li>
 </ol>
-<h3 id="pb21-recenzja-referatu"><a href="#pb21-recenzja-referatu">PB21 Recenzja referatu</a></h3>
+<h3 id="pb24-rezygnacja-z-noclegu"><a href="#pb24-rezygnacja-z-noclegu">PB24 Rezygnacja z noclegu</a></h3>
+<p>Aktorzy: Słuchacz/Dziennikarz/Prelegent</p>
+<p><em>Scenariusz główny:</em></p>
+<ol style="list-style-type: decimal">
+<li>Uczestnik wybiera opcję &quot;Rezygnacja z noclegu&quot;.</li>
+<li>System prezentuje listę noclegów.</li>
+<li>Uczestnik wybiera nocleg.</li>
+<li>Uczestnik zatwierdza.</li>
+<li>System anuluje rezerwację noclegu.</li>
+<li>System anuluje rachunek.</li>
+</ol>
+<p><em>Scenariusz alternatywny 1:</em></p>
+<p>1-6. Jak w scenariuszu głównym</p>
+<ol start="7" style="list-style-type: decimal">
+<li>Rachunek został już zapłacony.</li>
+<li>Pieniądze nie są zwracane.</li>
+</ol>
+<h3 id="pb25-recenzja-referatu"><a href="#pb25-recenzja-referatu">PB25 Recenzja referatu</a></h3>
 <p>Aktorzy: Recenzent, Prelegent</p>
 <p><em>Scenariusz główny:</em></p>
 <ol style="list-style-type: decimal">
@@ -422,7 +498,7 @@
 <li>System zmienia status publikacji na odrzuconą przez kolejnego recenzenta.</li>
 <li>System wysyła do Prelegenta e-mail z informacją o odrzuceniu i uwagami po odrzuceniu przez określoną liczbę recenzentów.</li>
 </ol>
-<h3 id="pb22-edycja-terminarza-wydarzenia"><a href="#pb22-edycja-terminarza-wydarzenia">PB22 Edycja terminarza wydarzenia</a></h3>
+<h3 id="pb26-edycja-terminarza-wydarzenia"><a href="#pb26-edycja-terminarza-wydarzenia">PB26 Edycja terminarza wydarzenia</a></h3>
 <p>Aktorzy: Organizator</p>
 <p><em>Scenariusz główny:</em></p>
 <ol style="list-style-type: decimal">
@@ -434,7 +510,7 @@
 <li><p>Jak w scenariuszu głównym.</p></li>
 <li><p>System informuje o kolizjach.</p></li>
 </ol>
-<h3 id="pb23-przeglądanie-terminarza"><a href="#pb23-przeglądanie-terminarza">PB23 Przeglądanie terminarza</a></h3>
+<h3 id="pb27-przeglądanie-terminarza"><a href="#pb27-przeglądanie-terminarza">PB27 Przeglądanie terminarza</a></h3>
 <p>Aktorzy: Prelegent/Recenzent/Organizator/Słuchacz/Dziennikarz</p>
 <p><em>Scenariusz główny:</em></p>
 <ol style="list-style-type: decimal">
@@ -446,7 +522,7 @@
 <li><p>Jak w scenariuszu głównym.</p></li>
 <li><p>System powiadamia, że terminarz nie został jeszcze utworzony.</p></li>
 </ol>
-<h3 id="pb24-kontakt-z-organizatorem"><a href="#pb24-kontakt-z-organizatorem">PB24 Kontakt z organizatorem</a></h3>
+<h3 id="pb28-kontakt-z-organizatorem"><a href="#pb28-kontakt-z-organizatorem">PB28 Kontakt z organizatorem</a></h3>
 <p>Aktorzy: Prelegent/Recenzent/Słuchacz/Dziennikarz, Organizator</p>
 <p><em>Scenariusz główny:</em></p>
 <ol style="list-style-type: decimal">
@@ -480,7 +556,24 @@
 <li>System wyświetla komunikat o błędzie.</li>
 <li>Powrót do punktu 1.</li>
 </ol>
-<h3 id="fu2-rejestracja-na-wycieczkę"><a href="#fu2-rejestracja-na-wycieczkę">FU2 Rejestracja na wycieczkę</a></h3>
+<h3 id="fu2-rezygnacja-z-warsztatu"><a href="#fu2-rezygnacja-z-warsztatu">FU2 Rezygnacja z warsztatu</a></h3>
+<p>Aktorzy: Słuchacz/Dziennikarz/Prelegent</p>
+<p><em>Scenariusz główny:</em></p>
+<ol style="list-style-type: decimal">
+<li>Uczestnik wybiera opcję &quot;Rezygnacja z warsztatu&quot;.</li>
+<li>System prezentuje listę warsztatów.</li>
+<li>Uczestnik lokalizuje warsztat na liście.</li>
+<li>Uczestnik zatwierdza.</li>
+<li>System anuluje rezerwację warsztatu.</li>
+<li>System anuluje rachunek.</li>
+</ol>
+<p><em>Scenariusz alternatywny 1:</em></p>
+<p>1-6. Jak w scenariuszu głównym</p>
+<ol start="7" style="list-style-type: decimal">
+<li>Rachunek został już zapłacony.</li>
+<li>Pieniądze nie są zwracane.</li>
+</ol>
+<h3 id="fu3-rejestracja-na-wycieczkę"><a href="#fu3-rejestracja-na-wycieczkę">FU3 Rejestracja na wycieczkę</a></h3>
 <p>Aktorzy: Słuchacz/Dziennikarz/Prelegent</p>
 <p><em>Scenariusz główny:</em></p>
 <ol style="list-style-type: decimal">
@@ -498,7 +591,24 @@
 <li>System wyświetla komunikat o błędzie.</li>
 <li>Powrót do punktu 1.</li>
 </ol>
-<h3 id="fu3-rejestracja-na-posiłek"><a href="#fu3-rejestracja-na-posiłek">FU3 Rejestracja na posiłek</a></h3>
+<h3 id="fu4-rezygnacja-z-wycieczki"><a href="#fu4-rezygnacja-z-wycieczki">FU4 Rezygnacja z wycieczki</a></h3>
+<p>Aktorzy: Słuchacz/Dziennikarz/Prelegent</p>
+<p><em>Scenariusz główny:</em></p>
+<ol style="list-style-type: decimal">
+<li>Uczestnik wybiera opcję &quot;Rezygnacja z wycieczki&quot;.</li>
+<li>System prezentuje listę wycieczek.</li>
+<li>Uczestnik lokalizuje wycieczkę na liście.</li>
+<li>Uczestnik zatwierdza.</li>
+<li>System anuluje rezerwację wycieczki.</li>
+<li>System anuluje rachunek.</li>
+</ol>
+<p><em>Scenariusz alternatywny 1:</em></p>
+<p>1-6. Jak w scenariuszu głównym</p>
+<ol start="7" style="list-style-type: decimal">
+<li>Rachunek został już zapłacony.</li>
+<li>Pieniądze nie są zwracane.</li>
+</ol>
+<h3 id="fu5-rejestracja-na-posiłek"><a href="#fu5-rejestracja-na-posiłek">FU5 Rejestracja na posiłek</a></h3>
 <p>Aktorzy: Słuchacz/Dziennikarz/Prelegent</p>
 <p><em>Scenariusz główny:</em></p>
 <ol style="list-style-type: decimal">
@@ -516,7 +626,24 @@
 <li>System wyświetla komunikat o błędzie.</li>
 <li>Powrót do punktu 1.</li>
 </ol>
-<h3 id="fu4-rejestracja-na-nocleg"><a href="#fu4-rejestracja-na-nocleg">FU4 Rejestracja na nocleg</a></h3>
+<h3 id="fu6-rezygnacja-z-posiłku"><a href="#fu6-rezygnacja-z-posiłku">FU6 Rezygnacja z posiłku</a></h3>
+<p>Aktorzy: Słuchacz/Dziennikarz/Prelegent</p>
+<p><em>Scenariusz główny:</em></p>
+<ol style="list-style-type: decimal">
+<li>Uczestnik wybiera opcję &quot;Rezygnacja z posiłku&quot;.</li>
+<li>System prezentuje listę posiłków.</li>
+<li>Uczestnik lokalizuje posiłek na liście.</li>
+<li>Uczestnik zatwierdza.</li>
+<li>System anuluje rezerwację posiłku.</li>
+<li>System anuluje rachunek.</li>
+</ol>
+<p><em>Scenariusz alternatywny 1:</em></p>
+<p>1-6. Jak w scenariuszu głównym</p>
+<ol start="7" style="list-style-type: decimal">
+<li>Rachunek został już zapłacony.</li>
+<li>Pieniądze nie są zwracane.</li>
+</ol>
+<h3 id="fu7-rejestracja-na-nocleg"><a href="#fu7-rejestracja-na-nocleg">FU7 Rejestracja na nocleg</a></h3>
 <p>Aktorzy: Słuchacz/Dziennikarz/Prelegent</p>
 <p><em>Scenariusz główny:</em></p>
 <ol style="list-style-type: decimal">
@@ -533,6 +660,23 @@
 <li>Miejsce zostało zajęte w międzyczasie.</li>
 <li>System wyświetla komunikat o błędzie.</li>
 <li>Powrót do punktu 1.</li>
+</ol>
+<h3 id="fu8-rezygnacja-z-noclegu"><a href="#fu8-rezygnacja-z-noclegu">FU8 Rezygnacja z noclegu</a></h3>
+<p>Aktorzy: Słuchacz/Dziennikarz/Prelegent</p>
+<p><em>Scenariusz główny:</em></p>
+<ol style="list-style-type: decimal">
+<li>Uczestnik wybiera opcję &quot;Rezygnacja z noclegu&quot;.</li>
+<li>System prezentuje listę noclegów.</li>
+<li>Uczestnik lokalizuje nocleg na liście.</li>
+<li>Uczestnik zatwierdza.</li>
+<li>System anuluje rezerwację noclegu.</li>
+<li>System anuluje rachunek.</li>
+</ol>
+<p><em>Scenariusz alternatywny 1:</em></p>
+<p>1-6. Jak w scenariuszu głównym</p>
+<ol start="7" style="list-style-type: decimal">
+<li>Rachunek został już zapłacony.</li>
+<li>Pieniądze nie są zwracane.</li>
 </ol>
 <h2 id="diagram-przypadków-biznesowych"><a href="#diagram-przypadków-biznesowych">Diagram przypadków biznesowych</a></h2>
 <p><img src=pb.png></p>

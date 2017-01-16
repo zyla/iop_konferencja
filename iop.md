@@ -348,7 +348,27 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### PB18 Rejestracja na wycieczkę
+### PB18 Rezygnacja z warsztatu
+
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
+
+_Scenariusz główny:_
+
+1. Uczestnik wybiera opcję "Rezygnacja z warsztatu".
+2. System prezentuje listę warsztatów.
+3. Uczestnik wybiera warsztat.
+4. Uczestnik zatwierdza.
+5. System anuluje rezerwację warsztatu.
+6. System anuluje rachunek.
+
+_Scenariusz alternatywny 1:_
+
+1-6. Jak w scenariuszu głównym
+
+7. Rachunek został już zapłacony.
+8. Pieniądze nie są zwracane.
+
+### PB19 Rejestracja na wycieczkę
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
@@ -369,7 +389,27 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### PB19 Rejestracja na posiłek
+### PB20 Rezygnacja z wycieczki
+
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
+
+_Scenariusz główny:_
+
+1. Uczestnik wybiera opcję "Rezygnacja z wycieczki".
+2. System prezentuje listę wycieczek.
+3. Uczestnik wybiera wycieczkę.
+4. Uczestnik zatwierdza.
+5. System anuluje rezerwację wycieczki.
+6. System anuluje rachunek.
+
+_Scenariusz alternatywny 1:_
+
+1-6. Jak w scenariuszu głównym
+
+7. Rachunek został już zapłacony.
+8. Pieniądze nie są zwracane.
+
+### PB21 Rejestracja na posiłek
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
@@ -390,7 +430,27 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### PB20 Rejestracja na nocleg
+### PB22 Rezygnacja z posiłku
+
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
+
+_Scenariusz główny:_
+
+1. Uczestnik wybiera opcję "Rezygnacja z posiłku".
+2. System prezentuje listę posiłków.
+3. Uczestnik wybiera posiłek.
+4. Uczestnik zatwierdza.
+5. System anuluje rezerwację posiłku.
+6. System anuluje rachunek.
+
+_Scenariusz alternatywny 1:_
+
+1-6. Jak w scenariuszu głównym
+
+7. Rachunek został już zapłacony.
+8. Pieniądze nie są zwracane.
+
+### PB23 Rejestracja na nocleg
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
@@ -411,7 +471,27 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### PB21 Recenzja referatu
+### PB24 Rezygnacja z noclegu
+
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
+
+_Scenariusz główny:_
+
+1. Uczestnik wybiera opcję "Rezygnacja z noclegu".
+2. System prezentuje listę noclegów.
+3. Uczestnik wybiera nocleg.
+4. Uczestnik zatwierdza.
+5. System anuluje rezerwację noclegu.
+6. System anuluje rachunek.
+
+_Scenariusz alternatywny 1:_
+
+1-6. Jak w scenariuszu głównym
+
+7. Rachunek został już zapłacony.
+8. Pieniądze nie są zwracane.
+
+### PB25 Recenzja referatu
 
 Aktorzy: Recenzent, Prelegent
 
@@ -433,7 +513,7 @@ _Scenariusz alternatywny 1:_
 5. System wysyła do Prelegenta e-mail z informacją o odrzuceniu i uwagami po odrzuceniu przez określoną liczbę recenzentów.
 
 
-### PB22 Edycja terminarza wydarzenia
+### PB26 Edycja terminarza wydarzenia
 
 Aktorzy: Organizator
 
@@ -450,7 +530,7 @@ _Scenariusz alternatywny 1:_
 2. System informuje o kolizjach.
 
 
-### PB23 Przeglądanie terminarza
+### PB27 Przeglądanie terminarza
 
 Aktorzy: Prelegent/Recenzent/Organizator/Słuchacz/Dziennikarz
 
@@ -467,7 +547,7 @@ _Scenariusz alternatywny 1:_
 2. System powiadamia, że terminarz nie został jeszcze utworzony.
 
 
-### PB24 Kontakt z organizatorem
+### PB28 Kontakt z organizatorem
 
 Aktorzy: Prelegent/Recenzent/Słuchacz/Dziennikarz, Organizator
 
@@ -515,7 +595,27 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### FU2 Rejestracja na wycieczkę
+### FU2 Rezygnacja z warsztatu
+
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
+
+_Scenariusz główny:_
+
+1. Uczestnik wybiera opcję "Rezygnacja z warsztatu".
+2. System prezentuje listę warsztatów.
+3. Uczestnik lokalizuje warsztat na liście.
+4. Uczestnik zatwierdza.
+5. System anuluje rezerwację warsztatu.
+6. System anuluje rachunek.
+
+_Scenariusz alternatywny 1:_
+
+1-6. Jak w scenariuszu głównym
+
+7. Rachunek został już zapłacony.
+8. Pieniądze nie są zwracane.
+
+### FU3 Rejestracja na wycieczkę
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
@@ -536,7 +636,27 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### FU3 Rejestracja na posiłek
+### FU4 Rezygnacja z wycieczki
+
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
+
+_Scenariusz główny:_
+
+1. Uczestnik wybiera opcję "Rezygnacja z wycieczki".
+2. System prezentuje listę wycieczek.
+3. Uczestnik lokalizuje wycieczkę na liście.
+4. Uczestnik zatwierdza.
+5. System anuluje rezerwację wycieczki.
+6. System anuluje rachunek.
+
+_Scenariusz alternatywny 1:_
+
+1-6. Jak w scenariuszu głównym
+
+7. Rachunek został już zapłacony.
+8. Pieniądze nie są zwracane.
+
+### FU5 Rejestracja na posiłek
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
@@ -557,7 +677,27 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### FU4 Rejestracja na nocleg
+### FU6 Rezygnacja z posiłku
+
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
+
+_Scenariusz główny:_
+
+1. Uczestnik wybiera opcję "Rezygnacja z posiłku".
+2. System prezentuje listę posiłków.
+3. Uczestnik lokalizuje posiłek na liście.
+4. Uczestnik zatwierdza.
+5. System anuluje rezerwację posiłku.
+6. System anuluje rachunek.
+
+_Scenariusz alternatywny 1:_
+
+1-6. Jak w scenariuszu głównym
+
+7. Rachunek został już zapłacony.
+8. Pieniądze nie są zwracane.
+
+### FU7 Rejestracja na nocleg
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
@@ -577,6 +717,26 @@ _Scenariusz alternatywny 1:_
 5. Miejsce zostało zajęte w międzyczasie.
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
+
+### FU8 Rezygnacja z noclegu
+
+Aktorzy: Słuchacz/Dziennikarz/Prelegent
+
+_Scenariusz główny:_
+
+1. Uczestnik wybiera opcję "Rezygnacja z noclegu".
+2. System prezentuje listę noclegów.
+3. Uczestnik lokalizuje nocleg na liście.
+4. Uczestnik zatwierdza.
+5. System anuluje rezerwację noclegu.
+6. System anuluje rachunek.
+
+_Scenariusz alternatywny 1:_
+
+1-6. Jak w scenariuszu głównym
+
+7. Rachunek został już zapłacony.
+8. Pieniądze nie są zwracane.
 
 
 ## Diagram przypadków biznesowych
