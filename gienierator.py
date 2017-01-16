@@ -113,15 +113,17 @@ N = namedtuple('N', ('mianownik', 'dopelniacz', 'biernik',
       'nowy_mianownik', 'nowy_dopelniacz', 'nowy_biernik'))
 
 def graph_node(src, dst, on_right, arrow):
-
-    arrow_fmt = '' if arrow else '[dir=none]'
-
     if on_right:
-        params = (dst, src, arrow_fmt)
+        src, dst = dst, src
+        arrow_fmt = '[dir=back]'
     else:
-        params = (src, dst, arrow_fmt)
+        arrow_fmt = ''
 
-    graph_out.write('"%s" -> "%s" %s"\n' % params)
+    if not arrow:
+        arrow_fmt = '[dir=none]'
+
+
+    graph_out.write('"%s" -> "%s" %s"\n' (src, dst, arrow_fmt))
 
 def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
     PB('Dodanie %s %s' % (thing.nowy_dopelniacz, thing.dopelniacz), aktor)
