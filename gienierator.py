@@ -58,7 +58,7 @@ def przypadek(id, nazwa, aktorzy):
         if aktor[:2] == '<-':
             right = True
             aktor = aktor[2:]
-        graph_node(aktor, '%s %s' % (id, nazwa))
+        graph_node(aktor, '%s %s' % (id, nazwa), right)
 
 def PB(*args, **kwargs):
     global current_out
