@@ -41,7 +41,7 @@ def reset():
     state.kolejny_punkt = 1
     state.kolejny_alt = 1
 
-def przypadek(id, nazwa, aktorzy):
+def przypadek(id, nazwa, aktorzy, wyjebac_scenariusz_glowny=False):
     reset()
     state.pb_name = nazwa
 
@@ -50,8 +50,10 @@ def przypadek(id, nazwa, aktorzy):
     output()
     output("Aktorzy: %s" % aktorzy)
     output()
-    output("_Scenariusz główny:_")
-    output()
+
+    if not wyjebac_scenariusz_glowny:
+        output("_Scenariusz główny:_")
+        output()
 
     first = True
     for aktor in aktorzy.split(', '):
