@@ -196,7 +196,7 @@ def delete_alt_wybrany(thing, wybrany):
     return _alt
 
 def RejestracjaNa(thing, aktorzy, aktor_gl):
-    # Rezygnacja
+    # Rejestracja
 
     PB('Rejestracja na %s' % thing.biernik, aktorzy)
     wybiera_opcje(aktor_gl)
