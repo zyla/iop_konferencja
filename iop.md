@@ -418,6 +418,23 @@ Aktorzy: Recenzent, Prelegent
 _Scenariusz główny:_
 
 
+_Scenariusz główny:_
+
+1. Recenzent czyta opis i draft publikacji
+2. Recenzent wpisuje swoje uwagi
+3. Recenzent zatwierdza publikację
+4. System zmienia status publikacji na przyjętą przez kolejnego recenzenta.
+5. System wysyła do Prelegenta e-mail z informacją i uwagami  po zaakceptowaniu przez określoną liczbę recenzentów.
+
+_Scenariusz alternatywny 1:_
+
+1-2. Jak w scenariuszu głównym
+
+3. Recenzent odrzuca publikację.
+4. System zmienia status publikacji na odrzuconą przez kolejnego recenzenta.
+5. System wysyła do Prelegenta e-mail z informacją o odrzuceniu i uwagami po odrzuceniu przez określoną liczbę recenzentów.
+
+
 
 ## Przypadki Systemowe
 
