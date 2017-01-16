@@ -308,7 +308,6 @@ PB('Recenzja referatu', 'Recenzent, <-Prelegent')
 
 """
 
-
 _Scenariusz główny:_
 
 1. Recenzent czyta opis i draft publikacji
