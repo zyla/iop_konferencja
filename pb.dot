@@ -16,13 +16,13 @@ digraph { rankdir=LR; "PB1 Zgłoszenie referatu" -> "Prelegent" [dir=back]
 "Administrator" -> "PB15 Edycja konferencji" 
 "Administrator" -> "PB16 Usunięcie konferencji" 
 "Słuchacz/Dziennikarz/Prelegent" -> "PB17 Rejestracja na warsztat" 
-"Słuchacz/Dziennikarz/Prelegent" -> "PB18 Rezygnacja z warsztat" 
+"Słuchacz/Dziennikarz/Prelegent" -> "PB18 Rezygnacja z warsztatu" 
 "Słuchacz/Dziennikarz/Prelegent" -> "PB19 Rejestracja na wycieczkę" 
-"Słuchacz/Dziennikarz/Prelegent" -> "PB20 Rezygnacja z wycieczkę" 
+"Słuchacz/Dziennikarz/Prelegent" -> "PB20 Rezygnacja z wycieczki" 
 "Słuchacz/Dziennikarz/Prelegent" -> "PB21 Rejestracja na posiłek" 
-"Słuchacz/Dziennikarz/Prelegent" -> "PB22 Rezygnacja z posiłek" 
+"Słuchacz/Dziennikarz/Prelegent" -> "PB22 Rezygnacja z posiłku" 
 "Słuchacz/Dziennikarz/Prelegent" -> "PB23 Rejestracja na nocleg" 
-"Słuchacz/Dziennikarz/Prelegent" -> "PB24 Rezygnacja z nocleg" 
+"Słuchacz/Dziennikarz/Prelegent" -> "PB24 Rezygnacja z noclegu" 
 "Recenzent" -> "PB25 Recenzja referatu" 
 "PB25 Recenzja referatu" -> "Prelegent" [dir=none]
  }

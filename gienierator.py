@@ -224,12 +224,12 @@ def RejestracjaNa(thing, aktorzy, aktor_gl):
     powrot(1)
 
     # Rezygnacja
-    PB('Rezygnacja z %s' % thing.biernik, aktorzy)
+    PB('Rezygnacja z %s' % thing.dopelniacz, aktorzy)
     wybiera_opcje(aktor_gl)
     punkt('System prezentuje listę %s' % thing.dopelniacz_lm)
     punkt('%s wybiera %s' % (aktor_gl, thing.biernik))
     p_zatw = punkt('%s zatwierdza' % aktor_gl)
-    punkt('System generuje rachunek do zapłacenia')
+    punkt('System anulujek rachunek')
     punkt('System zapisuje rezerwację')
 
     alt(p_zatw)

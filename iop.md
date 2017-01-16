@@ -348,17 +348,17 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### PB18 Rezygnacja z warsztat
+### PB18 Rezygnacja z warsztatu
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
-1. Uczestnik wybiera opcję "Rezygnacja z warsztat".
+1. Uczestnik wybiera opcję "Rezygnacja z warsztatu".
 2. System prezentuje listę warsztatów.
 3. Uczestnik wybiera warsztat.
 4. Uczestnik zatwierdza.
-5. System generuje rachunek do zapłacenia.
+5. System anulujek rachunek.
 6. System zapisuje rezerwację.
 
 _Scenariusz alternatywny 1:_
@@ -390,17 +390,17 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### PB20 Rezygnacja z wycieczkę
+### PB20 Rezygnacja z wycieczki
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
-1. Uczestnik wybiera opcję "Rezygnacja z wycieczkę".
+1. Uczestnik wybiera opcję "Rezygnacja z wycieczki".
 2. System prezentuje listę wycieczek.
 3. Uczestnik wybiera wycieczkę.
 4. Uczestnik zatwierdza.
-5. System generuje rachunek do zapłacenia.
+5. System anulujek rachunek.
 6. System zapisuje rezerwację.
 
 _Scenariusz alternatywny 1:_
@@ -432,17 +432,17 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### PB22 Rezygnacja z posiłek
+### PB22 Rezygnacja z posiłku
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
-1. Uczestnik wybiera opcję "Rezygnacja z posiłek".
+1. Uczestnik wybiera opcję "Rezygnacja z posiłku".
 2. System prezentuje listę posiłków.
 3. Uczestnik wybiera posiłek.
 4. Uczestnik zatwierdza.
-5. System generuje rachunek do zapłacenia.
+5. System anulujek rachunek.
 6. System zapisuje rezerwację.
 
 _Scenariusz alternatywny 1:_
@@ -474,17 +474,17 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### PB24 Rezygnacja z nocleg
+### PB24 Rezygnacja z noclegu
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
-1. Uczestnik wybiera opcję "Rezygnacja z nocleg".
+1. Uczestnik wybiera opcję "Rezygnacja z noclegu".
 2. System prezentuje listę noclegów.
 3. Uczestnik wybiera nocleg.
 4. Uczestnik zatwierdza.
-5. System generuje rachunek do zapłacenia.
+5. System anulujek rachunek.
 6. System zapisuje rezerwację.
 
 _Scenariusz alternatywny 1:_
