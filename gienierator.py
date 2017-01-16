@@ -241,8 +241,8 @@ def RejestracjaNa(thing, aktorzy, aktor_gl):
     punkt('System prezentuje listę %s' % thing.dopelniacz_lm)
     punkt('%s lokalizuje %s na liście' % (aktor_gl, thing.biernik))
     p_zatw = punkt('%s zatwierdza' % aktor_gl)
-    punkt('System generuje rachunek do zapłacenia')
-    punkt('System zapisuje rezerwację')
+    punkt('System anuluje rezerwację')
+    p_anuluje = punkt('System anuluje rachunek')
 
     alt(p_anuluje)
     punkt('Rachunek został już zapłacony')
