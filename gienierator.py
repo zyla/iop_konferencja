@@ -69,7 +69,7 @@ def graph_node(src, dst, on_right, arrow):
     if not arrow:
         arrow_fmt = '[dir=none]'
 
-    graph_out.write('"%s" -> "%s" %s"\n' % (src, dst, arrow_fmt))
+    graph_out.write('"%s" -> "%s" %s\n' % (src, dst, arrow_fmt))
 
 def PB(*args, **kwargs):
     global current_out
