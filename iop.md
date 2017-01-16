@@ -358,7 +358,7 @@ _Scenariusz główny:_
 2. System prezentuje listę warsztatów.
 3. Uczestnik wybiera warsztat.
 4. Uczestnik zatwierdza.
-5. System anulujek rachunek.
+5. System anuluje rachunek.
 6. System zapisuje rezerwację.
 
 _Scenariusz alternatywny 1:_
@@ -400,7 +400,7 @@ _Scenariusz główny:_
 2. System prezentuje listę wycieczek.
 3. Uczestnik wybiera wycieczkę.
 4. Uczestnik zatwierdza.
-5. System anulujek rachunek.
+5. System anuluje rachunek.
 6. System zapisuje rezerwację.
 
 _Scenariusz alternatywny 1:_
@@ -442,7 +442,7 @@ _Scenariusz główny:_
 2. System prezentuje listę posiłków.
 3. Uczestnik wybiera posiłek.
 4. Uczestnik zatwierdza.
-5. System anulujek rachunek.
+5. System anuluje rachunek.
 6. System zapisuje rezerwację.
 
 _Scenariusz alternatywny 1:_
@@ -484,7 +484,7 @@ _Scenariusz główny:_
 2. System prezentuje listę noclegów.
 3. Uczestnik wybiera nocleg.
 4. Uczestnik zatwierdza.
-5. System anulujek rachunek.
+5. System anuluje rachunek.
 6. System zapisuje rezerwację.
 
 _Scenariusz alternatywny 1:_
