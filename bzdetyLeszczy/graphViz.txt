@@ -1,0 +1,29 @@
+digraph { rankdir=LR; 
+
+
+node1[label="",image = "/home/akkak/22.png", width = "1", height = "1", fixedsize = "true", shape = "none"]
+node2[label = "gej"]
+node3[label = "aktor2"]
+"Organizator" -> "Dodanie nowego rodzaju posi³ku"
+"Dodanie nowego rodzaju posi³ku" -> node3[dir = back]
+"Organizator" -> "Edycja rodzaju posi³ku"
+"Organizator" -> "Usuniêcie rodzaju posi³ku"
+"Organizator" -> "Dodanie nowej mo¿liwoœci noclegu"
+"Dodanie nowej mo¿liwoœci noclegu"-> node3 [dir = back]
+"Organizator" -> "Edycja mo¿liwoœci noclegu"
+"Organizator" -> "Usuniêcie mo¿liwoœci noclegu"
+"Organizator" -> "Dodanie nowego warsztatu"
+"Dodanie nowego warsztatu"-> node3[dir = back]
+"Organizator" -> "Edycja warsztatu"
+"Organizator" -> "Usuniêcie warsztatu"
+"Organizator" -> "Dodanie nowej wycieczki"
+"Dodanie nowej wycieczki"-> node3[dir = back]
+"Organizator" -> "Edycja wycieczki"
+"Organizator" -> "Usuniêcie wycieczki"
+"Administrator" -> "Dodanie nowej konferencji"
+"Dodanie nowej konferencji"-> node3[dir = back]
+"Administrator" -> "Edycja konferencji"
+"Administrator" -> "Usuniêcie konferencji"
+node1 -> node2 [dir = back]
+
+ }
