@@ -310,7 +310,6 @@ RejestracjaNa(nocleg, aktorzy=SDP, aktor_gl='Uczestnik')
 # custom shit
 
 PB('Recenzja referatu', 'Recenzent, Prelegent')
-
 output("""
 1. Recenzent czyta opis i draft publikacji
 2. Recenzent wpisuje swoje uwagi
@@ -325,6 +324,49 @@ _Scenariusz alternatywny 1:_
 3. Recenzent odrzuca publikację.
 4. System zmienia status publikacji na odrzuconą przez kolejnego recenzenta.
 5. System wysyła do Prelegenta e-mail z informacją o odrzuceniu i uwagami po odrzuceniu przez określoną liczbę recenzentów.
+""")
+
+PB('Edycja terminarza wydarzenia', 'Organizator')
+output("""
+1. Organizator edytuje lub dodaje daty i godziny wydarzeń wcześniej wprowadzonych do systemu
+2. System zapisuje zmiany.
+
+_Scenariusz alternatywny 1:_
+
+1. Jak w scenariuszu głównym.
+
+2. System informuje o kolizjach.
+""")
+
+PB('Przeglądanie terminarza', 'Prelegent/Recenzent/Organizator/Słuchacz/Dziennikarz')
+output("""
+1. Aktor wybiera opcję przeglądania terminarza.
+2. System wyświetla terminarz wydarzenia.
+
+_Scenariusz alternatywny 1:_
+
+1. Jak w scenariuszu głównym.
+
+2. System powiadamia, że terminarz nie został jeszcze utworzony.
+""")
+
+PB('Kontakt z organizatorem', 'Prelegent/Recenzent/Słuchacz/Dziennikarz, Organizator')
+output("""
+1. Aktor wybiera opcję "Kontakt z organizatorem".
+2. System wyświetla formularz do wypełnienia danymi:
+-Imię
+-Nazwisko
+-Temat
+-Treść
+3. Aktor zatwierdza wypełnione dane.
+4. System wysyła formularz w formia e-maila do organizatora, wraz z adresem e-mail pytającego.
+
+_Scenariusz alternatywny 1:_
+
+1-3 Jak w scenariuszu głównym.
+
+4. System wyświetla informację o nie wypełnieniu części formularza
+5. Powrót do punktu 2 scenariusza głównego.
 """)
 
 ########################################################################################

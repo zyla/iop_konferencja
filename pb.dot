@@ -1,17 +1,17 @@
 digraph { rankdir=LR; "PB1 Zgłoszenie referatu" -> "Prelegent" [dir=back]
 "Recenzent" -> "PB1 Zgłoszenie referatu" [dir=none]
-"Organizator" -> "PB2 Dodanie nowego rodzaju posiłku" 
-"Organizator" -> "PB3 Edycja rodzaju posiłku" 
-"Organizator" -> "PB4 Usunięcie rodzaju posiłku" 
-"Organizator" -> "PB5 Dodanie nowej możliwości noclegu" 
-"Organizator" -> "PB6 Edycja możliwości noclegu" 
-"Organizator" -> "PB7 Usunięcie możliwości noclegu" 
-"Organizator" -> "PB8 Dodanie nowego warsztatu" 
-"Organizator" -> "PB9 Edycja warsztatu" 
-"Organizator" -> "PB10 Usunięcie warsztatu" 
-"Organizator" -> "PB11 Dodanie nowej wycieczki" 
-"Organizator" -> "PB12 Edycja wycieczki" 
-"Organizator" -> "PB13 Usunięcie wycieczki" 
+"PB2 Dodanie nowego rodzaju posiłku" -> "Organizator" [dir=back]
+"PB3 Edycja rodzaju posiłku" -> "Organizator" [dir=back]
+"PB4 Usunięcie rodzaju posiłku" -> "Organizator" [dir=back]
+"PB5 Dodanie nowej możliwości noclegu" -> "Organizator" [dir=back]
+"PB6 Edycja możliwości noclegu" -> "Organizator" [dir=back]
+"PB7 Usunięcie możliwości noclegu" -> "Organizator" [dir=back]
+"PB8 Dodanie nowego warsztatu" -> "Organizator" [dir=back]
+"PB9 Edycja warsztatu" -> "Organizator" [dir=back]
+"PB10 Usunięcie warsztatu" -> "Organizator" [dir=back]
+"PB11 Dodanie nowej wycieczki" -> "Organizator" [dir=back]
+"PB12 Edycja wycieczki" -> "Organizator" [dir=back]
+"PB13 Usunięcie wycieczki" -> "Organizator" [dir=back]
 "Administrator" -> "PB14 Dodanie nowej konferencji" 
 "Administrator" -> "PB15 Edycja konferencji" 
 "Administrator" -> "PB16 Usunięcie konferencji" 
@@ -21,4 +21,8 @@ digraph { rankdir=LR; "PB1 Zgłoszenie referatu" -> "Prelegent" [dir=back]
 "Słuchacz/Dziennikarz/Prelegent" -> "PB20 Rejestracja na nocleg" 
 "Recenzent" -> "PB21 Recenzja referatu" 
 "PB21 Recenzja referatu" -> "Prelegent" [dir=none]
+"PB22 Edycja terminarza wydarzenia" -> "Organizator" [dir=back]
+"Prelegent/Recenzent/Organizator/Słuchacz/Dziennikarz" -> "PB23 Przeglądanie terminarza" 
+"Prelegent/Recenzent/Słuchacz/Dziennikarz" -> "PB24 Kontakt z organizatorem" 
+"PB24 Kontakt z organizatorem" -> "Organizator" [dir=none]
  }
