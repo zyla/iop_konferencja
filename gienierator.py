@@ -571,36 +571,31 @@ output("""
 
 _Scenariusz alternatywny 1:_
 
-1-3 Jak w scenariuszu głównym.
+1-3. Jak w scenariuszu głównym.
 4. System wyświetla informację o różnym wpisaniu nowego hasła.
 
 _Scenariusz alternatywny 2:_
 
-1-3 Jak w scenariuszu głównym.
+1-3. Jak w scenariuszu głównym.
 4. System wyświetla informację o za słabym haśle.
 """)
 
 ########################################################################################
 # Custom FU shit
 
-FU('Rezygnacja z konferencji', 'Słuchacz')
+FU('Logowanie', 'Prelegent/Recenzent/Organizator/Słuchacz/Dziennikarz')
 output("""
-1. System wyświetla formularz z polami: imię, nazwisko, kod biletu.
-2. Słuchacz wpisuje dane.
-3. System wyświetla komunikat o sukcesie.
-4. System zaznacza że to miejsce jest wolne.
-5. System wysyła e-mail z potwierdzeniem.
-6. System zwraca pieniądze: wysyła na konto słuchacza.
+1. System wyświetla formularz z polami "login" i "hasło".
+2. Aktor wprowadza swoje dane.
+3. System sprawdza dane.
+4. System udziela aktorowi dostępu do części systemu odpowiedniej dla aktora.
 
-_Scenariusz alternatywny 1_:
+_Scenariusz alternatywny 1:_
 
-1-3. Jak w scenariuszu głównym.
-
-4. System wyświetla komunikat że zostały wpisane błędne dane.
-
-_Scenariusz alternatywny 2_:
-
-1. System wyświetla komunikat że upłynął termin rezygnacji z konferencji.
+1-2. Jak w scenariuszu głównym.
+3. Wprowadzony login lub hasło są niepoprawne.
+4. System wyświetla komunikat o błędzie.
+5. Powrót do punktu 1.
 """)
 
 ########################################################################################
