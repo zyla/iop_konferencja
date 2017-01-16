@@ -123,7 +123,7 @@ N = namedtuple('N', ('mianownik', 'dopelniacz', 'biernik',
       'dopelniacz_lm',
       'nowy_mianownik', 'nowy_dopelniacz', 'nowy_biernik'))
 
-def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
+def CRUD(thing, fields, fields_fu, delete_alt=None, aktor='Organizator'):
     PB('Dodanie %s %s' % (thing.nowy_dopelniacz, thing.dopelniacz), aktor)
     wybiera_opcje(aktor)
     punkt('%s wpisuje %s %s' % (aktor, fields, thing.dopelniacz))
@@ -161,6 +161,20 @@ def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
     if delete_alt:
         alt(p_zatw) 
         delete_alt()
+
+    # FU Dodanie
+    FU('Dodanie %s %s' % (thing.nowy_dopelniacz, thing.dopelniacz), aktor)
+    wybiera_opcje(aktor)
+    punkt('System prezentuje %s' % fields_fu)
+    punkt('%s wpisuje wartości w pola formularza' % aktor)
+    p_zatw = punkt('%s klika przycisk "Zapisz"' % aktor)
+    punkt('System zapisuje %s %s' % (thing.nowy_biernik, thing.biernik))
+    punkt('System wyświetla komunikat o sukcesie')
+
+    alt(p_zatw)
+    punkt('Wprowadzone dane są niepoprawne')
+    punkt('System wyświetla komunikat o błędzie')
+    powrot(1)
 
 ###############################################################################
 PB('Zgłoszenie referatu', 'Prelegent, Recenzent')
@@ -284,8 +298,10 @@ rodzaj_posilku = N(
         nowy_mianownik='nowy',
         nowy_dopelniacz='nowego',
         nowy_biernik='nowy')
-CRUD(rodzaj_posilku, 'nazwę',
-   delete_alt=delete_alt_wybrany(rodzaj_posilku, 'został wybrany'))
+CRUD(rodzaj_posilku,
+    fields='nazwę',
+    fields_fu='formularz z polem "nazwa"',
+    delete_alt=delete_alt_wybrany(rodzaj_posilku, 'został wybrany'))
 
 mozliwosc_noclegu = N(
         mianownik='możliwość noclegu',
@@ -295,7 +311,9 @@ mozliwosc_noclegu = N(
         nowy_mianownik='nową',
         nowy_dopelniacz='nowej',
         nowy_biernik='nową')
-CRUD(mozliwosc_noclegu, 'nazwę, opis, miejsce i cenę')
+CRUD(mozliwosc_noclegu,
+        fields='nazwę, opis, miejsce i cenę',
+        fields_fu='formularz z polami: nazwa, opis, miejsce, cena za dobę')
 
 warsztat = N(
         mianownik='warsztat',
@@ -307,7 +325,9 @@ warsztat = N(
         nowy_biernik='nowy'
         )
 
-CRUD(warsztat, 'nazwę, opis, miejsce i cenę')
+CRUD(warsztat,
+        fields='nazwę, opis, miejsce i cenę',
+        fields_fu='formularz z polami: nazwa, opis, miejsce, cena')
 
 wycieczka = N(
         mianownik='wycieczka',
@@ -317,7 +337,9 @@ wycieczka = N(
         nowy_mianownik='nowa',
         nowy_dopelniacz='nowej',
         nowy_biernik='nową')
-CRUD(wycieczka, 'nazwę, opis, miejsce i cenę')
+CRUD(wycieczka,
+        fields='nazwę, opis, miejsce i cenę',
+        fields_fu='formularz z polami: nazwa, opis, miejsce, cena')
 
 konferencja = N(
         mianownik='konferencja',
@@ -327,7 +349,10 @@ konferencja = N(
         nowy_mianownik='nową',
         nowy_dopelniacz='nowej',
         nowy_biernik='nową')
-CRUD(konferencja, 'nazwę i opis', aktor='Administrator')
+CRUD(konferencja,
+        fields='nazwę i opis',
+        fields_fu='formularz z polami: nazwa, opis',
+        aktor='Administrator')
 
 SDP = 'Słuchacz/Dziennikarz/Prelegent'
 
