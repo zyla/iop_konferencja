@@ -112,7 +112,7 @@ N = namedtuple('N', ('mianownik', 'dopelniacz', 'biernik',
       'dopelniacz_lm',
       'nowy_mianownik', 'nowy_dopelniacz', 'nowy_biernik'))
 
-def graph_node(src, dst, on_right=False):
+def graph_node(src, dst, on_right, arrow):
 
     arrow_fmt = '' if arrow else '[dir=none]'
 
