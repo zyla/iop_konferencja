@@ -358,8 +358,15 @@ _Scenariusz główny:_
 2. System prezentuje listę warsztatów.
 3. Uczestnik wybiera warsztat.
 4. Uczestnik zatwierdza.
-5. System anuluje rachunek.
-6. System anuluje rezerwację.
+5. System anuluje rezerwację.
+6. System anuluje rachunek.
+
+_Scenariusz alternatywny 1:_
+
+1-6. Jak w scenariuszu głównym
+
+7. Rachunek został już zapłacony.
+8. Pieniądze nie są zwracane.
 
 ### PB19 Rejestracja na wycieczkę
 
@@ -392,8 +399,15 @@ _Scenariusz główny:_
 2. System prezentuje listę wycieczek.
 3. Uczestnik wybiera wycieczkę.
 4. Uczestnik zatwierdza.
-5. System anuluje rachunek.
-6. System anuluje rezerwację.
+5. System anuluje rezerwację.
+6. System anuluje rachunek.
+
+_Scenariusz alternatywny 1:_
+
+1-6. Jak w scenariuszu głównym
+
+7. Rachunek został już zapłacony.
+8. Pieniądze nie są zwracane.
 
 ### PB21 Rejestracja na posiłek
 
@@ -426,8 +440,15 @@ _Scenariusz główny:_
 2. System prezentuje listę posiłków.
 3. Uczestnik wybiera posiłek.
 4. Uczestnik zatwierdza.
-5. System anuluje rachunek.
-6. System anuluje rezerwację.
+5. System anuluje rezerwację.
+6. System anuluje rachunek.
+
+_Scenariusz alternatywny 1:_
+
+1-6. Jak w scenariuszu głównym
+
+7. Rachunek został już zapłacony.
+8. Pieniądze nie są zwracane.
 
 ### PB23 Rejestracja na nocleg
 
@@ -460,8 +481,15 @@ _Scenariusz główny:_
 2. System prezentuje listę noclegów.
 3. Uczestnik wybiera nocleg.
 4. Uczestnik zatwierdza.
-5. System anuluje rachunek.
-6. System anuluje rezerwację.
+5. System anuluje rezerwację.
+6. System anuluje rachunek.
+
+_Scenariusz alternatywny 1:_
+
+1-6. Jak w scenariuszu głównym
+
+7. Rachunek został już zapłacony.
+8. Pieniądze nie są zwracane.
 
 ### PB25 Recenzja referatu
 

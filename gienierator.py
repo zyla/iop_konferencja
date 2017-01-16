@@ -228,9 +228,13 @@ def RejestracjaNa(thing, aktorzy, aktor_gl):
     wybiera_opcje(aktor_gl)
     punkt('System prezentuje listę %s' % thing.dopelniacz_lm)
     punkt('%s wybiera %s' % (aktor_gl, thing.biernik))
-    p_zatw = punkt('%s zatwierdza' % aktor_gl)
-    punkt('System anuluje rachunek')
+    punkt('%s zatwierdza' % aktor_gl)
     punkt('System anuluje rezerwację')
+    p_anuluje = punkt('System anuluje rachunek')
+
+    alt(p_anuluje)
+    punkt('Rachunek został już zapłacony')
+    punkt('Pieniądze nie są zwracane')
 
     FU('Rezygnacja na %s' % thing.biernik, aktorzy)
     wybiera_opcje(aktor_gl)
