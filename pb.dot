@@ -19,4 +19,5 @@ digraph { rankdir=LR; "Prelegent" -> "PB1 Zgłoszenie referatu"
 "Słuchacz/Dziennikarz/Prelegent" -> "PB18 Rejestracja na wycieczkę"
 "Słuchacz/Dziennikarz/Prelegent" -> "PB19 Rejestracja na posiłek"
 "Słuchacz/Dziennikarz/Prelegent" -> "PB20 Rejestracja na nocleg"
+"PB20 Rejestracja na nocleg" -- "test" [dir=back]
  }

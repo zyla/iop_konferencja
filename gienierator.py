@@ -299,7 +299,7 @@ nocleg = N(
         nowy_dopelniacz='nowego',
         nowy_biernik='nowy')
 
-RejestracjaNa(nocleg, aktorzy=SDP, aktor_gl='Uczestnik, <-test')
+RejestracjaNa(nocleg, aktorzy=SDP + ', <-test', aktor_gl='Uczestnik')
 
 ########################################################################################
 # output this shit

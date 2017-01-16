@@ -392,14 +392,14 @@ _Scenariusz alternatywny 1:_
 
 ### PB20 Rejestracja na nocleg
 
-Aktorzy: Słuchacz/Dziennikarz/Prelegent
+Aktorzy: Słuchacz/Dziennikarz/Prelegent, test
 
 _Scenariusz główny:_
 
-1. Uczestnik, <-test wybiera opcję "Rejestracja na nocleg".
+1. Uczestnik wybiera opcję "Rejestracja na nocleg".
 2. System prezentuje listę noclegów.
-3. Uczestnik, <-test wybiera nocleg.
-4. Uczestnik, <-test zatwierdza.
+3. Uczestnik wybiera nocleg.
+4. Uczestnik zatwierdza.
 5. System generuje rachunek do zapłacenia.
 6. System zapisuje rezerwację.
 
@@ -479,14 +479,14 @@ _Scenariusz alternatywny 1:_
 
 ### FU4 Rejestracja na nocleg
 
-Aktorzy: Słuchacz/Dziennikarz/Prelegent
+Aktorzy: Słuchacz/Dziennikarz/Prelegent, test
 
 _Scenariusz główny:_
 
-1. Uczestnik, <-test wybiera opcję "Rejestracja na nocleg".
+1. Uczestnik wybiera opcję "Rejestracja na nocleg".
 2. System prezentuje listę noclegów.
-3. Uczestnik, <-test lokalizuje nocleg na liście.
-4. Uczestnik, <-test zatwierdza.
+3. Uczestnik lokalizuje nocleg na liście.
+4. Uczestnik zatwierdza.
 5. System generuje rachunek do zapłacenia.
 6. System zapisuje rezerwację.
 
