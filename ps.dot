@@ -1,5 +1,5 @@
-digraph { rankdir=LR; "Słuchacz/Dziennikarz/Prelegent" -> "FU1 Rejestracja na warsztat"
-"Słuchacz/Dziennikarz/Prelegent" -> "FU2 Rejestracja na wycieczkę"
-"Słuchacz/Dziennikarz/Prelegent" -> "FU3 Rejestracja na posiłek"
-"Słuchacz/Dziennikarz/Prelegent" -> "FU4 Rejestracja na nocleg"
+digraph { rankdir=LR; "Słuchacz/Dziennikarz/Prelegent" -> "FU1 Rejestracja na warsztat" "
+"Słuchacz/Dziennikarz/Prelegent" -> "FU2 Rejestracja na wycieczkę" "
+"Słuchacz/Dziennikarz/Prelegent" -> "FU3 Rejestracja na posiłek" "
+"Słuchacz/Dziennikarz/Prelegent" -> "FU4 Rejestracja na nocleg" "
  }

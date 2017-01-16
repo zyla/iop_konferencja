@@ -48,17 +48,27 @@ def przypadek(id, nazwa, aktorzy):
     output()
     output("### %s %s" % (id, nazwa))
     output()
-    output("Aktorzy: %s" % re.sub(r'<-', '', aktorzy))
+    output("Aktorzy: %s" % aktorzy)
     output()
     output("_Scenariusz główny:_")
     output()
 
+    first = True
     for aktor in aktorzy.split(', '):
-        right = False
-        if aktor[:2] == '<-':
-            right = True
-            aktor = aktor[2:]
-        graph_node(aktor, '%s %s' % (id, nazwa), right)
+        right = aktor in ('Prelegent',)
+        graph_node(aktor, '%s %s' % (id, nazwa), right, first)
+
+def graph_node(src, dst, on_right, arrow):
+    if on_right:
+        src, dst = dst, src
+        arrow_fmt = '[dir=back]'
+    else:
+        arrow_fmt = ''
+
+    if not arrow:
+        arrow_fmt = '[dir=none]'
+
+    graph_out.write('"%s" -> "%s" %s"\n' % (src, dst, arrow_fmt))
 
 def PB(*args, **kwargs):
     global current_out
@@ -111,18 +121,6 @@ def wybiera_opcje(kto):
 N = namedtuple('N', ('mianownik', 'dopelniacz', 'biernik',
       'dopelniacz_lm',
       'nowy_mianownik', 'nowy_dopelniacz', 'nowy_biernik'))
-
-def graph_node(src, dst, on_right, arrow):
-    if on_right:
-        src, dst = dst, src
-        arrow_fmt = '[dir=back]'
-    else:
-        arrow_fmt = ''
-
-    if not arrow:
-        arrow_fmt = '[dir=none]'
-
-    graph_out.write('"%s" -> "%s" %s"\n' % (src, dst, arrow_fmt))
 
 def CRUD(thing, fields, delete_alt=None, aktor='Organizator'):
     PB('Dodanie %s %s' % (thing.nowy_dopelniacz, thing.dopelniacz), aktor)
