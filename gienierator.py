@@ -193,7 +193,7 @@ def CRUD(thing, fields, fields_fu, delete_alt=None, aktor='Organizator'):
     powrot(1)
 
     # FU Usunięcie
-    PB('Usunięcie %s' % thing.dopelniacz, aktor)
+    FU('Usunięcie %s' % thing.dopelniacz, aktor)
     wybiera_opcje(aktor)
     punkt('System prezentuje listę %s' % (thing.dopelniacz_lm))
     punkt('%s wybiera %s z listy' % (aktor, thing.mianownik))
