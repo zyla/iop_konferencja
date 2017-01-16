@@ -307,8 +307,6 @@ RejestracjaNa(nocleg, aktorzy=SDP, aktor_gl='Uczestnik')
 PB('Recenzja referatu', 'Recenzent, <-Prelegent')
 
 output("""
-_Scenariusz główny:_
-
 1. Recenzent czyta opis i draft publikacji
 2. Recenzent wpisuje swoje uwagi
 3. Recenzent zatwierdza publikację
