@@ -114,7 +114,7 @@ N = namedtuple('N', ('mianownik', 'dopelniacz', 'biernik',
 
 def graph_node(src, dst, on_right=False):
     if on_right:
-        graph_out.write('"%s" -- "%s" [dir=back]\n' % (dst, src))
+        graph_out.write('"%s" <- "%s" [dir=back]\n' % (dst, src))
     else:
         graph_out.write('"%s" -> "%s"\n' % (src, dst))
 
