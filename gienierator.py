@@ -560,13 +560,15 @@ output("""
 5. System generuje plik ze wszystkimi artykułami i ze spisem treści wymieniającym je w odpowiedniej kolejności.
 """)
 
-PB('Zmiana hasla', 'Prelegent/Recenzent/Organizator/Słuchacz/Dziennikarz') 
+PB('Zmiana hasła', 'Prelegent/Recenzent/Organizator/Słuchacz/Dziennikarz') 
 output("""
 1. Aktor wybiera opcję "Zmiana hasła".
 2. System wyświetla formularz do wypełnienia danymi
--stare hasło
--nowe hasło
--powtórzenie nowego hasła
+
+- stare hasło
+- nowe hasło
+- powtórzenie nowego hasła
+
 3. Aktory zatwierdza wypełnione dane.
 4. System zapisuje nowe hasło.
 
