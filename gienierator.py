@@ -196,6 +196,8 @@ def delete_alt_wybrany(thing, wybrany):
     return _alt
 
 def RejestracjaNa(thing, aktorzy, aktor_gl):
+    # Rezygnacja
+
     PB('Rejestracja na %s' % thing.biernik, aktorzy)
     wybiera_opcje(aktor_gl)
     punkt('System prezentuje listę %s' % thing.dopelniacz_lm)
@@ -221,6 +223,8 @@ def RejestracjaNa(thing, aktorzy, aktor_gl):
     punkt('Miejsce zostało zajęte w międzyczasie')
     punkt('System wyświetla komunikat o błędzie')
     powrot(1)
+
+    # Rezygnacja
 
 ###############################################################################
 # actual definitions
