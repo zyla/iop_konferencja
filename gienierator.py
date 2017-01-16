@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import io, os
+import io, os, re
 from collections import namedtuple
 
 print("# **Zadanie 2**: obsługa konferencji naukowej")
