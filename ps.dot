@@ -1,9 +1,9 @@
 digraph { rankdir=LR; "Słuchacz/Dziennikarz/Prelegent" -> "FU1 Rejestracja na warsztat" 
-"Słuchacz/Dziennikarz/Prelegent" -> "FU2 Rezygnacja na warsztat" 
+"Słuchacz/Dziennikarz/Prelegent" -> "FU2 Rezygnacja na warsztatu" 
 "Słuchacz/Dziennikarz/Prelegent" -> "FU3 Rejestracja na wycieczkę" 
-"Słuchacz/Dziennikarz/Prelegent" -> "FU4 Rezygnacja na wycieczkę" 
+"Słuchacz/Dziennikarz/Prelegent" -> "FU4 Rezygnacja na wycieczki" 
 "Słuchacz/Dziennikarz/Prelegent" -> "FU5 Rejestracja na posiłek" 
-"Słuchacz/Dziennikarz/Prelegent" -> "FU6 Rezygnacja na posiłek" 
+"Słuchacz/Dziennikarz/Prelegent" -> "FU6 Rezygnacja na posiłku" 
 "Słuchacz/Dziennikarz/Prelegent" -> "FU7 Rejestracja na nocleg" 
-"Słuchacz/Dziennikarz/Prelegent" -> "FU8 Rezygnacja na nocleg" 
+"Słuchacz/Dziennikarz/Prelegent" -> "FU8 Rezygnacja na noclegu" 
  }
