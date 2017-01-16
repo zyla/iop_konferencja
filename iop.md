@@ -552,11 +552,10 @@ _Scenariusz główny:_
 
 _Scenariusz alternatywny 1:_
 
-1-4. Jak w scenariuszu głównym
+1-6. Jak w scenariuszu głównym
 
-5. Miejsce zostało zajęte w międzyczasie.
-6. System wyświetla komunikat o błędzie.
-7. Powrót do punktu 1.
+7. Rachunek został już zapłacony.
+8. Pieniądze nie są zwracane.
 
 ### FU3 Rejestracja na wycieczkę
 
@@ -594,11 +593,10 @@ _Scenariusz główny:_
 
 _Scenariusz alternatywny 1:_
 
-1-4. Jak w scenariuszu głównym
+1-6. Jak w scenariuszu głównym
 
-5. Miejsce zostało zajęte w międzyczasie.
-6. System wyświetla komunikat o błędzie.
-7. Powrót do punktu 1.
+7. Rachunek został już zapłacony.
+8. Pieniądze nie są zwracane.
 
 ### FU5 Rejestracja na posiłek
 
@@ -636,11 +634,10 @@ _Scenariusz główny:_
 
 _Scenariusz alternatywny 1:_
 
-1-4. Jak w scenariuszu głównym
+1-6. Jak w scenariuszu głównym
 
-5. Miejsce zostało zajęte w międzyczasie.
-6. System wyświetla komunikat o błędzie.
-7. Powrót do punktu 1.
+7. Rachunek został już zapłacony.
+8. Pieniądze nie są zwracane.
 
 ### FU7 Rejestracja na nocleg
 
@@ -678,11 +675,10 @@ _Scenariusz główny:_
 
 _Scenariusz alternatywny 1:_
 
-1-4. Jak w scenariuszu głównym
+1-6. Jak w scenariuszu głównym
 
-5. Miejsce zostało zajęte w międzyczasie.
-6. System wyświetla komunikat o błędzie.
-7. Powrót do punktu 1.
+7. Rachunek został już zapłacony.
+8. Pieniądze nie są zwracane.
 
 
 ## Diagram przypadków biznesowych

@@ -244,10 +244,9 @@ def RejestracjaNa(thing, aktorzy, aktor_gl):
     punkt('System generuje rachunek do zapłacenia')
     punkt('System zapisuje rezerwację')
 
-    alt(p_zatw)
-    punkt('Miejsce zostało zajęte w międzyczasie')
-    punkt('System wyświetla komunikat o błędzie')
-    powrot(1)
+    alt(p_anuluje)
+    punkt('Rachunek został już zapłacony')
+    punkt('Pieniądze nie są zwracane')
 
 
 ###############################################################################
