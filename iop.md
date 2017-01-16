@@ -537,13 +537,13 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### FU2 Rezygnacja na warsztatu
+### FU2 Rezygnacja z warsztatu
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
-1. Uczestnik wybiera opcję "Rezygnacja na warsztatu".
+1. Uczestnik wybiera opcję "Rezygnacja z warsztatu".
 2. System prezentuje listę warsztatów.
 3. Uczestnik lokalizuje warsztat na liście.
 4. Uczestnik zatwierdza.
@@ -578,13 +578,13 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### FU4 Rezygnacja na wycieczki
+### FU4 Rezygnacja z wycieczki
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
-1. Uczestnik wybiera opcję "Rezygnacja na wycieczki".
+1. Uczestnik wybiera opcję "Rezygnacja z wycieczki".
 2. System prezentuje listę wycieczek.
 3. Uczestnik lokalizuje wycieczkę na liście.
 4. Uczestnik zatwierdza.
@@ -619,13 +619,13 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### FU6 Rezygnacja na posiłku
+### FU6 Rezygnacja z posiłku
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
-1. Uczestnik wybiera opcję "Rezygnacja na posiłku".
+1. Uczestnik wybiera opcję "Rezygnacja z posiłku".
 2. System prezentuje listę posiłków.
 3. Uczestnik lokalizuje posiłek na liście.
 4. Uczestnik zatwierdza.
@@ -660,13 +660,13 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
-### FU8 Rezygnacja na noclegu
+### FU8 Rezygnacja z noclegu
 
 Aktorzy: Słuchacz/Dziennikarz/Prelegent
 
 _Scenariusz główny:_
 
-1. Uczestnik wybiera opcję "Rezygnacja na noclegu".
+1. Uczestnik wybiera opcję "Rezygnacja z noclegu".
 2. System prezentuje listę noclegów.
 3. Uczestnik lokalizuje nocleg na liście.
 4. Uczestnik zatwierdza.

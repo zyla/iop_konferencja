@@ -236,7 +236,7 @@ def RejestracjaNa(thing, aktorzy, aktor_gl):
     punkt('Rachunek został już zapłacony')
     punkt('Pieniądze nie są zwracane')
 
-    FU('Rezygnacja na %s' % thing.dopelniacz, aktorzy)
+    FU('Rezygnacja z %s' % thing.dopelniacz, aktorzy)
     wybiera_opcje(aktor_gl)
     punkt('System prezentuje listę %s' % thing.dopelniacz_lm)
     punkt('%s lokalizuje %s na liście' % (aktor_gl, thing.biernik))
