@@ -304,7 +304,7 @@ RejestracjaNa(nocleg, aktorzy=SDP, aktor_gl='Uczestnik')
 ########################################################################################
 # custom shit
 
-PB('Recenzja referatu', 'Recenzent, Prelegent')
+PB('Recenzja referatu', 'Recenzent, <-Prelegent')
 
 output("""
 1. Recenzent czyta opis i draft publikacji
