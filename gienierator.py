@@ -230,12 +230,7 @@ def RejestracjaNa(thing, aktorzy, aktor_gl):
     punkt('%s wybiera %s' % (aktor_gl, thing.biernik))
     p_zatw = punkt('%s zatwierdza' % aktor_gl)
     punkt('System anuluje rachunek')
-    punkt('System zapisuje rezerwację')
-
-    alt(p_zatw)
-    punkt('Miejsce zostało zajęte w międzyczasie')
-    punkt('System wyświetla komunikat o błędzie')
-    powrot(1)
+    punkt('System anuluje rezerwację')
 
     FU('Rezygnacja na %s' % thing.biernik, aktorzy)
     wybiera_opcje(aktor_gl)

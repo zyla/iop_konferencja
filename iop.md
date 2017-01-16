@@ -359,15 +359,7 @@ _Scenariusz główny:_
 3. Uczestnik wybiera warsztat.
 4. Uczestnik zatwierdza.
 5. System anuluje rachunek.
-6. System zapisuje rezerwację.
-
-_Scenariusz alternatywny 1:_
-
-1-4. Jak w scenariuszu głównym
-
-5. Miejsce zostało zajęte w międzyczasie.
-6. System wyświetla komunikat o błędzie.
-7. Powrót do punktu 1.
+6. System anuluje rezerwację.
 
 ### PB19 Rejestracja na wycieczkę
 
@@ -401,15 +393,7 @@ _Scenariusz główny:_
 3. Uczestnik wybiera wycieczkę.
 4. Uczestnik zatwierdza.
 5. System anuluje rachunek.
-6. System zapisuje rezerwację.
-
-_Scenariusz alternatywny 1:_
-
-1-4. Jak w scenariuszu głównym
-
-5. Miejsce zostało zajęte w międzyczasie.
-6. System wyświetla komunikat o błędzie.
-7. Powrót do punktu 1.
+6. System anuluje rezerwację.
 
 ### PB21 Rejestracja na posiłek
 
@@ -443,15 +427,7 @@ _Scenariusz główny:_
 3. Uczestnik wybiera posiłek.
 4. Uczestnik zatwierdza.
 5. System anuluje rachunek.
-6. System zapisuje rezerwację.
-
-_Scenariusz alternatywny 1:_
-
-1-4. Jak w scenariuszu głównym
-
-5. Miejsce zostało zajęte w międzyczasie.
-6. System wyświetla komunikat o błędzie.
-7. Powrót do punktu 1.
+6. System anuluje rezerwację.
 
 ### PB23 Rejestracja na nocleg
 
@@ -485,15 +461,7 @@ _Scenariusz główny:_
 3. Uczestnik wybiera nocleg.
 4. Uczestnik zatwierdza.
 5. System anuluje rachunek.
-6. System zapisuje rezerwację.
-
-_Scenariusz alternatywny 1:_
-
-1-4. Jak w scenariuszu głównym
-
-5. Miejsce zostało zajęte w międzyczasie.
-6. System wyświetla komunikat o błędzie.
-7. Powrót do punktu 1.
+6. System anuluje rezerwację.
 
 ### PB25 Recenzja referatu
 
