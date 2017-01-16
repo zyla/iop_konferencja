@@ -88,9 +88,8 @@ def FU(*args, **kwargs):
     state.kolejny_fu += 1
 
 def punkt(tresc):
-    # TODO cap first
     punkt = state.kolejny_punkt
-    output('%d. %s.' % (punkt, tresc))
+    output('%d. %s.' % (punkt, tresc.capitalize()))
     state.kolejny_punkt += 1
     return punkt
 
