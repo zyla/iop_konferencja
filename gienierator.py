@@ -48,12 +48,16 @@ def przypadek(id, nazwa, aktorzy):
     output()
     output("### %s %s" % (id, nazwa))
     output()
-    output("Aktorzy: %s" % aktorzy)
+    output("Aktorzy: %s" % re.sub(r'<-', '', aktorzy))
     output()
     output("_Scenariusz główny:_")
     output()
 
     for aktor in aktorzy.split(', '):
+        right = False
+        if aktor[:2] == '<-':
+            right = True
+            aktor = aktor[2:]
         graph_node(aktor, '%s %s' % (id, nazwa))
 
 def PB(*args, **kwargs):
