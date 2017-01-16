@@ -411,6 +411,13 @@ _Scenariusz alternatywny 1:_
 6. System wyświetla komunikat o błędzie.
 7. Powrót do punktu 1.
 
+### PB21 Recenzja referatu
+
+Aktorzy: Recenzent, Prelegent
+
+_Scenariusz główny:_
+
+
 
 ## Przypadki Systemowe
 
