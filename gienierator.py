@@ -396,6 +396,91 @@ _Scenariusz alternatywny 1:_
 5. Powrót do punktu 2 scenariusza głównego.
 """)
 
+PB('Generowanie identyfikatorów dla uczestników', 'Organizator')
+output("""
+1. Organizator wybiera opcję “Generuj identyfikatory dla uczestników”
+2. System generuje identyfikatory i zapisuje je.
+3. System potwierdza wykonanie polecenia.
+
+_Scenariusz alternatywny 1:_
+
+1. Zapisy nie są jeszcze zamknięte. Opcja “Generuj identyfikatory dla uczestników” nie jest dostępna.
+""")
+
+PB('Wnoszenie opłaty za publikację artykułu', 'Prelegent')
+output("""
+1. Prelegent wybiera opcję “Opłata za publikację artykułu”.
+2. Prelegent dokonuje płatności za pomocą systemu bankowego.
+3. System zapisuje fakt dokonania płatności.
+4. System wysyła prelegentowi e-mail z potwierdzeniem wykonania operacji.
+
+_Scenariusz alternatywny 1 - płatność anulowana:_
+
+1. Jak w scenariuszu głównym.
+2. Prelegent nie zatwierdził płatności w systemie bankowym.
+3. System wyświetla informację o niepowodzeniu.
+
+_Scenariusz alternatywny 2:_
+
+1. Artykuł jest już opłacony. Opcja “Opłata za publikację artykułu” nie jest dostępna.
+""")
+
+
+PB('Zgłaszanie poprawek do artykułów', 'Prelegent')
+output("""
+1. Prelegent wybiera opcję “Zgłoś poprawki do artykułu”.
+2. System prezentuje tytuł i abstract artykułu z możliwością edycji.
+3. Prelegent edytuje dane.
+4. Prelegent przesyła na serwer plik z nowym draftem artukułu.
+5. Prelegent zatwierdza zmiany.
+6. System zapisuje zmiany.
+7. System wysyła e-mail do recenzentów z informacją o poprawkach.
+
+_Scenariusz alternatywny 1:_
+
+Prelegent nie zgłosił jeszcze pierwszej wersji artykułu. Opcja “Zgłoś poprawki” nie jest dostępna.
+
+_Scenariusz alternatywny 2:_
+
+1-5. Jak w scenariuszu głównym.
+6. Plik z draftem jest w niepoprawnym formacie.
+7. System informuje o błędzie.
+8. Powrót do punktu 2.
+""")
+
+PB('Zgłaszanie ostatecznych wersji artykułów', 'Prelegent, Recenzent')
+output("""
+1. Prelegent wybiera opcję “Zgłoś wersję artykułu jako ostateczną”.
+2. System zapisuje ostateczną wersję.
+3. System wysyła e-mail do recenzentów i e-mail z potwierdzeniem do prelegenta.
+
+_Scenariusz alternatywny 1:_
+
+1. Prelegent nie zgłosił jeszcze pierwszej wersji artykułu. Opcja “Zgłoś wersję jako ostateczną” nie jest dostępna.
+""")
+
+# MAYBE: Tutaj powinna byc strzalka tez od Organizatora?
+PB('Przypomnienie o terminie zgłoszenia ostatecznej wersji artykułu', 'Czas, Organizator, Prelegent')
+output("""
+1. Mija czas do 5 dni przed wydarzeniem.
+2. System wysyła powiadomienie o zatwierdzenie referatu do Prelegenta.
+
+_Scenariusz alternatywny 1:_
+
+1. Organizator wyszukuje prelegenta w katalogu.
+2. Organizator wybiera polecenie “Wyślij przypomnienie”
+3. System wysyła powiadomienie o zatwierdzenie referatu do Prelegenta.
+""")
+
+PB('Uszeregowanie i wysyłanie gotowych artykułów do wydawnictwa', 'Organizator')
+output("""
+1. System prezentuje listę zatwierdzonych artykułów.
+2. Organizator zmienia kolejność na liście.
+3. Organizator zatwierdza kolejność.
+4. System zapisuje kolejność artykułów.
+5. System generuje plik ze wszystkimi artykułami i ze spisem treści wymieniającym je w odpowiedniej kolejności.
+""")
+
 ########################################################################################
 # output this shit
 
