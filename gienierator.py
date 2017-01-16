@@ -193,6 +193,19 @@ def CRUD(thing, fields, fields_fu, delete_alt=None, aktor='Organizator'):
     punkt('System wyświetla komunikat o błędzie')
     powrot(1)
 
+    # FU Usunięcie
+    PB('Usunięcie %s' % thing.dopelniacz, aktor)
+    wybiera_opcje(aktor)
+    punkt('System prezentuje listę %s' % (thing.dopelniacz_lm))
+    punkt('%s wybiera %s z listy' % (aktor, thing.mianownik))
+    p_zatw = punkt('%s klika przycisk "Usuń"' % aktor)
+    punkt('System usuwa %s' % thing.biernik)
+    punkt('System wyświetla komunikat o sukcesie')
+
+    if delete_alt:
+        alt(p_zatw) 
+        delete_alt()
+
 ###############################################################################
 PB('Zgłoszenie referatu', 'Prelegent, Recenzent')
 p_form = punkt("""Prelegent wypełnia formularz z danymi:
