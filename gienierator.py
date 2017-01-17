@@ -3,7 +3,15 @@
 import io, os, re
 from collections import namedtuple
 
-print("# **Zadanie 2**: obsługa konferencji naukowej")
+print("---")
+print("title: '**Zadanie 2**: obsługa konferencji naukowej'")
+print("author:")
+print("- Adam Kwiatkowski")
+print("- Katarzyna Romasevska")
+print("- Tomasz Zwornicki")
+print("- Maciej Bielecki")
+print("geometry: margin=2cm")
+print("---")
 print("Zgłaszanie referatów, recenzowanie, ")
 print("organizacja eventu - program wystąpień, eventy typu przyjęcie, wycieczka ze zwiedzaniem itp.")
 print()
@@ -717,9 +725,9 @@ def make_diagram(ident, code):
 print()
 print("## Diagram przypadków biznesowych")
 make_diagram('pb', pb_graph_out.getvalue())
-print('<img src=pb.png>')
+print('![](pb.png)\\ ')
 
 print()
 print("## Diagram przypadków systemowych")
 make_diagram('ps', fu_graph_out.getvalue())
-print('<img src=ps.png>')
+print('![](ps.png)\\ ')
