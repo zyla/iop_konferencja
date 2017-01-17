@@ -689,6 +689,7 @@ _Scenariusz alternatywny 2_:
 
 FU('Potwierdzenie rezerwacji miejsca', 'Słuchacz/Dziennikarz/Prelegent', True)
 
+FU('Edycja terminarza wydarzenia', 'Organizator', True)
 FU('Zgłaszanie poprawek referatów/innej formy (Przemówienie wstępne, konwersatorium)', 'Prelegent', True)
 FU('Przypomnienie o zgłoszeniu ostatecznej wersji artykułu', 'Czas, Prelegent', True)
 FU('Szeregowanie artykułów do wydawnictwa', 'Organizator', True)
