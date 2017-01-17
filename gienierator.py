@@ -737,6 +737,32 @@ wybiera_opcje('Użytkownik')
 punkt('System wyświetla listę rachunków')
 punkt('Użytkownik przegląda rachunki')
 
+FU('Zmiana hasła', 'Prelegent/Recenzent/Organizator/Słuchacz/Dziennikarz') 
+output("""
+1. Aktor wybiera opcję "Zmiana hasła".
+2. System wyświetla formularz do wypełnienia danymi
+
+- stare hasło
+- nowe hasło
+- powtórzenie nowego hasła
+
+3. Aktory zatwierdza wypełnione dane.
+4. System zapisuje nowe hasło.
+5. System wyświetla komunikat o sukcesie.
+
+_Scenariusz alternatywny 1:_
+
+1-3. Jak w scenariuszu głównym.
+
+4. System wyświetla informację o różnym wpisaniu nowego hasła.
+
+_Scenariusz alternatywny 2:_
+
+1-3. Jak w scenariuszu głównym.
+
+4. System wyświetla informację o za słabym haśle.
+""")
+
 ########################################################################################
 # output this shit
 
