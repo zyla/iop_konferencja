@@ -40,10 +40,10 @@ Edycja terminarza wydarzenia
 			 wycieczki
 			 warsztatu
 Potwierdzenie rezerwacji miejsca
-Zgłaszanie poprawek referatów/innej formy (Przemówienie wstępne, konwersatorium)
-Przypomnienie o zgłoszeniu ostatecznej wersji artykułu
-Szeregowanie artykułów do wydawnictwa
-Utworzenie odpowiedniej formy zbioru artykułów do wysłania do wydawnictwa
+Zgłaszanie poprawek referatów/innej formy (Przemówienie wstępne, konwersatorium)--
+Przypomnienie o zgłoszeniu ostatecznej wersji artykułu--
+Szeregowanie artykułów do wydawnictwa--
+Utworzenie odpowiedniej formy zbioru artykułów do wysłania do wydawnictwa--
 		Wprowadzanie do systemu posiłków 
 		Wprowadzanie do systemu  noclegów
 		Wprowadzanie do systemu wycieczek
