@@ -614,6 +614,23 @@ _Scenariusz alternatywny 2 - upłynął termin rezygnacji_:
 2. System wyświetla komunikat, że upłynął termin rezygnacji.
 """)
 
+PB('Opłata rachunku', aktorzy=SDP)
+wybiera_opcje('Użytkownik')
+punkt('System wyświetla listę niezapłaconych rachunków użytkownika')
+p_wybiera = punkt('Użytkownik wybiera rachunek')
+punkt('Użytkownik płaci za pomocą systemu bankowości on-line')
+punkt('System zapisuje rachunek jako zapłacony')
+punkt('System wyświetla komunikat o sukcesie')
+
+alt(p_wybiera)
+punkt('Płatność nie powiodła się')
+punkt('System wyświetla komunikat o błędzie')
+
+PB('Przeglądanie rachunków', aktorzy=SDP)
+wybiera_opcje('Użytkownik')
+punkt('System wyświetla listę rachunków')
+punkt('Użytkownik przegląda rachunki')
+
 ########################################################################################
 # Custom FU shit
 
@@ -702,6 +719,23 @@ FU('Zgłaszanie poprawek referatów/innej formy (Przemówienie wstępne, konwers
 FU('Przypomnienie o zgłoszeniu ostatecznej wersji artykułu', 'Czas, Prelegent', True)
 FU('Szeregowanie artykułów do wydawnictwa', 'Organizator', True)
 FU('Utworzenie odpowiedniej formy zbioru artykułów do wysłania do wydawnictwa', 'Organizator', True)
+
+FU('Opłata rachunku', aktorzy=SDP)
+wybiera_opcje('Użytkownik')
+punkt('System wyświetla listę niezapłaconych rachunków użytkownika')
+p_wybiera = punkt('Użytkownik wybiera rachunek i klika przycisk "Zapłać"')
+punkt('Użytkownik płaci za pomocą systemu bankowości on-line')
+punkt('System zapisuje rachunek jako zapłacony')
+punkt('System wyświetla komunikat o sukcesie')
+
+alt(p_wybiera)
+punkt('Płatność nie powiodła się')
+punkt('System wyświetla komunikat o błędzie')
+
+FU('Przeglądanie rachunków', aktorzy=SDP)
+wybiera_opcje('Użytkownik')
+punkt('System wyświetla listę rachunków')
+punkt('Użytkownik przegląda rachunki')
 
 ########################################################################################
 # output this shit
