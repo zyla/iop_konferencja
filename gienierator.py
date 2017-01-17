@@ -65,7 +65,7 @@ def przypadek(id, nazwa, aktorzy, wyjebac_scenariusz_glowny=False):
 
     first = True
     for aktor in aktorzy.split(', '):
-        right = aktor in ['Prelegent']
+        right = aktor in ['Prelegent', 'Prelegent/Recenzent/Słuchacz/Dziennikarz']
         graph_node(aktor, '%s %s' % (id, nazwa), right, first)
         first = False
 
