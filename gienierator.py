@@ -731,3 +731,7 @@ print()
 print("## Diagram przypadków systemowych")
 make_diagram('ps', fu_graph_out.getvalue())
 print('![](ps.png)\\ ')
+
+print()
+print("## Diagram klas")
+print('![](diagram_klas.png)\\ ')
