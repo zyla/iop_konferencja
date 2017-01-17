@@ -606,6 +606,46 @@ _Scenariusz alternatywny 1:_
 5. Powrót do punktu 1.
 """)
 
+FU('Rejestracja referatu', 'Prelegent, Recenzent')
+output("""
+1. System wyświetla formularz z polami: imię, nazwisko, e-mail, temat, opis, draft.
+2. Prelegent wpisuje dane tekstowe.
+3. Prelegent ładuje plik z draftem.
+4. Prelegent zatwierdza dane.
+5. System zapisuje referat ze stanem "Do recenzji".
+6. System wyświetla komunikat o sukcesie.
+7. System wysyła e-mail z powiadomieniem do recenzentów.
+8. System wysyła e-mail z potwierdzeniem do prelegenta.
+
+_Scenariusz alternatywny 1:_
+
+1-4. Jak w scenariuszu głównym.
+
+5. Prelegent jest osobą zaproszoną.
+6. System zapisuje referat ze stanem "Zaakceptowany".
+7. System wysyła e-mail z potwierdzeniem do prelegenta.
+""")
+
+FU('Przeglądanie terminarza', 'Prelegent/Sluchacz')
+output("""
+System wyświetla okno zawierające listę wydarzeń na konferencji (prelekcje i
+wydarzenia dodatkowe) wraz z ich miejscami, datami i godzinami rozpoczęcia i
+zakończenia. 
+Aktor czyta informacje.
+
+_Scenariusz alternatywny 1:_
+
+Terminarz nie jest jeszcze gotowy. System zamiast informacji o
+wydarzeniach wyświetla komunikat "Terminarz nie jest jeszcze gotowy".
+""")
+
+FU('Rejestracja przemówienia wstępnego, konwersatorium', 'Prelegent', wyjebac_scenariusz_glowny=True)
+
+FU('Przeglądanie nadesłanego referatu', 'Recenzent', True)
+
+FU('Ocenianie i skomentowanie nadesłanego referatu/innej formy', 'Recenzent', True)
+
+
 ########################################################################################
 # output this shit
 

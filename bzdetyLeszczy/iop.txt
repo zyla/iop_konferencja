@@ -6,30 +6,32 @@ Edycja terminarza wydarzenia - 22
 Przeglądanie terminarza - 23 - wymaga spojrzenia
 Rezygnacja z konferencji -24 - w domyśle jest, że musi być zalogowany
 
-		Rezygnacja z wycieczki warsztatu posiłku noclegu - 25
+		Rezygnacja z wycieczki warsztatu posiłku noclegu - rezygnacja -.-
 		Zmiana posiłków noclegu warsztatu wycieczki - a czy to jest potrzebne?
 
-Rezygnacja z warsztatów dziennikarza
+		Rezygnacja z warsztatów dziennikarza
 Kontatkt z organizatorem -30
-Generowanie identyfikatoró dla uczestników
-Wnoszenie opłaty za publikację artykułu
-Zgłaszanie poprawek do artykułów
-Zgłaszanie ostatetcznych wersji artykułów
-Przypomnienie o terminie zgłoszenia ostatecznej wersji artykułu
+Generowanie identyfikatoró dla uczestników-
+Wnoszenie opłaty za publikację artykułu-
+Zgłaszanie poprawek do artykułów-
+Zgłaszanie ostatetcznych wersji artykułów- 
+Przypomnienie o terminie zgłoszenia ostatecznej wersji artykułu-
 
-Zmiana hasła
+Uszeregowanie i wysyłanie gotowych artykułów do wydawnictwa - dodano przez Tomko
+
+Zmiana hasła??
 
 		Opcja wydruku referatu posiłków wycieczek warsztatów terminarza identyfikatora 
 
-Zgłoszenie innej formy
+Zgłoszenie innej formy??
 
 FU:
-Logowanie
-Rejestracja referatu
-Przeglądanie terminarza
-Rejestracja przemówienia wstępnego, konwersatorium
-Przeglądanie nadesłanego referatu
-Ocenianie i skomentowanie nadesłanego referatu/innej formy
+Logowanie--
+Rejestracja referatu--
+Przeglądanie terminarza--
+Rejestracja przemówienia wstępnego, konwersatorium--
+Przeglądanie nadesłanego referatu--
+Ocenianie i skomentowanie nadesłanego referatu/innej formy--
 Edycja terminarza wydarzenia
 		Rejestracja na miejsca
 		Rezygnacja z konferencji
