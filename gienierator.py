@@ -241,7 +241,7 @@ output("""
  - temat prezentacji
  - krótki opis wraz z informacja o formie prezentacji
  - dane kontaktowe
-2. System zapisuje informacje. Wysyła e-mail do recenzentów i e-mail z potwierdzeniem do prelegenta.
+2. System zapisuje informacje. Wysyła e-mail do wybranych recenzentów i e-mail z potwierdzeniem do prelegenta.
 
 _Scenariusz alternatywny 1:_
 
@@ -257,6 +257,43 @@ _Scenariusz alternatywny 2:_
 
 3. Prelegent jest osobą zaproszoną.
 4. Publikacja jest automatycznie akceptowana.
+""")
+
+PB('Ocena referatu', 'Recenzent, Prelegent')
+output("""
+1. Recenzent otwiera referat i go czyta.
+2. Recenzent pisze komentarz i ocenia pozytywnie lub negatywnie referat.
+3. System zapisuje komentarz i ocenę.
+4. System wysyła komentarze prelegentowi.
+
+_Scenariusz alternatywny 1_:
+
+1. Jak w scenariuszu głównym.
+2. Recenzent nie jest przypisany do tego referatu.
+3. System wyświetla komunikat o błędzie.
+""")
+
+PB('Ocena innej formy', 'Recenzent, Prelegent')
+output("""
+1. Recenzent otwiera inną formę i czyta ją.
+2. Recenzent pisze komentarz i ocenia pozytywnie lub negatywnie inną formę.
+3. System zapisuje komentarz i ocenę.
+4. System wysyła komentarze prelegentowi.
+""")
+PB('Odmówienie recenzowania przez recenzenta', 'Recenzent')
+output("""
+1. Recenzent otwiera listę przypisanych referatów lub innej formy.
+2. Recenzent wybiera nie interesujący go referat lub inną formę.
+3. Recenzent opcjonalnie pisze czemu nie może recenzować i potwierdza.
+4. System wypisuje tego recenzenta i wybiera innego.
+5. System powiadamia nowego recenzenta.
+""")
+
+PB('Ustalenie rankingu referatów', 'Czas, Prelegent')
+output("""
+1. System na miesiąc przed wydarzeniem wybiera najlepiej ocenione referaty.
+2. System wysyła e-mail do wybranych prelegentów o tym, że pomyślnie oceniono ich referaty.
+3. System odblokowuję możliwość edycji wybranych referatów dla prelegentów.
 """)
 
 ###############################################################################
@@ -522,7 +559,7 @@ output("""
 4. Prelegent przesyła na serwer plik z nowym draftem artukułu.
 5. Prelegent zatwierdza zmiany.
 6. System zapisuje zmiany.
-7. System wysyła e-mail do recenzentów z informacją o poprawkach.
+7. System wysyła e-mail do wybranych recenzentów z informacją o poprawkach.
 
 _Scenariusz alternatywny 1:_
 
@@ -541,7 +578,7 @@ PB('Zgłaszanie ostatecznych wersji artykułów', 'Prelegent, Recenzent')
 output("""
 1. Prelegent wybiera opcję “Zgłoś wersję artykułu jako ostateczną”.
 2. System zapisuje ostateczną wersję.
-3. System wysyła e-mail do recenzentów i e-mail z potwierdzeniem do prelegenta.
+3. System wysyła e-mail do wybranych recenzentów i e-mail z potwierdzeniem do prelegenta.
 
 _Scenariusz alternatywny 1:_
 
@@ -658,7 +695,7 @@ output("""
 4. Prelegent zatwierdza dane.
 5. System zapisuje referat ze stanem "Do recenzji".
 6. System wyświetla komunikat o sukcesie.
-7. System wysyła e-mail z powiadomieniem do recenzentów.
+7. System wysyła e-mail z powiadomieniem do wybranych recenzentów.
 8. System wysyła e-mail z potwierdzeniem do prelegenta.
 
 _Scenariusz alternatywny 1:_
@@ -670,24 +707,85 @@ _Scenariusz alternatywny 1:_
 7. System wysyła e-mail z potwierdzeniem do prelegenta.
 """)
 
+FU('Wybranie recenzentów do referatu','Recenzent')
+output("""
+1. Pojawia się nowy referat bez recenzentów.
+2. System wybiera w losowy sposób wybraną ilość rezenzentów do danego referatu
+   bądź innej formy, tak aby recenzenci byli dość równo zaangażowani.
+3. System powiadamia wybranych recenzentów poprzez e-mail.
+""")
+
+FU('Odmówienie recenzowania przez recenzenta', 'Recenzent')
+output("""
+1. System wyświetla przypisane recenzentowi artykuły i inne formy.
+2. Recenzent wybiera artykuł lub inną formą której nie chce oceniać.
+3. System wyświetla okno z opcjonalnym polem do wpisania powodu i przyciskiem potwierdzenia.
+4. Recenzent potwierdza.
+5. System wypisuje recenzenta i wybiera nowego.
+6. System wysyła e-mail do nowego recenzenta z powiadomieniem.
+""")
+
+FU('Ustalenie rankingu referatów', 'Czas, Prelegent')
+output("""
+1. System układa referaty w kolejności malejącej wględem % pozytywnych ocen referatów.
+2. System wybranej ilości najlepszych referatów przyznaje status "przyjęte".
+3. System wysyła e-mail do prelegentów odpowiedzialnych za przyjęte referaty.
+4. System odblokowuje możliwość wnoszenia poprawek przyjętych referatów.
+""")
+
 FU('Przeglądanie terminarza', 'Prelegent/Sluchacz')
 output("""
-System wyświetla okno zawierające listę wydarzeń na konferencji (prelekcje i
+1. System wyświetla okno zawierające listę wydarzeń na konferencji (prelekcje i
 wydarzenia dodatkowe) wraz z ich miejscami, datami i godzinami rozpoczęcia i
 zakończenia. 
-Aktor czyta informacje.
+2. Aktor czyta informacje.
 
 _Scenariusz alternatywny 1:_
 
-Terminarz nie jest jeszcze gotowy. System zamiast informacji o
+1. Terminarz nie jest jeszcze gotowy. System zamiast informacji o
 wydarzeniach wyświetla komunikat "Terminarz nie jest jeszcze gotowy".
 """)
 
 FU('Rejestracja przemówienia wstępnego, konwersatorium', 'Prelegent', wyjebac_scenariusz_glowny=True)
+output("""
+1. System wyświetla formularz z polami: temat prezentacji, krótki opis wraz z informacją o formie prezentacji, dane kontaktowe
+2. Prelegent wpisuje dane tekstowe
+3. Prelegent zatwierdza dane.
+4. System zapisuje formę w systemie ze stanem "Do recenzji".
+5. System wysyła e-mail z powiadomieniem do wybranych recenzentów.
+6. System wysyła e-mail z potwierdzeniem do prelegenta.
 
-FU('Przeglądanie nadesłanego referatu', 'Recenzent', True)
+_Scenariusz alternatywny 1:_
 
-FU('Ocenianie i skomentowanie nadesłanego referatu/innej formy', 'Recenzent', True)
+1-3. Jak w scenariuszu głównym.
+
+4. System wyświetla komunikat o błędnych danych
+
+_Scenariusz alternatywny 2:_
+
+1-4. Jak w scenariuszu głównym.
+
+5. Prelegent jest osobą zaproszoną, przyjmuje przesłaną formę od razu.
+
+""")
+
+FU('Przeglądanie nadesłanego referatu', 'Recenzent, Prelegent', wyjebac_scenariusz_glowny=True)
+output("""
+1. System wyświetla listę referatów przypisanych do recenzenta.
+2. Recenzent wybiera referat z listy.
+3. System wyświetla przesłaną pracę. 
+4. Recenzent czyta referat.
+""")
+
+FU('Ocenianie i skomentowanie nadesłanego referatu/innej formy', 'Recenzent', wyjebac_scenariusz_glowny=True)
+output("""
+1. System wyświetla listę referatów przypisanych do recenzenta.
+2. Recenzent wybiera referat z listy.
+3. System wyświetla formularz z polem "komentarz", oraz przyciski "przyjęte", "odrzucone". 
+4. Recenzent wpisuje swoje komentarze i wybiera ocenę końcową.
+5. System zapisuje komentarz i ocenę recenzenta w systemie.
+6. System wysyła e-mail z komentarzem do prelegenta.
+""")
 
 FU('Rezygnacja z konferencji', 'Słuchacz')
 output("""
@@ -712,14 +810,83 @@ _Scenariusz alternatywny 2_:
 
 
 
-FU('Potwierdzenie rezerwacji miejsca', 'Słuchacz/Dziennikarz/Prelegent', True)
+FU('Edycja terminarza wydarzenia', 'Organizator', wyjebac_scenariusz_glowny=True)
+output("""
+1. System wyświetla okno z edytowalnym terminarzem.
+2. Organizator klika w wydarzenie by je edytować.
+3. System wyświetla okno z wydarzeniem i jego danymi.
+4. Organizator zmienia dane.
+5. Organizator potwierdza.
+6. System zapisuje zmiany.
 
-FU('Edycja terminarza wydarzenia', 'Organizator', True)
-FU('Zgłaszanie poprawek referatów/innej formy (Przemówienie wstępne, konwersatorium)', 'Prelegent', True)
-FU('Przypomnienie o zgłoszeniu ostatecznej wersji artykułu', 'Czas, Prelegent', True)
+_Scenariusz alternatywny 1:_
+
+1. Jak w scenariuszu głównym.
+
+2. Organizator klika w datę.
+3. System wyświetla okno z wydarzeniami które nie mają przypisanej daty.
+4. Organizator wybiera interesujące go wydarzenie.
+
+5-7. Jak w scenariuszu głównym.
+
+_Scenariusz alternatywny 2:_
+
+1-5. Jak w scenariuszu głównym.
+
+6. System wyświetla okno informujące o kolizji.
+7. System zapisuje zmiany. 
+""")
+
+FU('Zgłaszanie poprawek przemówienia wstępnego, konwersatorium', 'Prelegent', True)
+output("""
+1. System wyświetla wypełniony formularz z krótkim opisem przesłanej formy.
+2. Prelegent edytuje krótki opis.
+3. Prelegent potwierdza zmiany.
+4. System zapisuje zmiany.
+5. System wysyła e-mail z powiadomieniem do wybranych recencentów.
+6. System wysyła e-mail z potwierdzeniem do prelegenta.
+""")
+
+
+FU('Zgłaszanie poprawek referatów', 'Prelegent', True)
+output("""
+1. System wyświetla wypełniony formularz z opisem oraz draftem.
+2. Prelegent edytuje opis.
+3. Prelegent ładuje nowy draft.
+4. Prelegent potwierdza zmiany.
+5. System zapisuje zmiany.
+6. System wysyła e-mail z powiadomieniem do wybranych recencentów.
+7. System wysyła e-mail z potwierdzeniem do prelegenta.
+""")
+
+FU('Przypomnienie o zgłoszeniu ostatecznej wersji artykułu', 'Czas/Prelegent/Organizator', True)
+output("""
+1. System na 5 dni przed wydarzeniem automatycznie wysyła e-mail do prelegenta z przypomnieniem o zatwierdzeniu referatu.
+
+_Scenariusz alternatywny 1:_
+
+1. Organizator otwiera katalog prelegentów.
+2. System wyświetla katalog.
+3. Organizator wybiera polecenie "Wyślij przypomnienie" przy polu danego prelegenta.
+4. System wysyła e-mail z przypomnieniem o zatwierdzeniu referatu do prelegenta.
+""")
+
 FU('Szeregowanie artykułów do wydawnictwa', 'Organizator', True)
+output("""
+1. System otwiera interaktywną listę zatwierdzonych artykułów.
+2. Organizator przesuwa artykuły tworząc kolejność.
+3. Organizator zatwierdza kolejność.
+4. System zapisuje nową kolejność.
+    """)
 FU('Utworzenie odpowiedniej formy zbioru artykułów do wysłania do wydawnictwa', 'Organizator', True)
-
+output("""
+1. System wyświetla listę artykułów w wcześniej ustalonej kolejności.
+2. Organizator potwierdza listę.
+3. System generuje plik ze wszystkimi artykułami i ze spisem treści.
+4. System wyświetla okno z zapytaniem o lokalizację zapisu utworzonego pliku.
+5. Organizator wybiera lokalizację.
+6. System zapisuje plik w wskazanej lokalizacji.
+""")
 FU('Opłata rachunku', aktorzy=SDP)
 wybiera_opcje('Użytkownik')
 punkt('System wyświetla listę niezapłaconych rachunków użytkownika')
